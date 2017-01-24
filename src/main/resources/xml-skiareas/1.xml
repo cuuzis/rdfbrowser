@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skiArea id="1">
+	<name><![CDATA[Smokey Mountain Ski Club]]></name>
+	<georeferencing lat="52.977947" lng="-66.92094" />
+	<openingYear>1964</openingYear>
+	<officialWebsite><![CDATA[http://www.skismokey.ca/]]></officialWebsite>
+	<operatingStatus>Operating</operatingStatus>
+	<terrainPark>Unknown</terrainPark>
+	<nightSkiing>Unknown</nightSkiing>
+	<tags>
+		<tag id="1" name="Downhill" />
+	</tags>
+	<skiMaps count="3">
+		<skiMap id="10593"></skiMap>
+		<skiMap id="902"></skiMap>
+		<skiMap id="10283"></skiMap>
+	</skiMaps>
+	<regions>
+		<region id="335"><![CDATA[Newfoundland and Labrador]]></region>
+	</regions>
+	<created>2016-02-18T14:11:51+00:00</created>
+	<user id="7"><![CDATA[skier]]></user>
+</skiArea>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<skiMap id="22">
+	<caption><![CDATA[2007-08 Ski Big 3 Side 1 (3 Mountain Map, Norquay Map)]]></caption>
+	<yearPublished>2007</yearPublished>
+	<thumbnail width="100" url="https://skimap.org/data/16/1/1252281723thumb100w.jpg" />
+	<thumbnail width="200" url="https://skimap.org/data/16/1/1252281723thumb200w.jpg" />
+	<thumbnail width="400" url="https://skimap.org/data/16/1/1252281723thumb.jpg" />
+	<thumbnail height="100" url="https://skimap.org/data/16/1/1252281723thumb100h.jpg" />
+	<thumbnail height="200" url="https://skimap.org/data/16/1/1252281723thumb200h.jpg" />
+	<thumbnail height="400" url="https://skimap.org/data/16/1/1252281723thumb400h.jpg" />
+	<unprocessed width="5000" height="3755" size="3293013" url="https://skimap.org/data/16/1/1252281723.jpg" />
+	<skiArea id="16"><![CDATA[Mount Norquay]]></skiArea>
+	<tags>
+		<tag id="1" name="Downhill" />
+	</tags>
+	<created>2008-04-13T01:09:09+00:00</created>
+	<user id="1"><![CDATA[wbski]]></user>
+</skiMap>

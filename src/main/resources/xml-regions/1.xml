@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<region id="1" level="1" type="Landmass">
+	<name><![CDATA[Americas]]></name>
+	<georeferencing zoom="5" />
+	<maps count="6787" />
+	<regions>
+		<region id="187"><![CDATA[United States]]></region>
+		<region id="36"><![CDATA[Canada]]></region>
+		<region id="12"><![CDATA[Argentina]]></region>
+		<region id="40"><![CDATA[Chile]]></region>
+		<region id="26"><![CDATA[Bolivia]]></region>
+		<region id="116"><![CDATA[Mexico]]></region>
+		<region id="257"><![CDATA[French Guiana]]></region>
+		<region id="258"><![CDATA[Guadeloupe]]></region>
+		<region id="259"><![CDATA[Martinique]]></region>
+		<region id="262"><![CDATA[Aruba]]></region>
+		<region id="263"><![CDATA[Netherlands Antilles]]></region>
+		<region id="11"><![CDATA[Antigua and Barbuda]]></region>
+		<region id="17"><![CDATA[Bahamas]]></region>
+		<region id="20"><![CDATA[Barbados]]></region>
+		<region id="23"><![CDATA[Belize]]></region>
+		<region id="29"><![CDATA[Brazil]]></region>
+		<region id="42"><![CDATA[Colombia]]></region>
+		<region id="45"><![CDATA[Costa Rica]]></region>
+		<region id="48"><![CDATA[Cuba]]></region>
+		<region id="53"><![CDATA[Dominica]]></region>
+		<region id="54"><![CDATA[Dominican Republic]]></region>
+		<region id="55"><![CDATA[Ecuador]]></region>
+		<region id="57"><![CDATA[El Salvador]]></region>
+		<region id="71"><![CDATA[Grenada]]></region>
+		<region id="72"><![CDATA[Guatemala]]></region>
+		<region id="75"><![CDATA[Guyana]]></region>
+		<region id="76"><![CDATA[Haiti]]></region>
+		<region id="77"><![CDATA[Honduras]]></region>
+		<region id="87"><![CDATA[Jamaica]]></region>
+		<region id="129"><![CDATA[Nicaragua]]></region>
+		<region id="136"><![CDATA[Panama]]></region>
+		<region id="138"><![CDATA[Paraguay]]></region>
+		<region id="139"><![CDATA[Peru]]></region>
+		<region id="147"><![CDATA[Saint Kitts and Nevis]]></region>
+		<region id="148"><![CDATA[Saint Lucia]]></region>
+		<region id="149"><![CDATA[Saint Vincent and the Grenadines]]></region>
+		<region id="167"><![CDATA[Suriname]]></region>
+		<region id="178"><![CDATA[Trinidad and Tobago]]></region>
+		<region id="188"><![CDATA[Uruguay]]></region>
+		<region id="192"><![CDATA[Venezuela]]></region>
+		<region id="213"><![CDATA[Saint Barthelemy]]></region>
+		<region id="214"><![CDATA[Saint Martin]]></region>
+		<region id="215"><![CDATA[Saint Pierre and Miquelon]]></region>
+		<region id="218"><![CDATA[Clipperton Island]]></region>
+		<region id="226"><![CDATA[Anguilla]]></region>
+		<region id="227"><![CDATA[Bermuda]]></region>
+		<region id="230"><![CDATA[British Virgin Islands]]></region>
+		<region id="231"><![CDATA[Cayman Islands]]></region>
+		<region id="232"><![CDATA[Falkland Islands (Islas Malvinas)]]></region>
+		<region id="234"><![CDATA[Montserrat]]></region>
+		<region id="237"><![CDATA[South Georgia and the South Sandwich Islands]]></region>
+		<region id="238"><![CDATA[Turks and Caicos Islands]]></region>
+		<region id="240"><![CDATA[Puerto Rico]]></region>
+		<region id="249"><![CDATA[Navassa Island]]></region>
+		<region id="251"><![CDATA[U.S. Virgin Islands]]></region>
+	</regions>
+	<parents>
+	</parents>
+</region>
