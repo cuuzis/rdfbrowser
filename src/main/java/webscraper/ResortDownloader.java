@@ -8,12 +8,13 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 
+// Requires java to trust the SSL certificate used in skimap.org
+// if "unable to find valid certification path to requested target" error is thrown:
+// 1. Download the site certificate.cer using your browser (if valid!)
+// 2. Import it using java keytool (default password is changeit):
+// keytool -import -trustcacerts -alias myTrustedCert -file certificate.cer -keystore "JAVA_HOME/jre/lib/security/cacerts"
+
 public class ResortDownloader {
-    // Requires java to trust the SSL certificate used in skimap.org
-    // if "unable to find valid certification path to requested target" error is thrown:
-    // 1. Download the site certificate.cer using your browser (if valid!)
-    // 2. Import it using java keytool (default password is changeit):
-    // keytool -import -trustcacerts -alias myTrustedCert -file certificate.cer -keystore "JAVA_HOME/jre/lib/security/cacerts"
 
     private static final String REGIONS = "https://skimap.org/Regions/view/";
     private static final String SKI_AREAS = "https://skimap.org/SkiAreas/view/";
@@ -50,7 +51,8 @@ public class ResortDownloader {
                 dest = new File(destination + counter + ".xml");
                 FileUtils.copyURLToFile(src, dest);
                 counter++;
-            } while (!emptyResults.equals(dest));
+            } while (!FileUtils.contentEquals(emptyResults, dest));
+            dest.delete(); //Last file is empty
 
         } catch (MalformedURLException e) {
             System.out.println(counter + " Malformed URL");
@@ -59,6 +61,6 @@ public class ResortDownloader {
             System.out.println(counter + " IO error");
             e.printStackTrace();
         }
-        System.out.println("Processed " + (counter - startFrom) + " of " + source);
+        System.out.println("Processed " + (counter - startFrom - 1) + " of " + source);
     }
 }
