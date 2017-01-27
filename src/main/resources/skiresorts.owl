@@ -19,12 +19,16 @@
 
 <http://inf.unibz.it/2017/ski-resort-ontology/containsContinent> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/containsGeographicRegion> ;
+	a owl:IrreflexiveProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
 	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/containsCountry
 
 <http://inf.unibz.it/2017/ski-resort-ontology/containsCountry> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/containsGeographicRegion> ;
+	a owl:IrreflexiveProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
 	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/Country> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/containsGeographicRegion
@@ -39,26 +43,44 @@
 
 <http://inf.unibz.it/2017/ski-resort-ontology/containsObject> a owl:ObjectProperty ;
 	owl:inverseOf <http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion> ;
-	a owl:IrreflexiveProperty ;
-	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> , <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> .
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
+	rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/containsRegion
 
 <http://inf.unibz.it/2017/ski-resort-ontology/containsRegion> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/containsGeographicRegion> ;
+	a owl:IrreflexiveProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
 	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/Region> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/containsSkiResort
 
 <http://inf.unibz.it/2017/ski-resort-ontology/containsSkiResort> a owl:ObjectProperty ;
 	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/containsObject> ;
+	a owl:FunctionalProperty , owl:IrreflexiveProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
 	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> .
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/hasNearbyResort
+# http://inf.unibz.it/2017/ski-resort-ontology/hasAmenity
 
-<http://inf.unibz.it/2017/ski-resort-ontology/hasNearbyResort> a owl:ObjectProperty , owl:SymmetricProperty , owl:IrreflexiveProperty ;
+<http://inf.unibz.it/2017/ski-resort-ontology/hasAmenity> a owl:ObjectProperty ;
 	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
-	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> .
+	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/Amenity> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/hasNightSkiing
+
+<http://inf.unibz.it/2017/ski-resort-ontology/hasNightSkiing> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/hasAmenity> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/NightSkiing> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/hasTerrainPark
+
+<http://inf.unibz.it/2017/ski-resort-ontology/hasTerrainPark> a owl:ObjectProperty ;
+	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/hasAmenity> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/TerrainPark> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/isGeographicRegionLocatedInRegion
 
@@ -70,8 +92,8 @@
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion
 
-<http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion> a owl:ObjectProperty , owl:FunctionalProperty , owl:IrreflexiveProperty ;
-	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
+<http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion> a owl:ObjectProperty ;
+	rdfs:range <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/isSkiResortLocatedInRegion
 
@@ -79,6 +101,12 @@
 	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion> ;
 	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
 	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
+# 
+# http://xmlns.com/foaf/0.1/based_near
+
+<http://xmlns.com/foaf/0.1/based_near> a owl:ObjectProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> .
 # 
 # 
 # 
@@ -89,10 +117,61 @@
 # #################################################################
 # 
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/hasName
+# http://inf.unibz.it/2017/ski-resort-ontology/geoCoordinates
 
-<http://inf.unibz.it/2017/ski-resort-ontology/hasName> a owl:DatatypeProperty ;
-	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/Object> ;
+<http://inf.unibz.it/2017/ski-resort-ontology/geoCoordinates> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf owl:topDataProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:float .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/maximumElevation
+
+<http://inf.unibz.it/2017/ski-resort-ontology/maximumElevation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.w3.org/2003/01/geo/wgs84_pos#altitude> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:decimal .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/minimumElevation
+
+<http://inf.unibz.it/2017/ski-resort-ontology/minimumElevation> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://www.w3.org/2003/01/geo/wgs84_pos#altitude> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:decimal .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#altitude
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#altitude> a owl:DatatypeProperty .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#lat
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#lat> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/geoCoordinates> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:float .
+# 
+# http://www.w3.org/2003/01/geo/wgs84_pos#long
+
+<http://www.w3.org/2003/01/geo/wgs84_pos#long> a owl:DatatypeProperty ;
+	rdfs:subPropertyOf <http://inf.unibz.it/2017/ski-resort-ontology/geoCoordinates> ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:float .
+# 
+# http://xmlns.com/foaf/0.1/Image
+
+<http://xmlns.com/foaf/0.1/Image> a owl:DatatypeProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiMap> ;
+	rdfs:range xsd:string .
+# 
+# http://xmlns.com/foaf/0.1/homepage
+
+<http://xmlns.com/foaf/0.1/homepage> a owl:DatatypeProperty ;
+	rdfs:domain <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	rdfs:range xsd:string .
+# 
+# http://xmlns.com/foaf/0.1/name
+
+<http://xmlns.com/foaf/0.1/name> a owl:DatatypeProperty ;
+	rdfs:domain <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
 	rdfs:range xsd:string .
 # 
 # 
@@ -104,64 +183,60 @@
 # #################################################################
 # 
 # 
+# http://inf.unibz.it/2017/ski-resort-ontology/Amenity
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Amenity> a owl:Class .
+# 
 # http://inf.unibz.it/2017/ski-resort-ontology/Continent
 
 <http://inf.unibz.it/2017/ski-resort-ontology/Continent> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
+	owl:equivalentClass _:genid1 .
+
+_:genid1 a owl:Class ;
+	owl:oneOf _:genid7 .
+
+_:genid7 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Africa> ;
+	rdf:rest _:genid6 .
+
+_:genid6 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Americas> ;
+	rdf:rest _:genid5 .
+
+_:genid5 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Antarctica> ;
+	rdf:rest _:genid4 .
+
+_:genid4 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Asia> ;
+	rdf:rest _:genid3 .
+
+_:genid3 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Europe> ;
+	rdf:rest _:genid2 .
+
+_:genid2 a rdf:List ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Oceania> ;
+	rdf:rest rdf:nil .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Continent> rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/Country
 
 <http://inf.unibz.it/2017/ski-resort-ontology/Country> a owl:Class ;
 	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/GeoCoordinates
-
-<http://inf.unibz.it/2017/ski-resort-ontology/GeoCoordinates> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Property> .
-# 
 # http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion
 
 <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Object> .
+	rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> ;
+	owl:disjointWith <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> .
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/Latitude
+# http://inf.unibz.it/2017/ski-resort-ontology/NightSkiing
 
-<http://inf.unibz.it/2017/ski-resort-ontology/Latitude> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/GeoCoordinates> ;
-	owl:disjointWith <http://inf.unibz.it/2017/ski-resort-ontology/Longitude> .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/Longitude
-
-<http://inf.unibz.it/2017/ski-resort-ontology/Longitude> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/GeoCoordinates> .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/MaximumElevation
-
-<http://inf.unibz.it/2017/ski-resort-ontology/MaximumElevation> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Property> .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/MinimumElevation
-
-<http://inf.unibz.it/2017/ski-resort-ontology/MinimumElevation> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Property> .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/Name
-
-<http://inf.unibz.it/2017/ski-resort-ontology/Name> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Property> .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/Object
-
-<http://inf.unibz.it/2017/ski-resort-ontology/Object> a owl:Class ;
-	rdfs:subClassOf _:genid1 .
-
-_:genid1 a owl:Restriction ;
-	owl:onProperty <http://inf.unibz.it/2017/ski-resort-ontology/hasName> ;
-	owl:someValuesFrom xsd:string .
-# 
-# http://inf.unibz.it/2017/ski-resort-ontology/Property
-
-<http://inf.unibz.it/2017/ski-resort-ontology/Property> a owl:Class .
+<http://inf.unibz.it/2017/ski-resort-ontology/NightSkiing> a owl:Class ;
+	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Amenity> ;
+	owl:disjointWith <http://inf.unibz.it/2017/ski-resort-ontology/TerrainPark> .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/Region
 
@@ -170,28 +245,71 @@ _:genid1 a owl:Restriction ;
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/SkiMap
 
-<http://inf.unibz.it/2017/ski-resort-ontology/SkiMap> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/URL> ;
-	owl:disjointWith <http://inf.unibz.it/2017/ski-resort-ontology/WebPage> .
+<http://inf.unibz.it/2017/ski-resort-ontology/SkiMap> a owl:Class .
 # 
 # http://inf.unibz.it/2017/ski-resort-ontology/SkiResort
 
 <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Object> , _:genid2 .
+	rdfs:subClassOf <http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> , _:genid8 .
 
-_:genid2 a owl:Restriction ;
+_:genid8 a owl:Restriction ;
 	owl:onProperty <http://inf.unibz.it/2017/ski-resort-ontology/isSkiResortLocatedInRegion> ;
 	owl:someValuesFrom <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> .
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/URL
+# http://inf.unibz.it/2017/ski-resort-ontology/TerrainPark
 
-<http://inf.unibz.it/2017/ski-resort-ontology/URL> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Property> .
+<http://inf.unibz.it/2017/ski-resort-ontology/TerrainPark> a owl:Class ;
+	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/Amenity> .
 # 
-# http://inf.unibz.it/2017/ski-resort-ontology/WebPage
+# http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing
 
-<http://inf.unibz.it/2017/ski-resort-ontology/WebPage> a owl:Class ;
-	rdfs:subClassOf <http://inf.unibz.it/2017/ski-resort-ontology/URL> .
+<http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing> a owl:Class .
+# 
+# 
+# 
+# #################################################################
+# #
+# #    Individuals
+# #
+# #################################################################
+# 
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Africa
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Africa> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Alpine_Meadows_Ski_Area
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Alpine_Meadows_Ski_Area> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
+	<http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion> <http://inf.unibz.it/2017/ski-resort-ontology/Americas> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Americas
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Americas> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Antarctica
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Antarctica> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Asia
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Asia> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/California
+
+<http://inf.unibz.it/2017/ski-resort-ontology/California> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Region> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Europe
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Europe> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/Oceania
+
+<http://inf.unibz.it/2017/ski-resort-ontology/Oceania> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Continent> .
+# 
+# http://inf.unibz.it/2017/ski-resort-ontology/United_States
+
+<http://inf.unibz.it/2017/ski-resort-ontology/United_States> a owl:NamedIndividual , <http://inf.unibz.it/2017/ski-resort-ontology/Country> .
 # 
 # 
 # 
@@ -203,74 +321,34 @@ _:genid2 a owl:Restriction ;
 # 
 # 
 
-_:genid3 a owl:AllDisjointClasses ;
-	owl:members _:genid6 .
+_:genid9 a owl:AllDisjointClasses ;
+	owl:members _:genid12 .
 
-_:genid6 a rdf:List ;
+_:genid12 a rdf:List ;
 	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Continent> ;
-	rdf:rest _:genid5 .
+	rdf:rest _:genid11 .
 
-_:genid5 a rdf:List ;
+_:genid11 a rdf:List ;
 	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Country> ;
-	rdf:rest _:genid4 .
+	rdf:rest _:genid10 .
 
-_:genid4 a rdf:List ;
+_:genid10 a rdf:List ;
 	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Region> ;
 	rdf:rest rdf:nil .
 # 
 
-_:genid7 a owl:AllDisjointClasses ;
-	owl:members _:genid12 .
-
-_:genid12 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/GeoCoordinates> ;
-	rdf:rest _:genid11 .
-
-_:genid11 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/MaximumElevation> ;
-	rdf:rest _:genid10 .
-
-_:genid10 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/MinimumElevation> ;
-	rdf:rest _:genid9 .
-
-_:genid9 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Name> ;
-	rdf:rest _:genid8 .
-
-_:genid8 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/URL> ;
-	rdf:rest rdf:nil .
-# 
-
-_:genid13 a owl:AllDisjointClasses ;
+_:genid13 a owl:AllDisjointProperties ;
 	owl:members _:genid16 .
 
 _:genid16 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/GeographicRegion> ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/containsContinent> ;
 	rdf:rest _:genid15 .
 
 _:genid15 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/Property> ;
+	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/containsCountry> ;
 	rdf:rest _:genid14 .
 
 _:genid14 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/SkiResort> ;
-	rdf:rest rdf:nil .
-# 
-
-_:genid17 a owl:AllDisjointProperties ;
-	owl:members _:genid20 .
-
-_:genid20 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/containsContinent> ;
-	rdf:rest _:genid19 .
-
-_:genid19 a rdf:List ;
-	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/containsCountry> ;
-	rdf:rest _:genid18 .
-
-_:genid18 a rdf:List ;
 	rdf:first <http://inf.unibz.it/2017/ski-resort-ontology/containsRegion> ;
 	rdf:rest rdf:nil .
 # 
