@@ -19,8 +19,8 @@ public class ResortDownloader {
     private static final String REGIONS = "https://skimap.org/Regions/view/";
     private static final String SKI_AREAS = "https://skimap.org/SkiAreas/view/";
     private static final String SKI_MAPS = "https://skimap.org/SkiMaps/view/";
-    private static final String REGIONS_OUT = "src/main/resources/xml-regions/";
-    private static final String SKI_AREAS_OUT = "src/main/resources/xml-skiareas/";
+    public static final String REGIONS_OUT = "src/main/resources/xml-regions/";
+    public static final String SKI_AREAS_OUT = "src/main/resources/xml-skiareas/";
     private static final String SKI_MAPS_OUT = "src/main/resources/xml-maps/";
 
     public static void main(String[] args) {

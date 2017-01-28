@@ -1,0 +1,1560 @@
+@prefix : <http://inf.unibz.it/2017/ski-resort-ontology#> .
+@prefix geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix dcterms: <http://purl.org/dc/terms/> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix skio: <http://inf.unibz.it/2017/ski-resort-ontology/#> .
+@prefix ski-resort-ontology: <http://inf.unibz.it/2017/ski-resort-ontology/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+skio:Americas a :Continent ;
+	foaf:name "Americas" ;
+	dcterms:identifier "1"^^xsd:int .
+
+skio:Europe a :Continent ;
+	foaf:name "Europe" ;
+	dcterms:identifier "2"^^xsd:int .
+
+skio:Asia a :Continent ;
+	foaf:name "Asia" ;
+	dcterms:identifier "3"^^xsd:int .
+
+skio:Oceania a :Continent ;
+	foaf:name "Oceania" ;
+	dcterms:identifier "4"^^xsd:int .
+
+skio:Africa a :Continent ;
+	foaf:name "Africa" ;
+	dcterms:identifier "5"^^xsd:int .
+
+skio:Antarctica a :Continent ;
+	foaf:name "Antarctica" ;
+	dcterms:identifier "6"^^xsd:int .
+
+skio:Albania a :Country ;
+	foaf:name "Albania" ;
+	dcterms:identifier "7"^^xsd:int .
+
+skio:Algeria a :Country ;
+	foaf:name "Algeria" ;
+	dcterms:identifier "8"^^xsd:int .
+
+skio:Andorra a :Country ;
+	foaf:name "Andorra" ;
+	dcterms:identifier "9"^^xsd:int .
+
+skio:Angola a :Country ;
+	foaf:name "Angola" ;
+	dcterms:identifier "10"^^xsd:int .
+
+skio:Antigua_and_Barbuda a :Country ;
+	foaf:name "Antigua and Barbuda" ;
+	dcterms:identifier "11"^^xsd:int .
+
+skio:Argentina a :Country ;
+	foaf:name "Argentina" ;
+	dcterms:identifier "12"^^xsd:int .
+
+skio:Armenia a :Country ;
+	foaf:name "Armenia" ;
+	dcterms:identifier "13"^^xsd:int .
+
+skio:Australia a :Country ;
+	foaf:name "Australia" ;
+	dcterms:identifier "14"^^xsd:int .
+
+skio:Austria a :Country ;
+	foaf:name "Austria" ;
+	dcterms:identifier "15"^^xsd:int .
+
+skio:Azerbaijan a :Country ;
+	foaf:name "Azerbaijan" ;
+	dcterms:identifier "16"^^xsd:int .
+
+skio:Bahamas a :Country ;
+	foaf:name "Bahamas" ;
+	dcterms:identifier "17"^^xsd:int .
+
+skio:Bahrain a :Country ;
+	foaf:name "Bahrain" ;
+	dcterms:identifier "18"^^xsd:int .
+
+skio:Bangladesh a :Country ;
+	foaf:name "Bangladesh" ;
+	dcterms:identifier "19"^^xsd:int .
+
+skio:Barbados a :Country ;
+	foaf:name "Barbados" ;
+	dcterms:identifier "20"^^xsd:int .
+
+skio:Belarus a :Country ;
+	foaf:name "Belarus" ;
+	dcterms:identifier "21"^^xsd:int .
+
+skio:Belgium a :Country ;
+	foaf:name "Belgium" ;
+	dcterms:identifier "22"^^xsd:int .
+
+skio:Belize a :Country ;
+	foaf:name "Belize" ;
+	dcterms:identifier "23"^^xsd:int .
+
+skio:Benin a :Country ;
+	foaf:name "Benin" ;
+	dcterms:identifier "24"^^xsd:int .
+
+skio:Bhutan a :Country ;
+	foaf:name "Bhutan" ;
+	dcterms:identifier "25"^^xsd:int .
+
+skio:Bolivia a :Country ;
+	foaf:name "Bolivia" ;
+	dcterms:identifier "26"^^xsd:int .
+
+skio:Bosnia_and_Herzegovina a :Country ;
+	foaf:name "Bosnia and Herzegovina" ;
+	dcterms:identifier "27"^^xsd:int .
+
+skio:Botswana a :Country ;
+	foaf:name "Botswana" ;
+	dcterms:identifier "28"^^xsd:int .
+
+skio:Brazil a :Country ;
+	foaf:name "Brazil" ;
+	dcterms:identifier "29"^^xsd:int .
+
+skio:Brunei a :Country ;
+	foaf:name "Brunei" ;
+	dcterms:identifier "30"^^xsd:int .
+
+skio:Bulgaria a :Country ;
+	foaf:name "Bulgaria" ;
+	dcterms:identifier "31"^^xsd:int .
+
+skio:Burkina_Faso a :Country ;
+	foaf:name "Burkina Faso" ;
+	dcterms:identifier "32"^^xsd:int .
+
+skio:Burundi a :Country ;
+	foaf:name "Burundi" ;
+	dcterms:identifier "33"^^xsd:int .
+
+skio:Cambodia a :Country ;
+	foaf:name "Cambodia" ;
+	dcterms:identifier "34"^^xsd:int .
+
+skio:Cameroon a :Country ;
+	foaf:name "Cameroon" ;
+	dcterms:identifier "35"^^xsd:int .
+
+skio:Canada a :Country ;
+	foaf:name "Canada" ;
+	dcterms:identifier "36"^^xsd:int .
+
+skio:Cape_Verde a :Country ;
+	foaf:name "Cape Verde" ;
+	dcterms:identifier "37"^^xsd:int .
+
+skio:Central_African_Republic a :Country ;
+	foaf:name "Central African Republic" ;
+	dcterms:identifier "38"^^xsd:int .
+
+skio:Chad a :Country ;
+	foaf:name "Chad" ;
+	dcterms:identifier "39"^^xsd:int .
+
+skio:Chile a :Country ;
+	foaf:name "Chile" ;
+	dcterms:identifier "40"^^xsd:int .
+
+skio:China a :Country ;
+	foaf:name "China" ;
+	dcterms:identifier "41"^^xsd:int .
+
+skio:Colombia a :Country ;
+	foaf:name "Colombia" ;
+	dcterms:identifier "42"^^xsd:int .
+
+skio:Comoros a :Country ;
+	foaf:name "Comoros" ;
+	dcterms:identifier "43"^^xsd:int .
+
+skio:Congo a :Country ;
+	foaf:name "Congo" ;
+	dcterms:identifier "44"^^xsd:int .
+
+skio:Costa_Rica a :Country ;
+	foaf:name "Costa Rica" ;
+	dcterms:identifier "45"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Cote_d'Ivoire_(Ivory_Coast)> a :Country ;
+	foaf:name "Cote d'Ivoire (Ivory Coast)" ;
+	dcterms:identifier "46"^^xsd:int .
+
+skio:Croatia a :Country ;
+	foaf:name "Croatia" ;
+	dcterms:identifier "47"^^xsd:int .
+
+skio:Cuba a :Country ;
+	foaf:name "Cuba" ;
+	dcterms:identifier "48"^^xsd:int .
+
+skio:Cyprus a :Country ;
+	foaf:name "Cyprus" ;
+	dcterms:identifier "49"^^xsd:int .
+
+skio:Czech_Republic a :Country ;
+	foaf:name "Czech Republic" ;
+	dcterms:identifier "50"^^xsd:int .
+
+skio:Denmark a :Country ;
+	foaf:name "Denmark" ;
+	dcterms:identifier "51"^^xsd:int .
+
+skio:Djibouti a :Country ;
+	foaf:name "Djibouti" ;
+	dcterms:identifier "52"^^xsd:int .
+
+skio:Dominica a :Country ;
+	foaf:name "Dominica" ;
+	dcterms:identifier "53"^^xsd:int .
+
+skio:Dominican_Republic a :Country ;
+	foaf:name "Dominican Republic" ;
+	dcterms:identifier "54"^^xsd:int .
+
+skio:Ecuador a :Country ;
+	foaf:name "Ecuador" ;
+	dcterms:identifier "55"^^xsd:int .
+
+skio:Egypt a :Country ;
+	foaf:name "Egypt" ;
+	dcterms:identifier "56"^^xsd:int .
+
+skio:El_Salvador a :Country ;
+	foaf:name "El Salvador" ;
+	dcterms:identifier "57"^^xsd:int .
+
+skio:Equatorial_Guinea a :Country ;
+	foaf:name "Equatorial Guinea" ;
+	dcterms:identifier "58"^^xsd:int .
+
+skio:Eritrea a :Country ;
+	foaf:name "Eritrea" ;
+	dcterms:identifier "59"^^xsd:int .
+
+skio:Estonia a :Country ;
+	foaf:name "Estonia" ;
+	dcterms:identifier "60"^^xsd:int .
+
+skio:Ethiopia a :Country ;
+	foaf:name "Ethiopia" ;
+	dcterms:identifier "61"^^xsd:int .
+
+skio:Fiji a :Country ;
+	foaf:name "Fiji" ;
+	dcterms:identifier "62"^^xsd:int .
+
+skio:Finland a :Country ;
+	foaf:name "Finland" ;
+	dcterms:identifier "63"^^xsd:int .
+
+skio:France a :Country ;
+	foaf:name "France" ;
+	dcterms:identifier "64"^^xsd:int .
+
+skio:Gabon a :Country ;
+	foaf:name "Gabon" ;
+	dcterms:identifier "65"^^xsd:int .
+
+skio:Gambia a :Country ;
+	foaf:name "Gambia" ;
+	dcterms:identifier "66"^^xsd:int .
+
+skio:Georgia a :Country ;
+	foaf:name "Georgia" ;
+	dcterms:identifier "67"^^xsd:int .
+
+skio:Germany a :Country ;
+	foaf:name "Germany" ;
+	dcterms:identifier "68"^^xsd:int .
+
+skio:Ghana a :Country ;
+	foaf:name "Ghana" ;
+	dcterms:identifier "69"^^xsd:int .
+
+skio:Greece a :Country ;
+	foaf:name "Greece" ;
+	dcterms:identifier "70"^^xsd:int .
+
+skio:Grenada a :Country ;
+	foaf:name "Grenada" ;
+	dcterms:identifier "71"^^xsd:int .
+
+skio:Guatemala a :Country ;
+	foaf:name "Guatemala" ;
+	dcterms:identifier "72"^^xsd:int .
+
+skio:Guinea a :Country ;
+	foaf:name "Guinea" ;
+	dcterms:identifier "73"^^xsd:int .
+
+skio:Guinea-Bissau a :Country ;
+	foaf:name "Guinea-Bissau" ;
+	dcterms:identifier "74"^^xsd:int .
+
+skio:Guyana a :Country ;
+	foaf:name "Guyana" ;
+	dcterms:identifier "75"^^xsd:int .
+
+skio:Haiti a :Country ;
+	foaf:name "Haiti" ;
+	dcterms:identifier "76"^^xsd:int .
+
+skio:Honduras a :Country ;
+	foaf:name "Honduras" ;
+	dcterms:identifier "77"^^xsd:int .
+
+skio:Hungary a :Country ;
+	foaf:name "Hungary" ;
+	dcterms:identifier "78"^^xsd:int .
+
+skio:Iceland a :Country ;
+	foaf:name "Iceland" ;
+	dcterms:identifier "79"^^xsd:int .
+
+skio:India a :Country ;
+	foaf:name "India" ;
+	dcterms:identifier "80"^^xsd:int .
+
+skio:Indonesia a :Country ;
+	foaf:name "Indonesia" ;
+	dcterms:identifier "81"^^xsd:int .
+
+skio:Iran a :Country ;
+	foaf:name "Iran" ;
+	dcterms:identifier "82"^^xsd:int .
+
+skio:Iraq a :Country ;
+	foaf:name "Iraq" ;
+	dcterms:identifier "83"^^xsd:int .
+
+skio:Ireland a :Country ;
+	foaf:name "Ireland" ;
+	dcterms:identifier "84"^^xsd:int .
+
+skio:Israel a :Country ;
+	foaf:name "Israel" ;
+	dcterms:identifier "85"^^xsd:int .
+
+skio:Italy a :Country ;
+	foaf:name "Italy" ;
+	dcterms:identifier "86"^^xsd:int .
+
+skio:Jamaica a :Country ;
+	foaf:name "Jamaica" ;
+	dcterms:identifier "87"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Japan_(日本)> a :Country ;
+	foaf:name "Japan (日本)" ;
+	dcterms:identifier "88"^^xsd:int .
+
+skio:Jordan a :Country ;
+	foaf:name "Jordan" ;
+	dcterms:identifier "89"^^xsd:int .
+
+skio:Kazakhstan a :Country ;
+	foaf:name "Kazakhstan" ;
+	dcterms:identifier "90"^^xsd:int .
+
+skio:Kenya a :Country ;
+	foaf:name "Kenya" ;
+	dcterms:identifier "91"^^xsd:int .
+
+skio:Kiribati a :Country ;
+	foaf:name "Kiribati" ;
+	dcterms:identifier "92"^^xsd:int .
+
+skio:North_Korea a :Country ;
+	foaf:name "North Korea" ;
+	dcterms:identifier "93"^^xsd:int .
+
+skio:South_Korea a :Country ;
+	foaf:name "South Korea" ;
+	dcterms:identifier "94"^^xsd:int .
+
+skio:Kuwait a :Country ;
+	foaf:name "Kuwait" ;
+	dcterms:identifier "95"^^xsd:int .
+
+skio:Kyrgyzstan a :Country ;
+	foaf:name "Kyrgyzstan" ;
+	dcterms:identifier "96"^^xsd:int .
+
+skio:Laos a :Country ;
+	foaf:name "Laos" ;
+	dcterms:identifier "97"^^xsd:int .
+
+skio:Latvia a :Country ;
+	foaf:name "Latvia" ;
+	dcterms:identifier "98"^^xsd:int .
+
+skio:Lebanon a :Country ;
+	foaf:name "Lebanon" ;
+	dcterms:identifier "99"^^xsd:int .
+
+skio:Lesotho a :Country ;
+	foaf:name "Lesotho" ;
+	dcterms:identifier "100"^^xsd:int .
+
+skio:Liberia a :Country ;
+	foaf:name "Liberia" ;
+	dcterms:identifier "101"^^xsd:int .
+
+skio:Libya a :Country ;
+	foaf:name "Libya" ;
+	dcterms:identifier "102"^^xsd:int .
+
+skio:Liechtenstein a :Country ;
+	foaf:name "Liechtenstein" ;
+	dcterms:identifier "103"^^xsd:int .
+
+skio:Lithuania a :Country ;
+	foaf:name "Lithuania" ;
+	dcterms:identifier "104"^^xsd:int .
+
+skio:Luxembourg a :Country ;
+	foaf:name "Luxembourg" ;
+	dcterms:identifier "105"^^xsd:int .
+
+skio:Macedonia a :Country ;
+	foaf:name "Macedonia" ;
+	dcterms:identifier "106"^^xsd:int .
+
+skio:Madagascar a :Country ;
+	foaf:name "Madagascar" ;
+	dcterms:identifier "107"^^xsd:int .
+
+skio:Malawi a :Country ;
+	foaf:name "Malawi" ;
+	dcterms:identifier "108"^^xsd:int .
+
+skio:Malaysia a :Country ;
+	foaf:name "Malaysia" ;
+	dcterms:identifier "109"^^xsd:int .
+
+skio:Maldives a :Country ;
+	foaf:name "Maldives" ;
+	dcterms:identifier "110"^^xsd:int .
+
+skio:Mali a :Country ;
+	foaf:name "Mali" ;
+	dcterms:identifier "111"^^xsd:int .
+
+skio:Malta a :Country ;
+	foaf:name "Malta" ;
+	dcterms:identifier "112"^^xsd:int .
+
+skio:Marshall_Islands a :Country ;
+	foaf:name "Marshall Islands" ;
+	dcterms:identifier "113"^^xsd:int .
+
+skio:Mauritania a :Country ;
+	foaf:name "Mauritania" ;
+	dcterms:identifier "114"^^xsd:int .
+
+skio:Mauritius a :Country ;
+	foaf:name "Mauritius" ;
+	dcterms:identifier "115"^^xsd:int .
+
+skio:Mexico a :Country ;
+	foaf:name "Mexico" ;
+	dcterms:identifier "116"^^xsd:int .
+
+skio:Moldova a :Country ;
+	foaf:name "Moldova" ;
+	dcterms:identifier "117"^^xsd:int .
+
+skio:Monaco a :Country ;
+	foaf:name "Monaco" ;
+	dcterms:identifier "118"^^xsd:int .
+
+skio:Mongolia a :Country ;
+	foaf:name "Mongolia" ;
+	dcterms:identifier "119"^^xsd:int .
+
+skio:Montenegro a :Country ;
+	foaf:name "Montenegro" ;
+	dcterms:identifier "120"^^xsd:int .
+
+skio:Morocco a :Country ;
+	foaf:name "Morocco" ;
+	dcterms:identifier "121"^^xsd:int .
+
+skio:Mozambique a :Country ;
+	foaf:name "Mozambique" ;
+	dcterms:identifier "122"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Myanmar_(Burma)> a :Country ;
+	foaf:name "Myanmar (Burma)" ;
+	dcterms:identifier "123"^^xsd:int .
+
+skio:Namibia a :Country ;
+	foaf:name "Namibia" ;
+	dcterms:identifier "124"^^xsd:int .
+
+skio:Nauru a :Country ;
+	foaf:name "Nauru" ;
+	dcterms:identifier "125"^^xsd:int .
+
+skio:Nepal a :Country ;
+	foaf:name "Nepal" ;
+	dcterms:identifier "126"^^xsd:int .
+
+skio:Netherlands a :Country ;
+	foaf:name "Netherlands" ;
+	dcterms:identifier "127"^^xsd:int .
+
+skio:New_Zealand a :Country ;
+	foaf:name "New Zealand" ;
+	dcterms:identifier "128"^^xsd:int .
+
+skio:Nicaragua a :Country ;
+	foaf:name "Nicaragua" ;
+	dcterms:identifier "129"^^xsd:int .
+
+skio:Niger a :Country ;
+	foaf:name "Niger" ;
+	dcterms:identifier "130"^^xsd:int .
+
+skio:Nigeria a :Country ;
+	foaf:name "Nigeria" ;
+	dcterms:identifier "131"^^xsd:int .
+
+skio:Norway a :Country ;
+	foaf:name "Norway" ;
+	dcterms:identifier "132"^^xsd:int .
+
+skio:Oman a :Country ;
+	foaf:name "Oman" ;
+	dcterms:identifier "133"^^xsd:int .
+
+skio:Pakistan a :Country ;
+	foaf:name "Pakistan" ;
+	dcterms:identifier "134"^^xsd:int .
+
+skio:Palau a :Country ;
+	foaf:name "Palau" ;
+	dcterms:identifier "135"^^xsd:int .
+
+skio:Panama a :Country ;
+	foaf:name "Panama" ;
+	dcterms:identifier "136"^^xsd:int .
+
+skio:Papua_New_Guinea a :Country ;
+	foaf:name "Papua New Guinea" ;
+	dcterms:identifier "137"^^xsd:int .
+
+skio:Paraguay a :Country ;
+	foaf:name "Paraguay" ;
+	dcterms:identifier "138"^^xsd:int .
+
+skio:Peru a :Country ;
+	foaf:name "Peru" ;
+	dcterms:identifier "139"^^xsd:int .
+
+skio:Philippines a :Country ;
+	foaf:name "Philippines" ;
+	dcterms:identifier "140"^^xsd:int .
+
+skio:Poland a :Country ;
+	foaf:name "Poland" ;
+	dcterms:identifier "141"^^xsd:int .
+
+skio:Portugal a :Country ;
+	foaf:name "Portugal" ;
+	dcterms:identifier "142"^^xsd:int .
+
+skio:Qatar a :Country ;
+	foaf:name "Qatar" ;
+	dcterms:identifier "143"^^xsd:int .
+
+skio:Romania a :Country ;
+	foaf:name "Romania" ;
+	dcterms:identifier "144"^^xsd:int .
+
+skio:Russia a :Country ;
+	foaf:name "Russia" ;
+	dcterms:identifier "145"^^xsd:int .
+
+skio:Rwanda a :Country ;
+	foaf:name "Rwanda" ;
+	dcterms:identifier "146"^^xsd:int .
+
+skio:Saint_Kitts_and_Nevis a :Country ;
+	foaf:name "Saint Kitts and Nevis" ;
+	dcterms:identifier "147"^^xsd:int .
+
+skio:Saint_Lucia a :Country ;
+	foaf:name "Saint Lucia" ;
+	dcterms:identifier "148"^^xsd:int .
+
+skio:Saint_Vincent_and_the_Grenadines a :Country ;
+	foaf:name "Saint Vincent and the Grenadines" ;
+	dcterms:identifier "149"^^xsd:int .
+
+skio:Samoa a :Country ;
+	foaf:name "Samoa" ;
+	dcterms:identifier "150"^^xsd:int .
+
+skio:San_Marino a :Country ;
+	foaf:name "San Marino" ;
+	dcterms:identifier "151"^^xsd:int .
+
+skio:Sao_Tome_and_Principe a :Country ;
+	foaf:name "Sao Tome and Principe" ;
+	dcterms:identifier "152"^^xsd:int .
+
+skio:Saudi_Arabia a :Country ;
+	foaf:name "Saudi Arabia" ;
+	dcterms:identifier "153"^^xsd:int .
+
+skio:Senegal a :Country ;
+	foaf:name "Senegal" ;
+	dcterms:identifier "154"^^xsd:int .
+
+skio:Serbia a :Country ;
+	foaf:name "Serbia" ;
+	dcterms:identifier "155"^^xsd:int .
+
+skio:Seychelles a :Country ;
+	foaf:name "Seychelles" ;
+	dcterms:identifier "156"^^xsd:int .
+
+skio:Sierra_Leone a :Country ;
+	foaf:name "Sierra Leone" ;
+	dcterms:identifier "157"^^xsd:int .
+
+skio:Singapore a :Country ;
+	foaf:name "Singapore" ;
+	dcterms:identifier "158"^^xsd:int .
+
+skio:Slovakia a :Country ;
+	foaf:name "Slovakia" ;
+	dcterms:identifier "159"^^xsd:int .
+
+skio:Slovenia a :Country ;
+	foaf:name "Slovenia" ;
+	dcterms:identifier "160"^^xsd:int .
+
+skio:Solomon_Islands a :Country ;
+	foaf:name "Solomon Islands" ;
+	dcterms:identifier "161"^^xsd:int .
+
+skio:Somalia a :Country ;
+	foaf:name "Somalia" ;
+	dcterms:identifier "162"^^xsd:int .
+
+skio:South_Africa a :Country ;
+	foaf:name "South Africa" ;
+	dcterms:identifier "163"^^xsd:int .
+
+skio:Spain a :Country ;
+	foaf:name "Spain" ;
+	dcterms:identifier "164"^^xsd:int .
+
+skio:Sri_Lanka a :Country ;
+	foaf:name "Sri Lanka" ;
+	dcterms:identifier "165"^^xsd:int .
+
+skio:Sudan a :Country ;
+	foaf:name "Sudan" ;
+	dcterms:identifier "166"^^xsd:int .
+
+skio:Suriname a :Country ;
+	foaf:name "Suriname" ;
+	dcterms:identifier "167"^^xsd:int .
+
+skio:Swaziland a :Country ;
+	foaf:name "Swaziland" ;
+	dcterms:identifier "168"^^xsd:int .
+
+skio:Sweden a :Country ;
+	foaf:name "Sweden" ;
+	dcterms:identifier "169"^^xsd:int .
+
+skio:Switzerland a :Country ;
+	foaf:name "Switzerland" ;
+	dcterms:identifier "170"^^xsd:int .
+
+skio:Syria a :Country ;
+	foaf:name "Syria" ;
+	dcterms:identifier "171"^^xsd:int .
+
+skio:Tajikistan a :Country ;
+	foaf:name "Tajikistan" ;
+	dcterms:identifier "172"^^xsd:int .
+
+skio:Tanzania a :Country ;
+	foaf:name "Tanzania" ;
+	dcterms:identifier "173"^^xsd:int .
+
+skio:Thailand a :Country ;
+	foaf:name "Thailand" ;
+	dcterms:identifier "174"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Timor-Leste_(East_Timor)> a :Country ;
+	foaf:name "Timor-Leste (East Timor)" ;
+	dcterms:identifier "175"^^xsd:int .
+
+skio:Togo a :Country ;
+	foaf:name "Togo" ;
+	dcterms:identifier "176"^^xsd:int .
+
+skio:Tonga a :Country ;
+	foaf:name "Tonga" ;
+	dcterms:identifier "177"^^xsd:int .
+
+skio:Trinidad_and_Tobago a :Country ;
+	foaf:name "Trinidad and Tobago" ;
+	dcterms:identifier "178"^^xsd:int .
+
+skio:Tunisia a :Country ;
+	foaf:name "Tunisia" ;
+	dcterms:identifier "179"^^xsd:int .
+
+skio:Turkey a :Country ;
+	foaf:name "Turkey" ;
+	dcterms:identifier "180"^^xsd:int .
+
+skio:Turkmenistan a :Country ;
+	foaf:name "Turkmenistan" ;
+	dcterms:identifier "181"^^xsd:int .
+
+skio:Tuvalu a :Country ;
+	foaf:name "Tuvalu" ;
+	dcterms:identifier "182"^^xsd:int .
+
+skio:Uganda a :Country ;
+	foaf:name "Uganda" ;
+	dcterms:identifier "183"^^xsd:int .
+
+skio:Ukraine a :Country ;
+	foaf:name "Ukraine" ;
+	dcterms:identifier "184"^^xsd:int .
+
+skio:United_Arab_Emirates a :Country ;
+	foaf:name "United Arab Emirates" ;
+	dcterms:identifier "185"^^xsd:int .
+
+skio:United_Kingdom a :Country ;
+	foaf:name "United Kingdom" ;
+	dcterms:identifier "186"^^xsd:int .
+
+skio:United_States a :Country ;
+	foaf:name "United States" ;
+	dcterms:identifier "187"^^xsd:int .
+
+skio:Uruguay a :Country ;
+	foaf:name "Uruguay" ;
+	dcterms:identifier "188"^^xsd:int .
+
+skio:Uzbekistan a :Country ;
+	foaf:name "Uzbekistan" ;
+	dcterms:identifier "189"^^xsd:int .
+
+skio:Vanuatu a :Country ;
+	foaf:name "Vanuatu" ;
+	dcterms:identifier "190"^^xsd:int .
+
+skio:Vatican_City a :Country ;
+	foaf:name "Vatican City" ;
+	dcterms:identifier "191"^^xsd:int .
+
+skio:Venezuela a :Country ;
+	foaf:name "Venezuela" ;
+	dcterms:identifier "192"^^xsd:int .
+
+skio:Vietnam a :Country ;
+	foaf:name "Vietnam" ;
+	dcterms:identifier "193"^^xsd:int .
+
+skio:Yemen a :Country ;
+	foaf:name "Yemen" ;
+	dcterms:identifier "194"^^xsd:int .
+
+skio:Zambia a :Country ;
+	foaf:name "Zambia" ;
+	dcterms:identifier "195"^^xsd:int .
+
+skio:Zimbabwe a :Country ;
+	foaf:name "Zimbabwe" ;
+	dcterms:identifier "196"^^xsd:int .
+
+skio:Abkhazia a :Country ;
+	foaf:name "Abkhazia" ;
+	dcterms:identifier "197"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#China,_Republic_of_(Taiwan)> a :Country ;
+	foaf:name "China, Republic of (Taiwan)" ;
+	dcterms:identifier "198"^^xsd:int .
+
+skio:Nagorno-Karabakh a :Country ;
+	foaf:name "Nagorno-Karabakh" ;
+	dcterms:identifier "199"^^xsd:int .
+
+skio:Northern_Cyprus a :Country ;
+	foaf:name "Northern Cyprus" ;
+	dcterms:identifier "200"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Pridnestrovie_(Transnistria)> a :Country ;
+	foaf:name "Pridnestrovie (Transnistria)" ;
+	dcterms:identifier "201"^^xsd:int .
+
+skio:Somaliland a :Country ;
+	foaf:name "Somaliland" ;
+	dcterms:identifier "202"^^xsd:int .
+
+skio:South_Ossetia a :Country ;
+	foaf:name "South Ossetia" ;
+	dcterms:identifier "203"^^xsd:int .
+
+skio:Ashmore_and_Cartier_Islands a :Country ;
+	foaf:name "Ashmore and Cartier Islands" ;
+	dcterms:identifier "204"^^xsd:int .
+
+skio:Christmas_Island a :Country ;
+	foaf:name "Christmas Island" ;
+	dcterms:identifier "205"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Cocos_(Keeling)_Islands> a :Country ;
+	foaf:name "Cocos (Keeling) Islands" ;
+	dcterms:identifier "206"^^xsd:int .
+
+skio:Coral_Sea_Islands a :Country ;
+	foaf:name "Coral Sea Islands" ;
+	dcterms:identifier "207"^^xsd:int .
+
+skio:Heard_Island_and_McDonald_Islands a :Country ;
+	foaf:name "Heard Island and McDonald Islands" ;
+	dcterms:identifier "208"^^xsd:int .
+
+skio:Norfolk_Island a :Country ;
+	foaf:name "Norfolk Island" ;
+	dcterms:identifier "209"^^xsd:int .
+
+skio:New_Caledonia a :Country ;
+	foaf:name "New Caledonia" ;
+	dcterms:identifier "210"^^xsd:int .
+
+skio:French_Polynesia a :Country ;
+	foaf:name "French Polynesia" ;
+	dcterms:identifier "211"^^xsd:int .
+
+skio:Mayotte a :Country ;
+	foaf:name "Mayotte" ;
+	dcterms:identifier "212"^^xsd:int .
+
+skio:Saint_Barthelemy a :Country ;
+	foaf:name "Saint Barthelemy" ;
+	dcterms:identifier "213"^^xsd:int .
+
+skio:Saint_Martin a :Country ;
+	foaf:name "Saint Martin" ;
+	dcterms:identifier "214"^^xsd:int .
+
+skio:Saint_Pierre_and_Miquelon a :Country ;
+	foaf:name "Saint Pierre and Miquelon" ;
+	dcterms:identifier "215"^^xsd:int .
+
+skio:Wallis_and_Futuna a :Country ;
+	foaf:name "Wallis and Futuna" ;
+	dcterms:identifier "216"^^xsd:int .
+
+skio:French_Southern_and_Antarctic_Lands a :Country ;
+	foaf:name "French Southern and Antarctic Lands" ;
+	dcterms:identifier "217"^^xsd:int .
+
+skio:Clipperton_Island a :Country ;
+	foaf:name "Clipperton Island" ;
+	dcterms:identifier "218"^^xsd:int .
+
+skio:Bouvet_Island a :Country ;
+	foaf:name "Bouvet Island" ;
+	dcterms:identifier "219"^^xsd:int .
+
+skio:Cook_Islands a :Country ;
+	foaf:name "Cook Islands" ;
+	dcterms:identifier "220"^^xsd:int .
+
+skio:Niue a :Country ;
+	foaf:name "Niue" ;
+	dcterms:identifier "221"^^xsd:int .
+
+skio:Tokelau a :Country ;
+	foaf:name "Tokelau" ;
+	dcterms:identifier "222"^^xsd:int .
+
+skio:Guernsey a :Country ;
+	foaf:name "Guernsey" ;
+	dcterms:identifier "223"^^xsd:int .
+
+skio:Isle_of_Man a :Country ;
+	foaf:name "Isle of Man" ;
+	dcterms:identifier "224"^^xsd:int .
+
+skio:Jersey a :Country ;
+	foaf:name "Jersey" ;
+	dcterms:identifier "225"^^xsd:int .
+
+skio:Anguilla a :Country ;
+	foaf:name "Anguilla" ;
+	dcterms:identifier "226"^^xsd:int .
+
+skio:Bermuda a :Country ;
+	foaf:name "Bermuda" ;
+	dcterms:identifier "227"^^xsd:int .
+
+skio:British_Indian_Ocean_Territory a :Country ;
+	foaf:name "British Indian Ocean Territory" ;
+	dcterms:identifier "228"^^xsd:int .
+
+skio:British_Sovereign_Base_Areas a :Country ;
+	foaf:name "British Sovereign Base Areas" ;
+	dcterms:identifier "229"^^xsd:int .
+
+skio:British_Virgin_Islands a :Country ;
+	foaf:name "British Virgin Islands" ;
+	dcterms:identifier "230"^^xsd:int .
+
+skio:Cayman_Islands a :Country ;
+	foaf:name "Cayman Islands" ;
+	dcterms:identifier "231"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Falkland_Islands_(Islas_Malvinas)> a :Country ;
+	foaf:name "Falkland Islands (Islas Malvinas)" ;
+	dcterms:identifier "232"^^xsd:int .
+
+skio:Gibraltar a :Country ;
+	foaf:name "Gibraltar" ;
+	dcterms:identifier "233"^^xsd:int .
+
+skio:Montserrat a :Country ;
+	foaf:name "Montserrat" ;
+	dcterms:identifier "234"^^xsd:int .
+
+skio:Pitcairn_Islands a :Country ;
+	foaf:name "Pitcairn Islands" ;
+	dcterms:identifier "235"^^xsd:int .
+
+skio:Saint_Helena a :Country ;
+	foaf:name "Saint Helena" ;
+	dcterms:identifier "236"^^xsd:int .
+
+skio:South_Georgia_and_the_South_Sandwich_Islands a :Country ;
+	foaf:name "South Georgia and the South Sandwich Islands" ;
+	dcterms:identifier "237"^^xsd:int .
+
+skio:Turks_and_Caicos_Islands a :Country ;
+	foaf:name "Turks and Caicos Islands" ;
+	dcterms:identifier "238"^^xsd:int .
+
+skio:Northern_Mariana_Islands a :Country ;
+	foaf:name "Northern Mariana Islands" ;
+	dcterms:identifier "239"^^xsd:int .
+
+skio:Puerto_Rico a :Country ;
+	foaf:name "Puerto Rico" ;
+	dcterms:identifier "240"^^xsd:int .
+
+skio:American_Samoa a :Country ;
+	foaf:name "American Samoa" ;
+	dcterms:identifier "241"^^xsd:int .
+
+skio:Baker_Island a :Country ;
+	foaf:name "Baker Island" ;
+	dcterms:identifier "242"^^xsd:int .
+
+skio:Guam a :Country ;
+	foaf:name "Guam" ;
+	dcterms:identifier "243"^^xsd:int .
+
+skio:Howland_Island a :Country ;
+	foaf:name "Howland Island" ;
+	dcterms:identifier "244"^^xsd:int .
+
+skio:Jarvis_Island a :Country ;
+	foaf:name "Jarvis Island" ;
+	dcterms:identifier "245"^^xsd:int .
+
+skio:Johnston_Atoll a :Country ;
+	foaf:name "Johnston Atoll" ;
+	dcterms:identifier "246"^^xsd:int .
+
+skio:Kingman_Reef a :Country ;
+	foaf:name "Kingman Reef" ;
+	dcterms:identifier "247"^^xsd:int .
+
+skio:Midway_Islands a :Country ;
+	foaf:name "Midway Islands" ;
+	dcterms:identifier "248"^^xsd:int .
+
+skio:Navassa_Island a :Country ;
+	foaf:name "Navassa Island" ;
+	dcterms:identifier "249"^^xsd:int .
+
+skio:Palmyra_Atoll a :Country ;
+	foaf:name "Palmyra Atoll" ;
+	dcterms:identifier "250"^^xsd:int .
+
+skio:U.S._Virgin_Islands a :Country ;
+	foaf:name "U.S. Virgin Islands" ;
+	dcterms:identifier "251"^^xsd:int .
+
+skio:Wake_Island a :Country ;
+	foaf:name "Wake Island" ;
+	dcterms:identifier "252"^^xsd:int .
+
+skio:Hong_Kong a :Country ;
+	foaf:name "Hong Kong" ;
+	dcterms:identifier "253"^^xsd:int .
+
+skio:Macau a :Country ;
+	foaf:name "Macau" ;
+	dcterms:identifier "254"^^xsd:int .
+
+skio:Faroe_Islands a :Country ;
+	foaf:name "Faroe Islands" ;
+	dcterms:identifier "255"^^xsd:int .
+
+skio:Greenland a :Country ;
+	foaf:name "Greenland" ;
+	dcterms:identifier "256"^^xsd:int .
+
+skio:French_Guiana a :Country ;
+	foaf:name "French Guiana" ;
+	dcterms:identifier "257"^^xsd:int .
+
+skio:Guadeloupe a :Country ;
+	foaf:name "Guadeloupe" ;
+	dcterms:identifier "258"^^xsd:int .
+
+skio:Martinique a :Country ;
+	foaf:name "Martinique" ;
+	dcterms:identifier "259"^^xsd:int .
+
+skio:Reunion a :Country ;
+	foaf:name "Reunion" ;
+	dcterms:identifier "260"^^xsd:int .
+
+skio:Aland a :Country ;
+	foaf:name "Aland" ;
+	dcterms:identifier "261"^^xsd:int .
+
+skio:Aruba a :Country ;
+	foaf:name "Aruba" ;
+	dcterms:identifier "262"^^xsd:int .
+
+skio:Netherlands_Antilles a :Country ;
+	foaf:name "Netherlands Antilles" ;
+	dcterms:identifier "263"^^xsd:int .
+
+skio:Svalbard a :Country ;
+	foaf:name "Svalbard" ;
+	dcterms:identifier "264"^^xsd:int .
+
+skio:Ascension a :Country ;
+	foaf:name "Ascension" ;
+	dcterms:identifier "265"^^xsd:int .
+
+skio:Tristan_da_Cunha a :Country ;
+	foaf:name "Tristan da Cunha" ;
+	dcterms:identifier "266"^^xsd:int .
+
+skio:Antarctica a :Country ;
+	dcterms:identifier "267"^^xsd:int .
+
+skio:Kosovo a :Country ;
+	foaf:name "Kosovo" ;
+	dcterms:identifier "268"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Palestinian_Territories_(Gaza_Strip_and_West_Bank)> a :Country ;
+	foaf:name "Palestinian Territories (Gaza Strip and West Bank)" ;
+	dcterms:identifier "269"^^xsd:int .
+
+skio:Western_Sahara a :Country ;
+	foaf:name "Western Sahara" ;
+	dcterms:identifier "270"^^xsd:int .
+
+skio:Australian_Antarctic_Territory a :Country ;
+	foaf:name "Australian Antarctic Territory" ;
+	dcterms:identifier "271"^^xsd:int .
+
+skio:Ross_Dependency a :Country ;
+	foaf:name "Ross Dependency" ;
+	dcterms:identifier "272"^^xsd:int .
+
+skio:Peter_I_Island a :Country ;
+	foaf:name "Peter I Island" ;
+	dcterms:identifier "273"^^xsd:int .
+
+skio:Queen_Maud_Land a :Country ;
+	foaf:name "Queen Maud Land" ;
+	dcterms:identifier "274"^^xsd:int .
+
+skio:British_Antarctic_Territory a :Country ;
+	foaf:name "British Antarctic Territory" ;
+	dcterms:identifier "275"^^xsd:int .
+
+skio:Alabama a :Region ;
+	foaf:name "Alabama" ;
+	dcterms:identifier "276"^^xsd:int .
+
+skio:Alaska a :Region ;
+	foaf:name "Alaska" ;
+	dcterms:identifier "277"^^xsd:int .
+
+skio:Arizona a :Region ;
+	foaf:name "Arizona" ;
+	dcterms:identifier "278"^^xsd:int .
+
+skio:Arkansas a :Region ;
+	foaf:name "Arkansas" ;
+	dcterms:identifier "279"^^xsd:int .
+
+skio:California a :Region ;
+	foaf:name "California" ;
+	dcterms:identifier "280"^^xsd:int .
+
+skio:Colorado a :Region ;
+	foaf:name "Colorado" ;
+	dcterms:identifier "281"^^xsd:int .
+
+skio:Connecticut a :Region ;
+	foaf:name "Connecticut" ;
+	dcterms:identifier "282"^^xsd:int .
+
+skio:Delaware a :Region ;
+	foaf:name "Delaware" ;
+	dcterms:identifier "283"^^xsd:int .
+
+skio:Florida a :Region ;
+	foaf:name "Florida" ;
+	dcterms:identifier "284"^^xsd:int .
+
+skio:Georgia a :Region ;
+	dcterms:identifier "285"^^xsd:int .
+
+skio:Hawaii a :Region ;
+	foaf:name "Hawaii" ;
+	dcterms:identifier "286"^^xsd:int .
+
+skio:Idaho a :Region ;
+	foaf:name "Idaho" ;
+	dcterms:identifier "287"^^xsd:int .
+
+skio:Illinois a :Region ;
+	foaf:name "Illinois" ;
+	dcterms:identifier "288"^^xsd:int .
+
+skio:Indiana a :Region ;
+	foaf:name "Indiana" ;
+	dcterms:identifier "289"^^xsd:int .
+
+skio:Iowa a :Region ;
+	foaf:name "Iowa" ;
+	dcterms:identifier "290"^^xsd:int .
+
+skio:Kansas a :Region ;
+	foaf:name "Kansas" ;
+	dcterms:identifier "291"^^xsd:int .
+
+skio:Kentucky a :Region ;
+	foaf:name "Kentucky" ;
+	dcterms:identifier "292"^^xsd:int .
+
+skio:Louisiana a :Region ;
+	foaf:name "Louisiana" ;
+	dcterms:identifier "293"^^xsd:int .
+
+skio:Maine a :Region ;
+	foaf:name "Maine" ;
+	dcterms:identifier "294"^^xsd:int .
+
+skio:Maryland a :Region ;
+	foaf:name "Maryland" ;
+	dcterms:identifier "295"^^xsd:int .
+
+skio:Massachusetts a :Region ;
+	foaf:name "Massachusetts" ;
+	dcterms:identifier "296"^^xsd:int .
+
+skio:Michigan a :Region ;
+	foaf:name "Michigan" ;
+	dcterms:identifier "297"^^xsd:int .
+
+skio:Minnesota a :Region ;
+	foaf:name "Minnesota" ;
+	dcterms:identifier "298"^^xsd:int .
+
+skio:Mississippi a :Region ;
+	foaf:name "Mississippi" ;
+	dcterms:identifier "299"^^xsd:int .
+
+skio:Missouri a :Region ;
+	foaf:name "Missouri" ;
+	dcterms:identifier "300"^^xsd:int .
+
+skio:Montana a :Region ;
+	foaf:name "Montana" ;
+	dcterms:identifier "301"^^xsd:int .
+
+skio:Nebraska a :Region ;
+	foaf:name "Nebraska" ;
+	dcterms:identifier "302"^^xsd:int .
+
+skio:Nevada a :Region ;
+	foaf:name "Nevada" ;
+	dcterms:identifier "303"^^xsd:int .
+
+skio:New_Hampshire a :Region ;
+	foaf:name "New Hampshire" ;
+	dcterms:identifier "304"^^xsd:int .
+
+skio:New_Jersey a :Region ;
+	foaf:name "New Jersey" ;
+	dcterms:identifier "305"^^xsd:int .
+
+skio:New_Mexico a :Region ;
+	foaf:name "New Mexico" ;
+	dcterms:identifier "306"^^xsd:int .
+
+skio:New_York a :Region ;
+	foaf:name "New York" ;
+	dcterms:identifier "307"^^xsd:int .
+
+skio:North_Carolina a :Region ;
+	foaf:name "North Carolina" ;
+	dcterms:identifier "308"^^xsd:int .
+
+skio:North_Dakota a :Region ;
+	foaf:name "North Dakota" ;
+	dcterms:identifier "309"^^xsd:int .
+
+skio:Ohio a :Region ;
+	foaf:name "Ohio" ;
+	dcterms:identifier "310"^^xsd:int .
+
+skio:Oklahoma a :Region ;
+	foaf:name "Oklahoma" ;
+	dcterms:identifier "311"^^xsd:int .
+
+skio:Oregon a :Region ;
+	foaf:name "Oregon" ;
+	dcterms:identifier "312"^^xsd:int .
+
+skio:Pennsylvania a :Region ;
+	foaf:name "Pennsylvania" ;
+	dcterms:identifier "313"^^xsd:int .
+
+skio:Rhode_Island a :Region ;
+	foaf:name "Rhode Island" ;
+	dcterms:identifier "314"^^xsd:int .
+
+skio:South_Carolina a :Region ;
+	foaf:name "South Carolina" ;
+	dcterms:identifier "315"^^xsd:int .
+
+skio:South_Dakota a :Region ;
+	foaf:name "South Dakota" ;
+	dcterms:identifier "316"^^xsd:int .
+
+skio:Tennessee a :Region ;
+	foaf:name "Tennessee" ;
+	dcterms:identifier "317"^^xsd:int .
+
+skio:Texas a :Region ;
+	foaf:name "Texas" ;
+	dcterms:identifier "318"^^xsd:int .
+
+skio:Utah a :Region ;
+	foaf:name "Utah" ;
+	dcterms:identifier "319"^^xsd:int .
+
+skio:Vermont a :Region ;
+	foaf:name "Vermont" ;
+	dcterms:identifier "320"^^xsd:int .
+
+skio:Virginia a :Region ;
+	foaf:name "Virginia" ;
+	dcterms:identifier "321"^^xsd:int .
+
+skio:Washington a :Region ;
+	foaf:name "Washington" ;
+	dcterms:identifier "322"^^xsd:int .
+
+skio:West_Virginia a :Region ;
+	foaf:name "West Virginia" ;
+	dcterms:identifier "323"^^xsd:int .
+
+skio:Wisconsin a :Region ;
+	foaf:name "Wisconsin" ;
+	dcterms:identifier "324"^^xsd:int .
+
+skio:Wyoming a :Region ;
+	foaf:name "Wyoming" ;
+	dcterms:identifier "325"^^xsd:int .
+
+skio:Ontario a :Region ;
+	foaf:name "Ontario" ;
+	dcterms:identifier "326"^^xsd:int .
+
+skio:Quebec a :Region ;
+	foaf:name "Quebec" ;
+	dcterms:identifier "327"^^xsd:int .
+
+skio:Nova_Scotia a :Region ;
+	foaf:name "Nova Scotia" ;
+	dcterms:identifier "328"^^xsd:int .
+
+skio:New_Brunswick a :Region ;
+	foaf:name "New Brunswick" ;
+	dcterms:identifier "329"^^xsd:int .
+
+skio:Manitoba a :Region ;
+	foaf:name "Manitoba" ;
+	dcterms:identifier "330"^^xsd:int .
+
+skio:British_Columbia a :Region ;
+	foaf:name "British Columbia" ;
+	dcterms:identifier "331"^^xsd:int .
+
+skio:Prince_Edward_Island a :Region ;
+	foaf:name "Prince Edward Island" ;
+	dcterms:identifier "332"^^xsd:int .
+
+skio:Saskatchewan a :Region ;
+	foaf:name "Saskatchewan" ;
+	dcterms:identifier "333"^^xsd:int .
+
+skio:Alberta a :Region ;
+	foaf:name "Alberta" ;
+	dcterms:identifier "334"^^xsd:int .
+
+skio:Newfoundland_and_Labrador a :Region ;
+	foaf:name "Newfoundland and Labrador" ;
+	dcterms:identifier "335"^^xsd:int .
+
+skio:Northwest_Territories a :Region ;
+	foaf:name "Northwest Territories" ;
+	dcterms:identifier "336"^^xsd:int .
+
+skio:Yukon a :Region ;
+	foaf:name "Yukon" ;
+	dcterms:identifier "337"^^xsd:int .
+
+skio:Nunavut a :Region ;
+	foaf:name "Nunavut" ;
+	dcterms:identifier "338"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Kärnten_(Carinthia)> a :Region ;
+	foaf:name "Kärnten (Carinthia)" ;
+	dcterms:identifier "339"^^xsd:int .
+
+skio:Lower_Austria a :Region ;
+	foaf:name "Lower Austria" ;
+	dcterms:identifier "340"^^xsd:int .
+
+skio:Upper_Austria a :Region ;
+	foaf:name "Upper Austria" ;
+	dcterms:identifier "341"^^xsd:int .
+
+skio:Salzburg a :Region ;
+	foaf:name "Salzburg" ;
+	dcterms:identifier "342"^^xsd:int .
+
+skio:Styria a :Region ;
+	foaf:name "Styria" ;
+	dcterms:identifier "343"^^xsd:int .
+
+skio:Tyrol a :Region ;
+	foaf:name "Tyrol" ;
+	dcterms:identifier "344"^^xsd:int .
+
+skio:Vienna a :Region ;
+	foaf:name "Vienna" ;
+	dcterms:identifier "345"^^xsd:int .
+
+skio:Vorarlberg a :Region ;
+	foaf:name "Vorarlberg" ;
+	dcterms:identifier "346"^^xsd:int .
+
+skio:Burgenland a :Region ;
+	foaf:name "Burgenland" ;
+	dcterms:identifier "347"^^xsd:int .
+
+skio:Alsace a :Region ;
+	foaf:name "Alsace" ;
+	dcterms:identifier "348"^^xsd:int .
+
+skio:Aquitaine a :Region ;
+	foaf:name "Aquitaine" ;
+	dcterms:identifier "349"^^xsd:int .
+
+skio:Auvergne a :Region ;
+	foaf:name "Auvergne" ;
+	dcterms:identifier "350"^^xsd:int .
+
+skio:Brittany a :Region ;
+	foaf:name "Brittany" ;
+	dcterms:identifier "351"^^xsd:int .
+
+skio:Burgundy a :Region ;
+	foaf:name "Burgundy" ;
+	dcterms:identifier "352"^^xsd:int .
+
+skio:Center a :Region ;
+	foaf:name "Center" ;
+	dcterms:identifier "353"^^xsd:int .
+
+skio:Champagne-Ardenne a :Region ;
+	foaf:name "Champagne-Ardenne" ;
+	dcterms:identifier "354"^^xsd:int .
+
+skio:Corsica a :Region ;
+	foaf:name "Corsica" ;
+	dcterms:identifier "355"^^xsd:int .
+
+skio:Franche-comte a :Region ;
+	foaf:name "Franche-comte" ;
+	dcterms:identifier "356"^^xsd:int .
+
+skio:Languedoc-Roussillon a :Region ;
+	foaf:name "Languedoc-Roussillon" ;
+	dcterms:identifier "357"^^xsd:int .
+
+skio:Limousin a :Region ;
+	foaf:name "Limousin" ;
+	dcterms:identifier "358"^^xsd:int .
+
+skio:Lorraine a :Region ;
+	foaf:name "Lorraine" ;
+	dcterms:identifier "359"^^xsd:int .
+
+skio:Lower-Normandy a :Region ;
+	foaf:name "Lower-Normandy" ;
+	dcterms:identifier "360"^^xsd:int .
+
+skio:Midi-Pyrenees a :Region ;
+	foaf:name "Midi-Pyrenees" ;
+	dcterms:identifier "361"^^xsd:int .
+
+skio:North-Calais a :Region ;
+	foaf:name "North-Calais" ;
+	dcterms:identifier "362"^^xsd:int .
+
+skio:Paris-Isle-of-France a :Region ;
+	foaf:name "Paris-Isle-of-France" ;
+	dcterms:identifier "363"^^xsd:int .
+
+skio:Pays-de-la-Loire a :Region ;
+	foaf:name "Pays-de-la-Loire" ;
+	dcterms:identifier "364"^^xsd:int .
+
+skio:Picardy a :Region ;
+	foaf:name "Picardy" ;
+	dcterms:identifier "365"^^xsd:int .
+
+skio:Poitou-Charentes a :Region ;
+	foaf:name "Poitou-Charentes" ;
+	dcterms:identifier "366"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-_Alpes-de-Haute-Provence a :Region ;
+	foaf:name "Provence-Alpes-Azur - Alpes-de-Haute-Provence" ;
+	dcterms:identifier "367"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-_Alpes-Maritimes a :Region ;
+	foaf:name "Provence-Alpes-Azur - Alpes-Maritimes" ;
+	dcterms:identifier "368"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-_Bouches-du-Rhône a :Region ;
+	foaf:name "Provence-Alpes-Azur - Bouches-du-Rhône" ;
+	dcterms:identifier "369"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-_Hautes-Alpes a :Region ;
+	foaf:name "Provence-Alpes-Azur - Hautes-Alpes" ;
+	dcterms:identifier "370"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-__Var a :Region ;
+	foaf:name "Provence-Alpes-Azur -  Var" ;
+	dcterms:identifier "371"^^xsd:int .
+
+skio:Provence-Alpes-Azur_-_Vaucluse a :Region ;
+	foaf:name "Provence-Alpes-Azur - Vaucluse" ;
+	dcterms:identifier "372"^^xsd:int .
+
+skio:Upper-Normandy a :Region ;
+	foaf:name "Upper-Normandy" ;
+	dcterms:identifier "373"^^xsd:int .
+
+skio:Rhone-Alps_-_Ain a :Region ;
+	foaf:name "Rhone-Alps - Ain" ;
+	dcterms:identifier "374"^^xsd:int .
+
+skio:Rhone-Alps_-_Ardèche a :Region ;
+	foaf:name "Rhone-Alps - Ardèche" ;
+	dcterms:identifier "375"^^xsd:int .
+
+skio:Rhone-Alps_-_Drôme a :Region ;
+	foaf:name "Rhone-Alps - Drôme" ;
+	dcterms:identifier "376"^^xsd:int .
+
+skio:Rhone-Alps_-_Isère a :Region ;
+	foaf:name "Rhone-Alps - Isère" ;
+	dcterms:identifier "377"^^xsd:int .
+
+skio:Rhone-Alps_-_Loire a :Region ;
+	foaf:name "Rhone-Alps - Loire" ;
+	dcterms:identifier "378"^^xsd:int .
+
+skio:Rhone-Alps_-_Rhone a :Region ;
+	foaf:name "Rhone-Alps - Rhone" ;
+	dcterms:identifier "379"^^xsd:int .
+
+skio:Rhone-Alps_-_Savoie a :Region ;
+	foaf:name "Rhone-Alps - Savoie" ;
+	dcterms:identifier "380"^^xsd:int .
+
+skio:Rhone-Alps_-_Haute-Savoie a :Region ;
+	foaf:name "Rhone-Alps - Haute-Savoie" ;
+	dcterms:identifier "381"^^xsd:int .
+
+skio:Eastern_Switzerland a :Region ;
+	foaf:name "Eastern Switzerland" ;
+	dcterms:identifier "382"^^xsd:int .
+
+skio:Graubünden a :Region ;
+	foaf:name "Graubünden" ;
+	dcterms:identifier "383"^^xsd:int .
+
+skio:Central_Switzerland a :Region ;
+	foaf:name "Central Switzerland" ;
+	dcterms:identifier "384"^^xsd:int .
+
+skio:Bernese_Oberland a :Region ;
+	foaf:name "Bernese Oberland" ;
+	dcterms:identifier "385"^^xsd:int .
+
+skio:Massif_Central a :Region ;
+	foaf:name "Massif Central" ;
+	dcterms:identifier "386"^^xsd:int .
+
+skio:Valais_and_Vaud a :Region ;
+	foaf:name "Valais and Vaud" ;
+	dcterms:identifier "387"^^xsd:int .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Hokkaido_(北海道)> a :Region ;
+	foaf:name "Hokkaido (北海道)" ;
+	dcterms:identifier "388"^^xsd:int .
