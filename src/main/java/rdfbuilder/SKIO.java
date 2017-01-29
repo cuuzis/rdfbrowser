@@ -12,11 +12,13 @@ public class SKIO {
     public static final IRI REGION;
     public static final IRI COUNTRY;
     public static final IRI CONTINENT;
+    public static final IRI SKIRESORT;
 
     static {
         SimpleValueFactory factory = SimpleValueFactory.getInstance();
         REGION = factory.createIRI(NAMESPACE, "Region");
         CONTINENT = factory.createIRI(NAMESPACE, "Continent");
         COUNTRY = factory.createIRI(NAMESPACE, "Country");
+        SKIRESORT = factory.createIRI(NAMESPACE, "SkiResort");
     }
 }

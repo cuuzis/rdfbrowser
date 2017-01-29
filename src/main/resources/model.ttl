@@ -1558,3 +1558,3739 @@ skio:Valais_and_Vaud a :Region ;
 <http://inf.unibz.it/2017/ski-resort-ontology/#Hokkaido_(北海道)> a :Region ;
 	foaf:name "Hokkaido (北海道)" ;
 	dcterms:identifier "388"^^xsd:int .
+
+skio:Smokey_Mountain_Ski_Club a :SkiResort ;
+	dcterms:identifier "1"^^xsd:int ;
+	foaf:name "Smokey Mountain Ski Club" ;
+	geo:lat "52.977947"^^xsd:float ;
+	geo:long "-66.92094"^^xsd:float .
+
+skio:Northern_Lights_Ski_Club a :SkiResort ;
+	dcterms:identifier "2"^^xsd:int ;
+	foaf:name "Northern Lights Ski Club" ;
+	geo:lat "53.52358"^^xsd:float ;
+	geo:long "-64.020096"^^xsd:float .
+
+skio:White_Hills a :SkiResort ;
+	dcterms:identifier "3"^^xsd:int ;
+	foaf:name "White Hills" ;
+	geo:lat "48.161777"^^xsd:float ;
+	geo:long "-54.046467"^^xsd:float .
+
+skio:Mont_Shana a :SkiResort ;
+	dcterms:identifier "4"^^xsd:int ;
+	foaf:name "Mont Shana" ;
+	geo:lat "53.40974"^^xsd:float ;
+	geo:long "-60.425457"^^xsd:float .
+
+skio:Marble_Mountain a :SkiResort ;
+	dcterms:identifier "5"^^xsd:int ;
+	foaf:name "Marble Mountain" ;
+	geo:lat "48.93667"^^xsd:float ;
+	geo:long "-57.82722"^^xsd:float .
+
+skio:Snow_Valley_Ski_Club a :SkiResort ;
+	dcterms:identifier "6"^^xsd:int ;
+	foaf:name "Snow Valley Ski Club" ;
+	geo:lat "53.484203"^^xsd:float ;
+	geo:long "-113.55669"^^xsd:float .
+
+skio:Kinosoo_Ridge a :SkiResort ;
+	dcterms:identifier "7"^^xsd:int ;
+	foaf:name "Kinosoo Ridge" ;
+	geo:lat "54.440098"^^xsd:float ;
+	geo:long "-110.01915"^^xsd:float .
+
+skio:Marmot_Basin a :SkiResort ;
+	dcterms:identifier "8"^^xsd:int ;
+	foaf:name "Marmot Basin" ;
+	geo:lat "52.798588"^^xsd:float ;
+	geo:long "-118.100784"^^xsd:float .
+
+skio:Nakiska_Ski_Resort a :SkiResort ;
+	dcterms:identifier "9"^^xsd:int ;
+	foaf:name "Nakiska Ski Resort" ;
+	geo:lat "50.947773"^^xsd:float ;
+	geo:long "-115.171524"^^xsd:float .
+
+skio:Sunshine_Village a :SkiResort ;
+	dcterms:identifier "10"^^xsd:int ;
+	foaf:name "Sunshine Village" ;
+	geo:lat "51.086117"^^xsd:float ;
+	geo:long "-115.7739"^^xsd:float .
+
+skio:Rabbit_Hill_Ski_and_Snowboard_Center a :SkiResort ;
+	dcterms:identifier "11"^^xsd:int ;
+	foaf:name "Rabbit Hill Ski and Snowboard Center" ;
+	geo:lat "53.381126"^^xsd:float ;
+	geo:long "-113.67202"^^xsd:float .
+
+skio:Sunridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "12"^^xsd:int ;
+	foaf:name "Sunridge Ski Area" ;
+	geo:lat "53.56453"^^xsd:float ;
+	geo:long "-113.37247"^^xsd:float .
+
+skio:Silver_Summit a :SkiResort ;
+	dcterms:identifier "13"^^xsd:int ;
+	foaf:name "Silver Summit" ;
+	geo:lat "53.89321"^^xsd:float ;
+	geo:long "-116.567856"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Fortress_(Snowridge)> a :SkiResort ;
+	dcterms:identifier "14"^^xsd:int ;
+	foaf:name "Fortress (Snowridge)" ;
+	geo:lat "50.824535"^^xsd:float ;
+	geo:long "-115.199036"^^xsd:float .
+
+skio:Hidden_Valley a :SkiResort ;
+	dcterms:identifier "15"^^xsd:int ;
+	foaf:name "Hidden Valley" ;
+	geo:lat "49.65657"^^xsd:float ;
+	geo:long "-110.26085"^^xsd:float .
+
+skio:Mount_Norquay a :SkiResort ;
+	dcterms:identifier "16"^^xsd:int ;
+	foaf:name "Mount Norquay" ;
+	geo:lat "51.20622"^^xsd:float ;
+	geo:long "-115.60537"^^xsd:float .
+
+skio:Nitehawk_Ski_Hill a :SkiResort ;
+	dcterms:identifier "17"^^xsd:int ;
+	foaf:name "Nitehawk Ski Hill" ;
+	geo:lat "55.060787"^^xsd:float ;
+	geo:long "-118.85969"^^xsd:float .
+
+skio:Castle_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "18"^^xsd:int ;
+	foaf:name "Castle Mountain Resort" ;
+	geo:lat "49.315353"^^xsd:float ;
+	geo:long "-114.42647"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Canyon_Ski_Resort_(Ski_Red_Deer)> a :SkiResort ;
+	dcterms:identifier "19"^^xsd:int ;
+	foaf:name "Canyon Ski Resort (Ski Red Deer)" ;
+	geo:lat "52.3047"^^xsd:float ;
+	geo:long "-113.68283"^^xsd:float .
+
+skio:Edmonton_Ski_Club a :SkiResort ;
+	dcterms:identifier "20"^^xsd:int ;
+	foaf:name "Edmonton Ski Club" ;
+	geo:lat "53.53361"^^xsd:float ;
+	geo:long "-113.47528"^^xsd:float .
+
+skio:Canada_Olympic_Park a :SkiResort ;
+	dcterms:identifier "21"^^xsd:int ;
+	foaf:name "Canada Olympic Park" ;
+	geo:lat "51.079723"^^xsd:float ;
+	geo:long "-114.215836"^^xsd:float .
+
+skio:Lake_Louise a :SkiResort ;
+	dcterms:identifier "22"^^xsd:int ;
+	foaf:name "Lake Louise" ;
+	geo:lat "51.448277"^^xsd:float ;
+	geo:long "-116.12743"^^xsd:float .
+
+skio:Wapiti_Valley a :SkiResort ;
+	dcterms:identifier "23"^^xsd:int ;
+	foaf:name "Wapiti Valley" ;
+	geo:lat "53.23522"^^xsd:float ;
+	geo:long "-104.46092"^^xsd:float .
+
+skio:Table_Mountain a :SkiResort ;
+	dcterms:identifier "24"^^xsd:int ;
+	foaf:name "Table Mountain" ;
+	geo:lat "52.815422"^^xsd:float ;
+	geo:long "-108.60535"^^xsd:float .
+
+skio:Mission_Ridge_Winter_Park a :SkiResort ;
+	dcterms:identifier "25"^^xsd:int ;
+	foaf:name "Mission Ridge Winter Park" ;
+	geo:lat "50.754486"^^xsd:float ;
+	geo:long "-103.77874"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Prairie_West_Terminal_Snow_Park_(Twin_Towers)> a :SkiResort ;
+	dcterms:identifier "26"^^xsd:int ;
+	foaf:name "Prairie West Terminal Snow Park (Twin Towers)" ;
+	geo:lat "51.677105"^^xsd:float ;
+	geo:long "-108.494514"^^xsd:float .
+
+skio:Brookvale_Provincial_Park a :SkiResort ;
+	dcterms:identifier "27"^^xsd:int ;
+	foaf:name "Brookvale Provincial Park" ;
+	geo:lat "46.28251"^^xsd:float ;
+	geo:long "-63.410267"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Whistler_Blackcomb_(Garibaldi_Lift_Co.)> a :SkiResort ;
+	dcterms:identifier "28"^^xsd:int ;
+	foaf:name "Whistler Blackcomb (Garibaldi Lift Co.)" ;
+	geo:lat "50.091354"^^xsd:float ;
+	geo:long "-122.92857"^^xsd:float .
+
+skio:Mount_Washington_Alpine_Resort a :SkiResort ;
+	dcterms:identifier "29"^^xsd:int ;
+	foaf:name "Mount Washington Alpine Resort" ;
+	geo:lat "49.747387"^^xsd:float ;
+	geo:long "-125.29948"^^xsd:float .
+
+skio:Fernie_Alpine_Resort a :SkiResort ;
+	dcterms:identifier "30"^^xsd:int ;
+	foaf:name "Fernie Alpine Resort" ;
+	geo:lat "49.457355"^^xsd:float ;
+	geo:long "-115.10198"^^xsd:float .
+
+skio:Murray_Ridge a :SkiResort ;
+	dcterms:identifier "31"^^xsd:int ;
+	foaf:name "Murray Ridge" ;
+	geo:lat "54.51879"^^xsd:float ;
+	geo:long "-124.20971"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Revelstoke_Mountain_Resort_(Powder_Springs)> a :SkiResort ;
+	dcterms:identifier "32"^^xsd:int ;
+	foaf:name "Revelstoke Mountain Resort (Powder Springs)" ;
+	geo:lat "50.961586"^^xsd:float ;
+	geo:long "-118.12561"^^xsd:float .
+
+skio:Salmo_Ski_Area a :SkiResort ;
+	dcterms:identifier "33"^^xsd:int ;
+	foaf:name "Salmo Ski Area" ;
+	geo:lat "49.186302"^^xsd:float ;
+	geo:long "-117.30051"^^xsd:float .
+
+skio:Tabor_Mountain a :SkiResort ;
+	dcterms:identifier "34"^^xsd:int ;
+	foaf:name "Tabor Mountain" ;
+	geo:lat "53.943962"^^xsd:float ;
+	geo:long "-122.4543"^^xsd:float .
+
+skio:Summit_Lake a :SkiResort ;
+	dcterms:identifier "35"^^xsd:int ;
+	foaf:name "Summit Lake" ;
+	geo:lat "50.146023"^^xsd:float ;
+	geo:long "-117.61514"^^xsd:float .
+
+skio:Sun_Peaks_Resort a :SkiResort ;
+	dcterms:identifier "36"^^xsd:int ;
+	foaf:name "Sun Peaks Resort" ;
+	geo:lat "50.88888"^^xsd:float ;
+	geo:long "-119.89387"^^xsd:float .
+
+skio:Mt._Baldy_Family_Ski_Area a :SkiResort ;
+	dcterms:identifier "37"^^xsd:int ;
+	foaf:name "Mt. Baldy Family Ski Area" ;
+	geo:lat "49.15297"^^xsd:float ;
+	geo:long "-119.235306"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Ski_Smithers_(Hudson_Bay_Mountain)> a :SkiResort ;
+	dcterms:identifier "38"^^xsd:int ;
+	foaf:name "Ski Smithers (Hudson Bay Mountain)" ;
+	geo:lat "54.771286"^^xsd:float ;
+	geo:long "-127.26185"^^xsd:float .
+
+skio:Kimberley_Alpine_Resort a :SkiResort ;
+	dcterms:identifier "39"^^xsd:int ;
+	foaf:name "Kimberley Alpine Resort" ;
+	geo:lat "49.687065"^^xsd:float ;
+	geo:long "-116.00962"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Kicking_Horse_(Whitetooth)> a :SkiResort ;
+	dcterms:identifier "40"^^xsd:int ;
+	foaf:name "Kicking Horse (Whitetooth)" ;
+	geo:lat "51.28643"^^xsd:float ;
+	geo:long "-117.066635"^^xsd:float .
+
+skio:Red_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "41"^^xsd:int ;
+	foaf:name "Red Mountain Resort" ;
+	geo:lat "49.101448"^^xsd:float ;
+	geo:long "-117.84124"^^xsd:float .
+
+skio:Manning_Park_Resort a :SkiResort ;
+	dcterms:identifier "42"^^xsd:int ;
+	foaf:name "Manning Park Resort" ;
+	geo:lat "49.06802"^^xsd:float ;
+	geo:long "-120.91604"^^xsd:float .
+
+skio:Mount_Seymour a :SkiResort ;
+	dcterms:identifier "43"^^xsd:int ;
+	foaf:name "Mount Seymour" ;
+	geo:lat "49.371704"^^xsd:float ;
+	geo:long "-122.94473"^^xsd:float .
+
+skio:Silver_Star_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "44"^^xsd:int ;
+	foaf:name "Silver Star Mountain Resort" ;
+	geo:lat "50.374527"^^xsd:float ;
+	geo:long "-119.04756"^^xsd:float .
+
+skio:Powder_King a :SkiResort ;
+	dcterms:identifier "45"^^xsd:int ;
+	foaf:name "Powder King" ;
+	geo:lat "55.36399"^^xsd:float ;
+	geo:long "-122.610855"^^xsd:float .
+
+skio:Panorama_Mountain_Village a :SkiResort ;
+	dcterms:identifier "46"^^xsd:int ;
+	foaf:name "Panorama Mountain Village" ;
+	geo:lat "50.442417"^^xsd:float ;
+	geo:long "-116.2246"^^xsd:float .
+
+skio:Fairmont_Hot_Springs_Resort a :SkiResort ;
+	dcterms:identifier "47"^^xsd:int ;
+	foaf:name "Fairmont Hot Springs Resort" ;
+	geo:lat "50.33856"^^xsd:float ;
+	geo:long "-115.82629"^^xsd:float .
+
+skio:Purden_Ski_Village a :SkiResort ;
+	dcterms:identifier "48"^^xsd:int ;
+	foaf:name "Purden Ski Village" ;
+	geo:lat "53.900394"^^xsd:float ;
+	geo:long "-121.88473"^^xsd:float .
+
+skio:Apex_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "49"^^xsd:int ;
+	foaf:name "Apex Mountain Resort" ;
+	geo:lat "49.391033"^^xsd:float ;
+	geo:long "-119.90436"^^xsd:float .
+
+skio:Cypress_Mountain a :SkiResort ;
+	dcterms:identifier "50"^^xsd:int ;
+	foaf:name "Cypress Mountain" ;
+	geo:lat "49.39642"^^xsd:float ;
+	geo:long "-123.201706"^^xsd:float .
+
+skio:Phoenix_Mountain a :SkiResort ;
+	dcterms:identifier "51"^^xsd:int ;
+	foaf:name "Phoenix Mountain" ;
+	geo:lat "49.10905"^^xsd:float ;
+	geo:long "-118.58625"^^xsd:float .
+
+skio:Crystal_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "52"^^xsd:int ;
+	foaf:name "Crystal Mountain Resort" ;
+	geo:lat "49.882027"^^xsd:float ;
+	geo:long "-119.71167"^^xsd:float .
+
+skio:Harper_Mountain a :SkiResort ;
+	dcterms:identifier "53"^^xsd:int ;
+	foaf:name "Harper Mountain" ;
+	geo:lat "50.72309"^^xsd:float ;
+	geo:long "-120.13979"^^xsd:float .
+
+skio:Mt._Cain a :SkiResort ;
+	dcterms:identifier "54"^^xsd:int ;
+	foaf:name "Mt. Cain" ;
+	geo:lat "50.218987"^^xsd:float ;
+	geo:long "-126.35307"^^xsd:float .
+
+skio:Shames_Mountain a :SkiResort ;
+	dcterms:identifier "55"^^xsd:int ;
+	foaf:name "Shames Mountain" ;
+	geo:lat "54.484997"^^xsd:float ;
+	geo:long "-128.95357"^^xsd:float .
+
+skio:Hemlock_Resort a :SkiResort ;
+	dcterms:identifier "56"^^xsd:int ;
+	foaf:name "Hemlock Resort" ;
+	geo:lat "49.37941"^^xsd:float ;
+	geo:long "-121.93451"^^xsd:float .
+
+skio:Big_White_Ski_Resort a :SkiResort ;
+	dcterms:identifier "57"^^xsd:int ;
+	foaf:name "Big White Ski Resort" ;
+	geo:lat "49.732353"^^xsd:float ;
+	geo:long "-118.94175"^^xsd:float .
+
+skio:Grouse_Mountain a :SkiResort ;
+	dcterms:identifier "58"^^xsd:int ;
+	foaf:name "Grouse Mountain" ;
+	geo:lat "49.380028"^^xsd:float ;
+	geo:long "-123.08103"^^xsd:float .
+
+skio:Whitewater_Ski_Resort a :SkiResort ;
+	dcterms:identifier "59"^^xsd:int ;
+	foaf:name "Whitewater Ski Resort" ;
+	geo:lat "49.441208"^^xsd:float ;
+	geo:long "-117.154884"^^xsd:float .
+
+skio:Falcon_Ridge a :SkiResort ;
+	dcterms:identifier "60"^^xsd:int ;
+	foaf:name "Falcon Ridge" ;
+	geo:lat "49.704273"^^xsd:float ;
+	geo:long "-95.19147"^^xsd:float .
+
+skio:Asessippi_Winter_Park a :SkiResort ;
+	dcterms:identifier "61"^^xsd:int ;
+	foaf:name "Asessippi Winter Park" ;
+	geo:lat "50.95131"^^xsd:float ;
+	geo:long "-101.33822"^^xsd:float .
+
+skio:Holiday_Mountain a :SkiResort ;
+	dcterms:identifier "62"^^xsd:int ;
+	foaf:name "Holiday Mountain" ;
+	geo:lat "49.236786"^^xsd:float ;
+	geo:long "-98.69394"^^xsd:float .
+
+skio:Stony_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "63"^^xsd:int ;
+	foaf:name "Stony Mountain Ski Area" ;
+	geo:lat "50.094093"^^xsd:float ;
+	geo:long "-97.20651"^^xsd:float .
+
+skio:Mystery_Mountain a :SkiResort ;
+	dcterms:identifier "64"^^xsd:int ;
+	foaf:name "Mystery Mountain" ;
+	geo:lat "55.868828"^^xsd:float ;
+	geo:long "-97.77693"^^xsd:float .
+
+skio:Poley_Mountain a :SkiResort ;
+	dcterms:identifier "65"^^xsd:int ;
+	foaf:name "Poley Mountain" ;
+	geo:lat "45.679268"^^xsd:float ;
+	geo:long "-65.38258"^^xsd:float .
+
+skio:Crabbe_Mountain a :SkiResort ;
+	dcterms:identifier "66"^^xsd:int ;
+	foaf:name "Crabbe Mountain" ;
+	geo:lat "46.120262"^^xsd:float ;
+	geo:long "-67.10698"^^xsd:float .
+
+skio:Mont_Farlagne a :SkiResort ;
+	dcterms:identifier "67"^^xsd:int ;
+	foaf:name "Mont Farlagne" ;
+	geo:lat "47.41371"^^xsd:float ;
+	geo:long "-68.38185"^^xsd:float .
+
+skio:Sugarloaf_Provincial_Park a :SkiResort ;
+	dcterms:identifier "68"^^xsd:int ;
+	foaf:name "Sugarloaf Provincial Park" ;
+	geo:lat "47.982235"^^xsd:float ;
+	geo:long "-66.6947"^^xsd:float .
+
+skio:Ski_Martock a :SkiResort ;
+	dcterms:identifier "69"^^xsd:int ;
+	foaf:name "Ski Martock" ;
+	geo:lat "44.93253"^^xsd:float ;
+	geo:long "-64.16519"^^xsd:float .
+
+skio:Cape_Smokey a :SkiResort ;
+	dcterms:identifier "70"^^xsd:int ;
+	foaf:name "Cape Smokey" ;
+	geo:lat "46.62681"^^xsd:float ;
+	geo:long "-60.423088"^^xsd:float .
+
+skio:Ski_Wentworth a :SkiResort ;
+	dcterms:identifier "71"^^xsd:int ;
+	foaf:name "Ski Wentworth" ;
+	geo:lat "45.608513"^^xsd:float ;
+	geo:long "-63.56214"^^xsd:float .
+
+skio:Ski_Ben_Eoin a :SkiResort ;
+	dcterms:identifier "72"^^xsd:int ;
+	foaf:name "Ski Ben Eoin" ;
+	geo:lat "45.974686"^^xsd:float ;
+	geo:long "-60.43494"^^xsd:float .
+
+skio:Mont_Olympia a :SkiResort ;
+	dcterms:identifier "73"^^xsd:int ;
+	foaf:name "Mont Olympia" ;
+	geo:lat "45.914734"^^xsd:float ;
+	geo:long "-74.1246"^^xsd:float .
+
+skio:Gray_Rocks a :SkiResort ;
+	dcterms:identifier "74"^^xsd:int ;
+	foaf:name "Gray Rocks" ;
+	geo:lat "46.163406"^^xsd:float ;
+	geo:long "-74.58863"^^xsd:float .
+
+skio:Mont_Orignal a :SkiResort ;
+	dcterms:identifier "75"^^xsd:int ;
+	foaf:name "Mont Orignal" ;
+	geo:lat "46.40912"^^xsd:float ;
+	geo:long "-70.5852"^^xsd:float .
+
+skio:Mont_Shefford a :SkiResort ;
+	dcterms:identifier "76"^^xsd:int ;
+	foaf:name "Mont Shefford" ;
+	geo:lat "45.378677"^^xsd:float ;
+	geo:long "-72.60916"^^xsd:float .
+
+skio:Ski_Morin_Heights a :SkiResort ;
+	dcterms:identifier "77"^^xsd:int ;
+	foaf:name "Ski Morin Heights" ;
+	geo:lat "45.89874"^^xsd:float ;
+	geo:long "-74.268425"^^xsd:float .
+
+skio:Le_Relais a :SkiResort ;
+	dcterms:identifier "78"^^xsd:int ;
+	foaf:name "Le Relais" ;
+	geo:lat "46.936943"^^xsd:float ;
+	geo:long "-71.2975"^^xsd:float .
+
+skio:Ski_Bromont a :SkiResort ;
+	dcterms:identifier "79"^^xsd:int ;
+	foaf:name "Ski Bromont" ;
+	geo:lat "45.299683"^^xsd:float ;
+	geo:long "-72.636284"^^xsd:float .
+
+skio:Mont_Ti-Basse a :SkiResort ;
+	dcterms:identifier "81"^^xsd:int ;
+	foaf:name "Mont Ti-Basse" ;
+	geo:lat "49.289364"^^xsd:float ;
+	geo:long "-68.16725"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Owl's_Head> a :SkiResort ;
+	dcterms:identifier "82"^^xsd:int ;
+	foaf:name "Owl's Head" ;
+	geo:lat "45.07514"^^xsd:float ;
+	geo:long "-72.295044"^^xsd:float .
+
+skio:Montjoye a :SkiResort ;
+	dcterms:identifier "83"^^xsd:int ;
+	foaf:name "Montjoye" ;
+	geo:lat "45.30253"^^xsd:float ;
+	geo:long "-71.932365"^^xsd:float .
+
+skio:Mont_Grand_Fonds a :SkiResort ;
+	dcterms:identifier "84"^^xsd:int ;
+	foaf:name "Mont Grand Fonds" ;
+	geo:lat "47.77129"^^xsd:float ;
+	geo:long "-70.10376"^^xsd:float .
+
+skio:Mont_Saint-Sauveur a :SkiResort ;
+	dcterms:identifier "85"^^xsd:int ;
+	foaf:name "Mont Saint-Sauveur" ;
+	geo:lat "45.884003"^^xsd:float ;
+	geo:long "-74.15351"^^xsd:float .
+
+skio:Mont-Sainte-Anne a :SkiResort ;
+	dcterms:identifier "87"^^xsd:int ;
+	foaf:name "Mont-Sainte-Anne" ;
+	geo:lat "47.076126"^^xsd:float ;
+	geo:long "-70.91375"^^xsd:float .
+
+skio:Mont_Cascades a :SkiResort ;
+	dcterms:identifier "88"^^xsd:int ;
+	foaf:name "Mont Cascades" ;
+	geo:lat "45.59288"^^xsd:float ;
+	geo:long "-75.849335"^^xsd:float .
+
+skio:Parc_du_Mont-Comi a :SkiResort ;
+	dcterms:identifier "89"^^xsd:int ;
+	foaf:name "Parc du Mont-Comi" ;
+	geo:lat "48.468094"^^xsd:float ;
+	geo:long "-68.19516"^^xsd:float .
+
+skio:Mont_Sutton a :SkiResort ;
+	dcterms:identifier "90"^^xsd:int ;
+	foaf:name "Mont Sutton" ;
+	geo:lat "45.104656"^^xsd:float ;
+	geo:long "-72.5617"^^xsd:float .
+
+skio:Mont_Orford a :SkiResort ;
+	dcterms:identifier "91"^^xsd:int ;
+	foaf:name "Mont Orford" ;
+	geo:lat "45.318596"^^xsd:float ;
+	geo:long "-72.220116"^^xsd:float .
+
+skio:Mont_Ste-Marie a :SkiResort ;
+	dcterms:identifier "92"^^xsd:int ;
+	foaf:name "Mont Ste-Marie" ;
+	geo:lat "45.942085"^^xsd:float ;
+	geo:long "-75.87341"^^xsd:float .
+
+skio:Mont_Video a :SkiResort ;
+	dcterms:identifier "93"^^xsd:int ;
+	foaf:name "Mont Video" ;
+	geo:lat "48.41923"^^xsd:float ;
+	geo:long "-77.77694"^^xsd:float .
+
+skio:Val_Saint-Come a :SkiResort ;
+	dcterms:identifier "94"^^xsd:int ;
+	foaf:name "Val Saint-Come" ;
+	geo:lat "46.27141"^^xsd:float ;
+	geo:long "-73.87118"^^xsd:float .
+
+skio:Massif_du_Sud a :SkiResort ;
+	dcterms:identifier "95"^^xsd:int ;
+	foaf:name "Massif du Sud" ;
+	geo:lat "46.62128"^^xsd:float ;
+	geo:long "-70.49071"^^xsd:float .
+
+skio:Le_Massif_de_Charlevoix a :SkiResort ;
+	dcterms:identifier "96"^^xsd:int ;
+	foaf:name "Le Massif de Charlevoix" ;
+	geo:lat "47.27958"^^xsd:float ;
+	geo:long "-70.59571"^^xsd:float .
+
+skio:Mont_Alta a :SkiResort ;
+	dcterms:identifier "97"^^xsd:int ;
+	foaf:name "Mont Alta" ;
+	geo:lat "46.101665"^^xsd:float ;
+	geo:long "-74.48417"^^xsd:float .
+
+skio:Mont_Blanc a :SkiResort ;
+	dcterms:identifier "98"^^xsd:int ;
+	foaf:name "Mont Blanc" ;
+	geo:lat "46.10886"^^xsd:float ;
+	geo:long "-74.482544"^^xsd:float .
+
+skio:La_Vallee_du_Parc a :SkiResort ;
+	dcterms:identifier "99"^^xsd:int ;
+	foaf:name "La Vallee du Parc" ;
+	geo:lat "46.61495"^^xsd:float ;
+	geo:long "-72.800415"^^xsd:float .
+
+skio:Stoneham_Ski_Resort a :SkiResort ;
+	dcterms:identifier "100"^^xsd:int ;
+	foaf:name "Stoneham Ski Resort" ;
+	geo:lat "47.03"^^xsd:float ;
+	geo:long "-71.388336"^^xsd:float .
+
+skio:Mont_Tremblant a :SkiResort ;
+	dcterms:identifier "101"^^xsd:int ;
+	foaf:name "Mont Tremblant" ;
+	geo:lat "46.219128"^^xsd:float ;
+	geo:long "-74.55645"^^xsd:float .
+
+skio:Vallee_Bleue a :SkiResort ;
+	dcterms:identifier "102"^^xsd:int ;
+	foaf:name "Vallee Bleue" ;
+	geo:lat "46.025536"^^xsd:float ;
+	geo:long "-74.21839"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Val_D'Irene> a :SkiResort ;
+	dcterms:identifier "103"^^xsd:int ;
+	foaf:name "Val D'Irene" ;
+	geo:lat "48.472095"^^xsd:float ;
+	geo:long "-67.57078"^^xsd:float .
+
+skio:Mont_Habitant a :SkiResort ;
+	dcterms:identifier "104"^^xsd:int ;
+	foaf:name "Mont Habitant" ;
+	geo:lat "45.880802"^^xsd:float ;
+	geo:long "-74.1769"^^xsd:float .
+
+skio:Belle_Neige a :SkiResort ;
+	dcterms:identifier "105"^^xsd:int ;
+	foaf:name "Belle Neige" ;
+	geo:lat "45.999466"^^xsd:float ;
+	geo:long "-74.212906"^^xsd:float .
+
+skio:Mont_Gabriel a :SkiResort ;
+	dcterms:identifier "106"^^xsd:int ;
+	foaf:name "Mont Gabriel" ;
+	geo:lat "45.924023"^^xsd:float ;
+	geo:long "-74.15405"^^xsd:float .
+
+skio:Mont_Fortin a :SkiResort ;
+	dcterms:identifier "107"^^xsd:int ;
+	foaf:name "Mont Fortin" ;
+	geo:lat "48.435886"^^xsd:float ;
+	geo:long "-71.225815"^^xsd:float .
+
+skio:Mont_Garceau a :SkiResort ;
+	dcterms:identifier "108"^^xsd:int ;
+	foaf:name "Mont Garceau" ;
+	geo:lat "46.33686"^^xsd:float ;
+	geo:long "-74.2194"^^xsd:float .
+
+skio:Camp_Fortune a :SkiResort ;
+	dcterms:identifier "109"^^xsd:int ;
+	foaf:name "Camp Fortune" ;
+	geo:lat "45.509"^^xsd:float ;
+	geo:long "-75.851"^^xsd:float .
+
+skio:Ski_Vorlage a :SkiResort ;
+	dcterms:identifier "110"^^xsd:int ;
+	foaf:name "Ski Vorlage" ;
+	geo:lat "45.64509"^^xsd:float ;
+	geo:long "-75.935555"^^xsd:float .
+
+skio:Calabogie_Peaks a :SkiResort ;
+	dcterms:identifier "111"^^xsd:int ;
+	foaf:name "Calabogie Peaks" ;
+	geo:lat "45.2744"^^xsd:float ;
+	geo:long "-76.78274"^^xsd:float .
+
+skio:Glen_Eden a :SkiResort ;
+	dcterms:identifier "112"^^xsd:int ;
+	foaf:name "Glen Eden" ;
+	geo:lat "43.504066"^^xsd:float ;
+	geo:long "-79.946396"^^xsd:float .
+
+skio:Blue_Mountain a :SkiResort ;
+	dcterms:identifier "113"^^xsd:int ;
+	foaf:name "Blue Mountain" ;
+	geo:lat "44.500057"^^xsd:float ;
+	geo:long "-80.31195"^^xsd:float .
+
+skio:Pine_Ridge_Ski_Club a :SkiResort ;
+	dcterms:identifier "114"^^xsd:int ;
+	foaf:name "Pine Ridge Ski Club" ;
+	geo:lat "44.563705"^^xsd:float ;
+	geo:long "-79.66449"^^xsd:float .
+
+skio:Talisman_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "115"^^xsd:int ;
+	foaf:name "Talisman Mountain Resort" ;
+	geo:lat "44.39119"^^xsd:float ;
+	geo:long "-80.54633"^^xsd:float .
+
+skio:Mt._Chinguacousy_Ski_and_Snowboard_Hill a :SkiResort ;
+	dcterms:identifier "116"^^xsd:int ;
+	foaf:name "Mt. Chinguacousy Ski and Snowboard Hill" ;
+	geo:lat "43.728367"^^xsd:float ;
+	geo:long "-79.72509"^^xsd:float .
+
+skio:Ski_Lakeridge a :SkiResort ;
+	dcterms:identifier "117"^^xsd:int ;
+	foaf:name "Ski Lakeridge" ;
+	geo:lat "44.02696"^^xsd:float ;
+	geo:long "-79.06148"^^xsd:float .
+
+skio:Mount_Pakenham a :SkiResort ;
+	dcterms:identifier "118"^^xsd:int ;
+	foaf:name "Mount Pakenham" ;
+	geo:lat "45.320557"^^xsd:float ;
+	geo:long "-76.33806"^^xsd:float .
+
+skio:Kamiskotia_Ski_Resort a :SkiResort ;
+	dcterms:identifier "119"^^xsd:int ;
+	foaf:name "Kamiskotia Ski Resort" ;
+	geo:lat "48.53376"^^xsd:float ;
+	geo:long "-81.54144"^^xsd:float .
+
+skio:Onaping_Ski_Hill a :SkiResort ;
+	dcterms:identifier "120"^^xsd:int ;
+	foaf:name "Onaping Ski Hill" ;
+	geo:lat "46.62679"^^xsd:float ;
+	geo:long "-81.40376"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Brimacombe_(Oshawa_Ski_Club)> a :SkiResort ;
+	dcterms:identifier "121"^^xsd:int ;
+	foaf:name "Brimacombe (Oshawa Ski Club)" ;
+	geo:lat "44.022415"^^xsd:float ;
+	geo:long "-78.57644"^^xsd:float .
+
+skio:Mountain_View a :SkiResort ;
+	dcterms:identifier "122"^^xsd:int ;
+	foaf:name "Mountain View" ;
+	geo:lat "44.73435"^^xsd:float ;
+	geo:long "-79.92016"^^xsd:float .
+
+skio:Hockley_Valley_Resort a :SkiResort ;
+	dcterms:identifier "123"^^xsd:int ;
+	foaf:name "Hockley Valley Resort" ;
+	geo:lat "43.97767"^^xsd:float ;
+	geo:long "-80.04628"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#North_York_Ski_Centre_(Earl_Bales)> a :SkiResort ;
+	dcterms:identifier "124"^^xsd:int ;
+	foaf:name "North York Ski Centre (Earl Bales)" ;
+	geo:lat "43.75309"^^xsd:float ;
+	geo:long "-79.432846"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Boler_Mountain_(London_Ski_Club)> a :SkiResort ;
+	dcterms:identifier "125"^^xsd:int ;
+	foaf:name "Boler Mountain (London Ski Club)" ;
+	geo:lat "42.944736"^^xsd:float ;
+	geo:long "-81.33767"^^xsd:float .
+
+skio:Mansfield_Ski_Club a :SkiResort ;
+	dcterms:identifier "126"^^xsd:int ;
+	foaf:name "Mansfield Ski Club" ;
+	geo:lat "44.201103"^^xsd:float ;
+	geo:long "-80.05471"^^xsd:float .
+
+skio:Mount_Dufour a :SkiResort ;
+	dcterms:identifier "127"^^xsd:int ;
+	foaf:name "Mount Dufour" ;
+	geo:lat "46.3859"^^xsd:float ;
+	geo:long "-82.63543"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Heyden_Ski_Hill_&_Resort> a :SkiResort ;
+	dcterms:identifier "128"^^xsd:int ;
+	foaf:name "Heyden Ski Hill & Resort" ;
+	geo:lat "46.643604"^^xsd:float ;
+	geo:long "-84.31191"^^xsd:float .
+
+skio:Alpine_Ski_Club a :SkiResort ;
+	dcterms:identifier "129"^^xsd:int ;
+	foaf:name "Alpine Ski Club" ;
+	geo:lat "44.521374"^^xsd:float ;
+	geo:long "-80.353226"^^xsd:float .
+
+skio:Tri-Town_Ski_Village a :SkiResort ;
+	dcterms:identifier "130"^^xsd:int ;
+	foaf:name "Tri-Town Ski Village" ;
+	geo:lat "47.362316"^^xsd:float ;
+	geo:long "-79.570114"^^xsd:float .
+
+skio:Horseshoe_Resort a :SkiResort ;
+	dcterms:identifier "131"^^xsd:int ;
+	foaf:name "Horseshoe Resort" ;
+	geo:lat "44.547527"^^xsd:float ;
+	geo:long "-79.67196"^^xsd:float .
+
+skio:Mount_St._Louis_Moonstone a :SkiResort ;
+	dcterms:identifier "132"^^xsd:int ;
+	foaf:name "Mount St. Louis Moonstone" ;
+	geo:lat "44.62296"^^xsd:float ;
+	geo:long "-79.666405"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Alice_Hill_Park_(Pembroke_Ski_Club)> a :SkiResort ;
+	dcterms:identifier "133"^^xsd:int ;
+	foaf:name "Alice Hill Park (Pembroke Ski Club)" ;
+	geo:lat "45.732143"^^xsd:float ;
+	geo:long "-77.346054"^^xsd:float .
+
+skio:Beaver_Valley a :SkiResort ;
+	dcterms:identifier "134"^^xsd:int ;
+	foaf:name "Beaver Valley" ;
+	geo:lat "44.358932"^^xsd:float ;
+	geo:long "-80.54477"^^xsd:float .
+
+skio:Ski_Snow_Valley_Barrie a :SkiResort ;
+	dcterms:identifier "135"^^xsd:int ;
+	foaf:name "Ski Snow Valley Barrie" ;
+	geo:lat "44.422527"^^xsd:float ;
+	geo:long "-79.76813"^^xsd:float .
+
+skio:Hidden_Valley_Highlands a :SkiResort ;
+	dcterms:identifier "136"^^xsd:int ;
+	foaf:name "Hidden Valley Highlands" ;
+	geo:lat "41.1856"^^xsd:float ;
+	geo:long "-74.4806"^^xsd:float .
+
+skio:Mount_Baldy a :SkiResort ;
+	dcterms:identifier "137"^^xsd:int ;
+	foaf:name "Mount Baldy" ;
+	geo:lat "34.27"^^xsd:float ;
+	geo:long "-117.61"^^xsd:float .
+
+skio:Loch_Lomond_Ski_Area a :SkiResort ;
+	dcterms:identifier "138"^^xsd:int ;
+	foaf:name "Loch Lomond Ski Area" ;
+	geo:lat "48.294056"^^xsd:float ;
+	geo:long "-89.34674"^^xsd:float .
+
+skio:Ski_Dagmar a :SkiResort ;
+	dcterms:identifier "139"^^xsd:int ;
+	foaf:name "Ski Dagmar" ;
+	geo:lat "44.01243"^^xsd:float ;
+	geo:long "-79.05761"^^xsd:float .
+
+skio:Searchmont_Resort a :SkiResort ;
+	dcterms:identifier "140"^^xsd:int ;
+	foaf:name "Searchmont Resort" ;
+	geo:lat "46.769226"^^xsd:float ;
+	geo:long "-84.04548"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Cobble_Hills_Golf_&_Ski_Club> a :SkiResort ;
+	dcterms:identifier "141"^^xsd:int ;
+	foaf:name "Cobble Hills Golf & Ski Club" ;
+	geo:lat "43.10894"^^xsd:float ;
+	geo:long "-81.06473"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Madawaska_Valley_(Radcliffe_Hills)> a :SkiResort ;
+	dcterms:identifier "142"^^xsd:int ;
+	foaf:name "Madawaska Valley (Radcliffe Hills)" ;
+	geo:lat "45.470966"^^xsd:float ;
+	geo:long "-77.66733"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Devil's_Elbow> a :SkiResort ;
+	dcterms:identifier "143"^^xsd:int ;
+	foaf:name "Devil's Elbow" ;
+	geo:lat "44.21996"^^xsd:float ;
+	geo:long "-78.57567"^^xsd:float .
+
+skio:Rene_Burnelle a :SkiResort ;
+	dcterms:identifier "144"^^xsd:int ;
+	foaf:name "Rene Burnelle" .
+
+skio:Chicopee_Ski_Club a :SkiResort ;
+	dcterms:identifier "145"^^xsd:int ;
+	foaf:name "Chicopee Ski Club" ;
+	geo:lat "43.435284"^^xsd:float ;
+	geo:long "-80.41842"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Skyloft_Ski_&_Country_Club> a :SkiResort ;
+	dcterms:identifier "146"^^xsd:int ;
+	foaf:name "Skyloft Ski & Country Club" ;
+	geo:lat "44.030018"^^xsd:float ;
+	geo:long "-79.07562"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Sir_Sam's_Ski_Area> a :SkiResort ;
+	dcterms:identifier "147"^^xsd:int ;
+	foaf:name "Sir Sam's Ski Area" ;
+	geo:lat "45.129856"^^xsd:float ;
+	geo:long "-78.48307"^^xsd:float .
+
+skio:White_Pine_Ski_Area a :SkiResort ;
+	dcterms:identifier "148"^^xsd:int ;
+	foaf:name "White Pine Ski Area" ;
+	geo:lat "42.9774"^^xsd:float ;
+	geo:long "-109.758224"^^xsd:float .
+
+skio:Big_Horn_Ski_Resort a :SkiResort ;
+	dcterms:identifier "149"^^xsd:int ;
+	foaf:name "Big Horn Ski Resort" ;
+	geo:lat "44.16349"^^xsd:float ;
+	geo:long "-107.21729"^^xsd:float .
+
+skio:Grand_Targhee_Ski_Resort a :SkiResort ;
+	dcterms:identifier "150"^^xsd:int ;
+	foaf:name "Grand Targhee Ski Resort" ;
+	geo:lat "43.78381"^^xsd:float ;
+	geo:long "-110.94664"^^xsd:float .
+
+skio:Jackson_Hole_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "151"^^xsd:int ;
+	foaf:name "Jackson Hole Mountain Resort" ;
+	geo:lat "43.594883"^^xsd:float ;
+	geo:long "-110.844086"^^xsd:float .
+
+skio:Hogadon_Ski_Area a :SkiResort ;
+	dcterms:identifier "152"^^xsd:int ;
+	foaf:name "Hogadon Ski Area" ;
+	geo:lat "42.74496"^^xsd:float ;
+	geo:long "-106.339424"^^xsd:float .
+
+skio:Antelope_Butte_Ski_Area a :SkiResort ;
+	dcterms:identifier "153"^^xsd:int ;
+	foaf:name "Antelope Butte Ski Area" ;
+	geo:lat "44.611458"^^xsd:float ;
+	geo:long "-107.514786"^^xsd:float .
+
+skio:Sleeping_Giant_Ski_Area a :SkiResort ;
+	dcterms:identifier "154"^^xsd:int ;
+	foaf:name "Sleeping Giant Ski Area" ;
+	geo:lat "44.492004"^^xsd:float ;
+	geo:long "-109.94175"^^xsd:float .
+
+skio:Snowy_Range a :SkiResort ;
+	dcterms:identifier "155"^^xsd:int ;
+	foaf:name "Snowy Range" ;
+	geo:lat "41.34127"^^xsd:float ;
+	geo:long "-106.183174"^^xsd:float .
+
+skio:Snow_King_Ski_Area a :SkiResort ;
+	dcterms:identifier "156"^^xsd:int ;
+	foaf:name "Snow King Ski Area" ;
+	geo:lat "43.469166"^^xsd:float ;
+	geo:long "-110.75083"^^xsd:float .
+
+skio:Nordic_Mountain a :SkiResort ;
+	dcterms:identifier "157"^^xsd:int ;
+	foaf:name "Nordic Mountain" ;
+	geo:lat "44.1217"^^xsd:float ;
+	geo:long "-89.181"^^xsd:float .
+
+skio:Whitecap_Mountains a :SkiResort ;
+	dcterms:identifier "158"^^xsd:int ;
+	foaf:name "Whitecap Mountains" ;
+	geo:lat "46.40786"^^xsd:float ;
+	geo:long "-90.39559"^^xsd:float .
+
+skio:Trollhaugen_Ski_Area a :SkiResort ;
+	dcterms:identifier "159"^^xsd:int ;
+	foaf:name "Trollhaugen Ski Area" ;
+	geo:lat "45.349613"^^xsd:float ;
+	geo:long "-92.621956"^^xsd:float .
+
+skio:Standing_Rocks a :SkiResort ;
+	dcterms:identifier "160"^^xsd:int ;
+	foaf:name "Standing Rocks" ;
+	geo:lat "44.43355"^^xsd:float ;
+	geo:long "-89.39852"^^xsd:float .
+
+skio:Little_Switzerland a :SkiResort ;
+	dcterms:identifier "161"^^xsd:int ;
+	foaf:name "Little Switzerland" ;
+	geo:lat "43.3383"^^xsd:float ;
+	geo:long "-88.2807"^^xsd:float .
+
+skio:Tyrol_Basin a :SkiResort ;
+	dcterms:identifier "162"^^xsd:int ;
+	foaf:name "Tyrol Basin" ;
+	geo:lat "43.042747"^^xsd:float ;
+	geo:long "-89.77772"^^xsd:float .
+
+skio:The_Mountain_Top_at_Grand_Geneva_Resort a :SkiResort ;
+	dcterms:identifier "163"^^xsd:int ;
+	foaf:name "The Mountain Top at Grand Geneva Resort" ;
+	geo:lat "42.61078"^^xsd:float ;
+	geo:long "-88.387924"^^xsd:float .
+
+skio:Bruce_Mound_Ski_Area a :SkiResort ;
+	dcterms:identifier "164"^^xsd:int ;
+	foaf:name "Bruce Mound Ski Area" ;
+	geo:lat "44.445164"^^xsd:float ;
+	geo:long "-90.785355"^^xsd:float .
+
+skio:Wilmot_Mountain a :SkiResort ;
+	dcterms:identifier "165"^^xsd:int ;
+	foaf:name "Wilmot Mountain" ;
+	geo:lat "42.5"^^xsd:float ;
+	geo:long "-88.18889"^^xsd:float .
+
+skio:Christmas_Mountain_Village a :SkiResort ;
+	dcterms:identifier "166"^^xsd:int ;
+	foaf:name "Christmas Mountain Village" ;
+	geo:lat "43.608738"^^xsd:float ;
+	geo:long "-89.85941"^^xsd:float .
+
+skio:Highlands_of_Olympia a :SkiResort ;
+	dcterms:identifier "167"^^xsd:int ;
+	foaf:name "Highlands of Olympia" .
+
+skio:Mount_Ashwabay a :SkiResort ;
+	dcterms:identifier "168"^^xsd:int ;
+	foaf:name "Mount Ashwabay" ;
+	geo:lat "46.781048"^^xsd:float ;
+	geo:long "-90.91241"^^xsd:float .
+
+skio:Alpine_Valley_Resort a :SkiResort ;
+	dcterms:identifier "169"^^xsd:int ;
+	foaf:name "Alpine Valley Resort" ;
+	geo:lat "42.733017"^^xsd:float ;
+	geo:long "-88.42827"^^xsd:float .
+
+skio:Granite_Peak a :SkiResort ;
+	dcterms:identifier "170"^^xsd:int ;
+	foaf:name "Granite Peak" ;
+	geo:lat "44.92861"^^xsd:float ;
+	geo:long "-89.6825"^^xsd:float .
+
+skio:Mt._LaCrosse a :SkiResort ;
+	dcterms:identifier "171"^^xsd:int ;
+	foaf:name "Mt. LaCrosse" ;
+	geo:lat "43.741028"^^xsd:float ;
+	geo:long "-91.18275"^^xsd:float .
+
+skio:Telemark_Resort a :SkiResort ;
+	dcterms:identifier "172"^^xsd:int ;
+	foaf:name "Telemark Resort" ;
+	geo:lat "46.18788"^^xsd:float ;
+	geo:long "-91.248024"^^xsd:float .
+
+skio:Sunburst_Ski_Area a :SkiResort ;
+	dcterms:identifier "173"^^xsd:int ;
+	foaf:name "Sunburst Ski Area" ;
+	geo:lat "43.49381"^^xsd:float ;
+	geo:long "-88.22416"^^xsd:float .
+
+skio:Crystal_Ridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "174"^^xsd:int ;
+	foaf:name "Crystal Ridge Ski Area" ;
+	geo:lat "42.920418"^^xsd:float ;
+	geo:long "-88.01628"^^xsd:float .
+
+skio:Cascade_Mountain a :SkiResort ;
+	dcterms:identifier "175"^^xsd:int ;
+	foaf:name "Cascade Mountain" ;
+	geo:lat "43.49901"^^xsd:float ;
+	geo:long "-89.51471"^^xsd:float .
+
+skio:Mont_du_Lac_Ski_Area a :SkiResort ;
+	dcterms:identifier "176"^^xsd:int ;
+	foaf:name "Mont du Lac Ski Area" .
+
+skio:Keyes_Peak_Ski_Area a :SkiResort ;
+	dcterms:identifier "177"^^xsd:int ;
+	foaf:name "Keyes Peak Ski Area" ;
+	geo:lat "45.895355"^^xsd:float ;
+	geo:long "-88.299095"^^xsd:float .
+
+skio:Christie_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "178"^^xsd:int ;
+	foaf:name "Christie Mountain Ski Area" ;
+	geo:lat "45.50755"^^xsd:float ;
+	geo:long "-91.383415"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Devil's_Head_Resort> a :SkiResort ;
+	dcterms:identifier "179"^^xsd:int ;
+	foaf:name "Devil's Head Resort" ;
+	geo:lat "43.422005"^^xsd:float ;
+	geo:long "-89.62733"^^xsd:float .
+
+skio:Canaan_Valley_Resort a :SkiResort ;
+	dcterms:identifier "180"^^xsd:int ;
+	foaf:name "Canaan Valley Resort" ;
+	geo:lat "39.007473"^^xsd:float ;
+	geo:long "-79.43682"^^xsd:float .
+
+skio:Snowshoe_Mountain a :SkiResort ;
+	dcterms:identifier "181"^^xsd:int ;
+	foaf:name "Snowshoe Mountain" ;
+	geo:lat "38.42416"^^xsd:float ;
+	geo:long "-79.99455"^^xsd:float .
+
+skio:Winterplace_Ski_Resort a :SkiResort ;
+	dcterms:identifier "182"^^xsd:int ;
+	foaf:name "Winterplace Ski Resort" ;
+	geo:lat "37.59"^^xsd:float ;
+	geo:long "-81.115"^^xsd:float .
+
+skio:Timberline_Ski_Resort a :SkiResort ;
+	dcterms:identifier "183"^^xsd:int ;
+	foaf:name "Timberline Ski Resort" ;
+	geo:lat "39.037586"^^xsd:float ;
+	geo:long "-79.39716"^^xsd:float .
+
+skio:White_Pass_Ski_Area a :SkiResort ;
+	dcterms:identifier "184"^^xsd:int ;
+	foaf:name "White Pass Ski Area" ;
+	geo:lat "46.62329"^^xsd:float ;
+	geo:long "-121.39446"^^xsd:float .
+
+skio:Bluewood a :SkiResort ;
+	dcterms:identifier "185"^^xsd:int ;
+	foaf:name "Bluewood" ;
+	geo:lat "46.07585"^^xsd:float ;
+	geo:long "-117.851715"^^xsd:float .
+
+skio:Mission_Ridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "186"^^xsd:int ;
+	foaf:name "Mission Ridge Ski Area" ;
+	geo:lat "47.281525"^^xsd:float ;
+	geo:long "-120.412254"^^xsd:float .
+
+skio:Badger_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "187"^^xsd:int ;
+	foaf:name "Badger Mountain Ski Area" ;
+	geo:lat "47.611282"^^xsd:float ;
+	geo:long "-120.129616"^^xsd:float .
+
+skio:Sitzmark_Ski_Hill a :SkiResort ;
+	dcterms:identifier "188"^^xsd:int ;
+	foaf:name "Sitzmark Ski Hill" ;
+	geo:lat "48.86398"^^xsd:float ;
+	geo:long "-119.16398"^^xsd:float .
+
+skio:Mt._Spokane_Ski_Area a :SkiResort ;
+	dcterms:identifier "189"^^xsd:int ;
+	foaf:name "Mt. Spokane Ski Area" ;
+	geo:lat "47.92336"^^xsd:float ;
+	geo:long "-117.10293"^^xsd:float .
+
+skio:Stevens_Pass_Ski_Area a :SkiResort ;
+	dcterms:identifier "190"^^xsd:int ;
+	foaf:name "Stevens Pass Ski Area" ;
+	geo:lat "47.73757"^^xsd:float ;
+	geo:long "-121.09043"^^xsd:float .
+
+skio:Mt._Baker_Ski_Area a :SkiResort ;
+	dcterms:identifier "191"^^xsd:int ;
+	foaf:name "Mt. Baker Ski Area" ;
+	geo:lat "48.85726"^^xsd:float ;
+	geo:long "-121.66574"^^xsd:float .
+
+skio:Loup_Loup_Ski_Bowl a :SkiResort ;
+	dcterms:identifier "192"^^xsd:int ;
+	foaf:name "Loup Loup Ski Bowl" ;
+	geo:lat "48.393307"^^xsd:float ;
+	geo:long "-119.91011"^^xsd:float .
+
+skio:Crystal_Mountain_Resort dcterms:identifier "193"^^xsd:int ;
+	geo:lat "46.936317"^^xsd:float ;
+	geo:long "-121.47428"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#The_Summit_at_Snoqualmie_/_Alpental> a :SkiResort ;
+	dcterms:identifier "194"^^xsd:int ;
+	foaf:name "The Summit at Snoqualmie / Alpental" ;
+	geo:lat "47.412334"^^xsd:float ;
+	geo:long "-121.418434"^^xsd:float .
+
+skio:49_Degrees_North_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "195"^^xsd:int ;
+	foaf:name "49 Degrees North Mountain Resort" ;
+	geo:lat "48.292973"^^xsd:float ;
+	geo:long "-117.565575"^^xsd:float .
+
+skio:Bryce_Resort a :SkiResort ;
+	dcterms:identifier "196"^^xsd:int ;
+	foaf:name "Bryce Resort" ;
+	geo:lat "38.813896"^^xsd:float ;
+	geo:long "-78.76687"^^xsd:float .
+
+skio:Massanutten_Resort a :SkiResort ;
+	dcterms:identifier "197"^^xsd:int ;
+	foaf:name "Massanutten Resort" ;
+	geo:lat "38.399258"^^xsd:float ;
+	geo:long "-78.7579"^^xsd:float .
+
+skio:The_Homestead_Ski_Area a :SkiResort ;
+	dcterms:identifier "198"^^xsd:int ;
+	foaf:name "The Homestead Ski Area" ;
+	geo:lat "37.99454"^^xsd:float ;
+	geo:long "-79.82134"^^xsd:float .
+
+skio:Wintergreen_Ski_Resort a :SkiResort ;
+	dcterms:identifier "199"^^xsd:int ;
+	foaf:name "Wintergreen Ski Resort" ;
+	geo:lat "37.91969"^^xsd:float ;
+	geo:long "-78.945175"^^xsd:float .
+
+skio:Mad_River_Glen a :SkiResort ;
+	dcterms:identifier "200"^^xsd:int ;
+	foaf:name "Mad River Glen" ;
+	geo:lat "44.199753"^^xsd:float ;
+	geo:long "-72.92549"^^xsd:float .
+
+skio:Magic_Mountain a :SkiResort ;
+	dcterms:identifier "201"^^xsd:int ;
+	foaf:name "Magic Mountain" ;
+	geo:lat "43.198418"^^xsd:float ;
+	geo:long "-72.76674"^^xsd:float .
+
+skio:Jay_Peak a :SkiResort ;
+	dcterms:identifier "202"^^xsd:int ;
+	foaf:name "Jay Peak" ;
+	geo:lat "44.928547"^^xsd:float ;
+	geo:long "-72.51407"^^xsd:float .
+
+skio:Suicide_Six a :SkiResort ;
+	dcterms:identifier "203"^^xsd:int ;
+	foaf:name "Suicide Six" ;
+	geo:lat "43.663887"^^xsd:float ;
+	geo:long "-72.54444"^^xsd:float .
+
+skio:Okemo_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "204"^^xsd:int ;
+	foaf:name "Okemo Mountain Resort" ;
+	geo:lat "43.41023"^^xsd:float ;
+	geo:long "-72.73316"^^xsd:float .
+
+skio:Sugarbush_Resort a :SkiResort ;
+	dcterms:identifier "205"^^xsd:int ;
+	foaf:name "Sugarbush Resort" ;
+	geo:lat "44.14859"^^xsd:float ;
+	geo:long "-72.91081"^^xsd:float .
+
+skio:Ascutney_Mountain a :SkiResort ;
+	dcterms:identifier "206"^^xsd:int ;
+	foaf:name "Ascutney Mountain" ;
+	geo:lat "43.460896"^^xsd:float ;
+	geo:long "-72.46324"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Cochran's_Ski_Area> a :SkiResort ;
+	dcterms:identifier "207"^^xsd:int ;
+	foaf:name "Cochran's Ski Area" ;
+	geo:lat "44.396812"^^xsd:float ;
+	geo:long "-72.98205"^^xsd:float .
+
+skio:Burke_Mountain a :SkiResort ;
+	dcterms:identifier "208"^^xsd:int ;
+	foaf:name "Burke Mountain" ;
+	geo:lat "44.568054"^^xsd:float ;
+	geo:long "-71.88583"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Smugglers'_Notch_Resort> a :SkiResort ;
+	dcterms:identifier "209"^^xsd:int ;
+	foaf:name "Smugglers' Notch Resort" ;
+	geo:lat "44.57022"^^xsd:float ;
+	geo:long "-72.77109"^^xsd:float .
+
+skio:Mount_Snow a :SkiResort ;
+	dcterms:identifier "210"^^xsd:int ;
+	foaf:name "Mount Snow" ;
+	geo:lat "42.96159"^^xsd:float ;
+	geo:long "-72.907745"^^xsd:float .
+
+skio:Killington a :SkiResort ;
+	dcterms:identifier "211"^^xsd:int ;
+	foaf:name "Killington" ;
+	geo:lat "43.620056"^^xsd:float ;
+	geo:long "-72.80683"^^xsd:float .
+
+skio:Stowe_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "212"^^xsd:int ;
+	foaf:name "Stowe Mountain Resort" ;
+	geo:lat "44.529778"^^xsd:float ;
+	geo:long "-72.79033"^^xsd:float .
+
+skio:Stratton_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "213"^^xsd:int ;
+	foaf:name "Stratton Mountain Resort" ;
+	geo:lat "43.102253"^^xsd:float ;
+	geo:long "-72.90963"^^xsd:float .
+
+skio:Middlebury_College_Snow_Bowl a :SkiResort ;
+	dcterms:identifier "214"^^xsd:int ;
+	foaf:name "Middlebury College Snow Bowl" ;
+	geo:lat "43.94"^^xsd:float ;
+	geo:long "-72.96"^^xsd:float .
+
+skio:Quechee_Lakes a :SkiResort ;
+	dcterms:identifier "215"^^xsd:int ;
+	foaf:name "Quechee Lakes" ;
+	geo:lat "43.65645"^^xsd:float ;
+	geo:long "-72.444534"^^xsd:float .
+
+skio:Bolton_Valley_Resort a :SkiResort ;
+	dcterms:identifier "216"^^xsd:int ;
+	foaf:name "Bolton Valley Resort" ;
+	geo:lat "44.415833"^^xsd:float ;
+	geo:long "-72.86972"^^xsd:float .
+
+skio:Bromley_Mountain a :SkiResort ;
+	dcterms:identifier "217"^^xsd:int ;
+	foaf:name "Bromley Mountain" ;
+	geo:lat "43.22778"^^xsd:float ;
+	geo:long "-72.938614"^^xsd:float .
+
+skio:Snowbasin a :SkiResort ;
+	dcterms:identifier "219"^^xsd:int ;
+	foaf:name "Snowbasin" ;
+	geo:lat "41.201508"^^xsd:float ;
+	geo:long "-111.86126"^^xsd:float .
+
+skio:Beaver_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "220"^^xsd:int ;
+	foaf:name "Beaver Mountain Ski Area" ;
+	geo:lat "41.968334"^^xsd:float ;
+	geo:long "-111.541664"^^xsd:float .
+
+skio:Nordic_Valley_Resort a :SkiResort ;
+	dcterms:identifier "221"^^xsd:int ;
+	foaf:name "Nordic Valley Resort" .
+
+skio:Brighton_Ski_Resort a :SkiResort ;
+	dcterms:identifier "222"^^xsd:int ;
+	foaf:name "Brighton Ski Resort" ;
+	geo:lat "40.59313"^^xsd:float ;
+	geo:long "-111.57823"^^xsd:float .
+
+skio:Deer_Valley_Resort a :SkiResort ;
+	dcterms:identifier "223"^^xsd:int ;
+	foaf:name "Deer Valley Resort" ;
+	geo:lat "40.62099"^^xsd:float ;
+	geo:long "-111.48925"^^xsd:float .
+
+skio:Alta_Ski_Area a :SkiResort ;
+	dcterms:identifier "224"^^xsd:int ;
+	foaf:name "Alta Ski Area" ;
+	geo:lat "40.57928"^^xsd:float ;
+	geo:long "-111.61208"^^xsd:float .
+
+skio:Solitude_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "225"^^xsd:int ;
+	foaf:name "Solitude Mountain Resort" ;
+	geo:lat "40.61475"^^xsd:float ;
+	geo:long "-111.60162"^^xsd:float .
+
+skio:Snowbird_Ski_and_Summer_Resort a :SkiResort ;
+	dcterms:identifier "226"^^xsd:int ;
+	foaf:name "Snowbird Ski and Summer Resort" ;
+	geo:lat "40.56933"^^xsd:float ;
+	geo:long "-111.653725"^^xsd:float .
+
+skio:Brian_Head_Resort a :SkiResort ;
+	dcterms:identifier "227"^^xsd:int ;
+	foaf:name "Brian Head Resort" ;
+	geo:lat "37.69053"^^xsd:float ;
+	geo:long "-112.845955"^^xsd:float .
+
+skio:Powder_Mountain a :SkiResort ;
+	dcterms:identifier "228"^^xsd:int ;
+	foaf:name "Powder Mountain" ;
+	geo:lat "41.37996"^^xsd:float ;
+	geo:long "-111.76798"^^xsd:float .
+
+skio:Park_City_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "229"^^xsd:int ;
+	foaf:name "Park City Mountain Resort" ;
+	geo:lat "40.633564"^^xsd:float ;
+	geo:long "-111.52393"^^xsd:float .
+
+skio:Sundance a :SkiResort ;
+	dcterms:identifier "230"^^xsd:int ;
+	foaf:name "Sundance" ;
+	geo:lat "40.380272"^^xsd:float ;
+	geo:long "-111.5874"^^xsd:float .
+
+skio:Eagle_Point a :SkiResort ;
+	dcterms:identifier "231"^^xsd:int ;
+	foaf:name "Eagle Point" ;
+	geo:lat "38.317417"^^xsd:float ;
+	geo:long "-112.38739"^^xsd:float .
+
+skio:Ober_Gatlinburg_Ski_Resort a :SkiResort ;
+	dcterms:identifier "232"^^xsd:int ;
+	foaf:name "Ober Gatlinburg Ski Resort" ;
+	geo:lat "35.701427"^^xsd:float ;
+	geo:long "-83.55922"^^xsd:float .
+
+skio:Terry_Peak_Ski_Area a :SkiResort ;
+	dcterms:identifier "233"^^xsd:int ;
+	foaf:name "Terry Peak Ski Area" ;
+	geo:lat "44.330788"^^xsd:float ;
+	geo:long "-103.83419"^^xsd:float .
+
+skio:Great_Bear_Recreation_Park a :SkiResort ;
+	dcterms:identifier "234"^^xsd:int ;
+	foaf:name "Great Bear Recreation Park" ;
+	geo:lat "43.5821"^^xsd:float ;
+	geo:long "-96.66497"^^xsd:float .
+
+skio:Ski_Mystic_Deer_Mountain a :SkiResort ;
+	dcterms:identifier "235"^^xsd:int ;
+	foaf:name "Ski Mystic Deer Mountain" ;
+	geo:lat "44.308434"^^xsd:float ;
+	geo:long "-103.81844"^^xsd:float .
+
+skio:Yawgoo_Valley_Ski_Area a :SkiResort ;
+	dcterms:identifier "236"^^xsd:int ;
+	foaf:name "Yawgoo Valley Ski Area" ;
+	geo:lat "41.516922"^^xsd:float ;
+	geo:long "-71.526855"^^xsd:float .
+
+skio:Ski_Big_Bear a :SkiResort ;
+	dcterms:identifier "237"^^xsd:int ;
+	foaf:name "Ski Big Bear" ;
+	geo:lat "41.523296"^^xsd:float ;
+	geo:long "-75.024"^^xsd:float .
+
+skio:Camelback_Ski_Area a :SkiResort ;
+	dcterms:identifier "238"^^xsd:int ;
+	foaf:name "Camelback Ski Area" ;
+	geo:lat "41.04"^^xsd:float ;
+	geo:long "-75.306114"^^xsd:float .
+
+skio:Tanglwood_Ski_Area a :SkiResort ;
+	dcterms:identifier "239"^^xsd:int ;
+	foaf:name "Tanglwood Ski Area" ;
+	geo:lat "41.40514"^^xsd:float ;
+	geo:long "-75.1815"^^xsd:float .
+
+skio:Seven_Springs_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "240"^^xsd:int ;
+	foaf:name "Seven Springs Mountain Resort" ;
+	geo:lat "40.02428"^^xsd:float ;
+	geo:long "-79.30294"^^xsd:float .
+
+skio:Blue_Knob a :SkiResort ;
+	dcterms:identifier "241"^^xsd:int ;
+	foaf:name "Blue Knob" ;
+	geo:lat "40.293274"^^xsd:float ;
+	geo:long "-78.560486"^^xsd:float .
+
+skio:Ski_Roundtop a :SkiResort ;
+	dcterms:identifier "242"^^xsd:int ;
+	foaf:name "Ski Roundtop" ;
+	geo:lat "40.10683"^^xsd:float ;
+	geo:long "-76.92627"^^xsd:float .
+
+skio:Liberty_Mountain a :SkiResort ;
+	dcterms:identifier "243"^^xsd:int ;
+	foaf:name "Liberty Mountain" ;
+	geo:lat "39.758408"^^xsd:float ;
+	geo:long "-77.36796"^^xsd:float .
+
+skio:Ski_Denton a :SkiResort ;
+	dcterms:identifier "244"^^xsd:int ;
+	foaf:name "Ski Denton" ;
+	geo:lat "41.77336"^^xsd:float ;
+	geo:long "-77.83212"^^xsd:float .
+
+skio:Mt._Pleasant a :SkiResort ;
+	dcterms:identifier "245"^^xsd:int ;
+	foaf:name "Mt. Pleasant" ;
+	geo:lat "41.85118"^^xsd:float ;
+	geo:long "-80.07089"^^xsd:float .
+
+skio:Shawnee_Mountain a :SkiResort ;
+	dcterms:identifier "246"^^xsd:int ;
+	foaf:name "Shawnee Mountain" ;
+	geo:lat "41.034954"^^xsd:float ;
+	geo:long "-75.07816"^^xsd:float .
+
+skio:Hidden_Valley dcterms:identifier "247"^^xsd:int .
+
+skio:Montage_Mountain a :SkiResort ;
+	dcterms:identifier "248"^^xsd:int ;
+	foaf:name "Montage Mountain" ;
+	geo:lat "41.3522"^^xsd:float ;
+	geo:long "-75.659584"^^xsd:float .
+
+skio:Eagle_Rock_Ski_Area a :SkiResort ;
+	dcterms:identifier "250"^^xsd:int ;
+	foaf:name "Eagle Rock Ski Area" ;
+	geo:lat "40.92272"^^xsd:float ;
+	geo:long "-76.10367"^^xsd:float .
+
+skio:Elk_Mountain a :SkiResort ;
+	dcterms:identifier "251"^^xsd:int ;
+	foaf:name "Elk Mountain" ;
+	geo:lat "41.71946"^^xsd:float ;
+	geo:long "-75.55881"^^xsd:float .
+
+skio:Big_Boulder_Ski_Area a :SkiResort ;
+	dcterms:identifier "252"^^xsd:int ;
+	foaf:name "Big Boulder Ski Area" ;
+	geo:lat "41.047253"^^xsd:float ;
+	geo:long "-75.60173"^^xsd:float .
+
+skio:Blue_Marsh a :SkiResort ;
+	dcterms:identifier "253"^^xsd:int ;
+	foaf:name "Blue Marsh" ;
+	geo:lat "40.42397"^^xsd:float ;
+	geo:long "-76.114075"^^xsd:float .
+
+skio:Jack_Frost_Ski_Area a :SkiResort ;
+	dcterms:identifier "254"^^xsd:int ;
+	foaf:name "Jack Frost Ski Area" ;
+	geo:lat "41.047382"^^xsd:float ;
+	geo:long "-75.353165"^^xsd:float .
+
+skio:Alpine_Mountain a :SkiResort ;
+	dcterms:identifier "255"^^xsd:int ;
+	foaf:name "Alpine Mountain" ;
+	geo:lat "41.113503"^^xsd:float ;
+	geo:long "-75.22579"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Bear_Creek_Ski_&_Recreation_Area> a :SkiResort ;
+	dcterms:identifier "256"^^xsd:int ;
+	foaf:name "Bear Creek Ski & Recreation Area" ;
+	geo:lat "40.47555"^^xsd:float ;
+	geo:long "-75.62782"^^xsd:float .
+
+skio:Tussey_Mountain a :SkiResort ;
+	dcterms:identifier "257"^^xsd:int ;
+	foaf:name "Tussey Mountain" ;
+	geo:lat "40.768387"^^xsd:float ;
+	geo:long "-77.75262"^^xsd:float .
+
+skio:Blue_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "258"^^xsd:int ;
+	foaf:name "Blue Mountain Ski Area" ;
+	geo:lat "40.814068"^^xsd:float ;
+	geo:long "-75.513664"^^xsd:float .
+
+skio:Boyce_Park_Ski_Area a :SkiResort ;
+	dcterms:identifier "259"^^xsd:int ;
+	foaf:name "Boyce Park Ski Area" .
+
+skio:Whitetail_Ski_Resort a :SkiResort ;
+	dcterms:identifier "260"^^xsd:int ;
+	foaf:name "Whitetail Ski Resort" ;
+	geo:lat "39.745342"^^xsd:float ;
+	geo:long "-77.93667"^^xsd:float .
+
+skio:Spring_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "261"^^xsd:int ;
+	foaf:name "Spring Mountain Ski Area" ;
+	geo:lat "40.270752"^^xsd:float ;
+	geo:long "-75.453415"^^xsd:float .
+
+skio:Ski_Sawmill a :SkiResort ;
+	dcterms:identifier "262"^^xsd:int ;
+	foaf:name "Ski Sawmill" ;
+	geo:lat "41.516163"^^xsd:float ;
+	geo:long "-77.29019"^^xsd:float .
+
+skio:Mt._Hood_SkiBowl a :SkiResort ;
+	dcterms:identifier "263"^^xsd:int ;
+	foaf:name "Mt. Hood SkiBowl" ;
+	geo:lat "45.296745"^^xsd:float ;
+	geo:long "-121.75641"^^xsd:float .
+
+skio:Anthony_Lakes_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "264"^^xsd:int ;
+	foaf:name "Anthony Lakes Mountain Resort" ;
+	geo:lat "44.9637"^^xsd:float ;
+	geo:long "-118.2348"^^xsd:float .
+
+skio:Ferguson_Ridge a :SkiResort ;
+	dcterms:identifier "265"^^xsd:int ;
+	foaf:name "Ferguson Ridge" ;
+	geo:lat "45.282284"^^xsd:float ;
+	geo:long "-117.11259"^^xsd:float .
+
+skio:Timberline_Ski_Area a :SkiResort ;
+	dcterms:identifier "266"^^xsd:int ;
+	foaf:name "Timberline Ski Area" ;
+	geo:lat "45.33097"^^xsd:float ;
+	geo:long "-121.71195"^^xsd:float .
+
+skio:Willamette_Pass a :SkiResort ;
+	dcterms:identifier "267"^^xsd:int ;
+	foaf:name "Willamette Pass" ;
+	geo:lat "43.601665"^^xsd:float ;
+	geo:long "-122.03167"^^xsd:float .
+
+skio:Hoodoo_Ski_Area a :SkiResort ;
+	dcterms:identifier "268"^^xsd:int ;
+	foaf:name "Hoodoo Ski Area" ;
+	geo:lat "44.409"^^xsd:float ;
+	geo:long "-121.872"^^xsd:float .
+
+skio:Spout_Springs a :SkiResort ;
+	dcterms:identifier "269"^^xsd:int ;
+	foaf:name "Spout Springs" ;
+	geo:lat "45.757103"^^xsd:float ;
+	geo:long "-118.04805"^^xsd:float .
+
+skio:Mt._Bachelor a :SkiResort ;
+	dcterms:identifier "270"^^xsd:int ;
+	foaf:name "Mt. Bachelor" ;
+	geo:lat "43.9914"^^xsd:float ;
+	geo:long "-121.68453"^^xsd:float .
+
+skio:Mt._Hood_Meadows_Ski_Resort a :SkiResort ;
+	dcterms:identifier "271"^^xsd:int ;
+	foaf:name "Mt. Hood Meadows Ski Resort" ;
+	geo:lat "45.337326"^^xsd:float ;
+	geo:long "-121.66522"^^xsd:float .
+
+skio:Cooper_Spur_Ski_Area a :SkiResort ;
+	dcterms:identifier "272"^^xsd:int ;
+	foaf:name "Cooper Spur Ski Area" .
+
+skio:Summit_Ski_Area a :SkiResort ;
+	dcterms:identifier "273"^^xsd:int ;
+	foaf:name "Summit Ski Area" ;
+	geo:lat "45.303024"^^xsd:float ;
+	geo:long "-121.745766"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Mt._Ashland_Ski_&_Snowboard_Resort> a :SkiResort ;
+	dcterms:identifier "274"^^xsd:int ;
+	foaf:name "Mt. Ashland Ski & Snowboard Resort" ;
+	geo:lat "42.083332"^^xsd:float ;
+	geo:long "-122.71667"^^xsd:float .
+
+skio:Clear_Fork_Ski_Area a :SkiResort ;
+	dcterms:identifier "275"^^xsd:int ;
+	foaf:name "Clear Fork Ski Area" ;
+	geo:lat "40.593525"^^xsd:float ;
+	geo:long "-82.412285"^^xsd:float .
+
+skio:Boston_Mills a :SkiResort ;
+	dcterms:identifier "276"^^xsd:int ;
+	foaf:name "Boston Mills" ;
+	geo:lat "41.263874"^^xsd:float ;
+	geo:long "-81.5649"^^xsd:float .
+
+skio:Alpine_Valley_Ski_Area a :SkiResort ;
+	dcterms:identifier "277"^^xsd:int ;
+	foaf:name "Alpine Valley Ski Area" ;
+	geo:lat "41.5285"^^xsd:float ;
+	geo:long "-81.25883"^^xsd:float .
+
+skio:Mad_River_Mountain a :SkiResort ;
+	dcterms:identifier "278"^^xsd:int ;
+	foaf:name "Mad River Mountain" ;
+	geo:lat "40.31632"^^xsd:float ;
+	geo:long "-83.680565"^^xsd:float .
+
+skio:Snow_Trails a :SkiResort ;
+	dcterms:identifier "279"^^xsd:int ;
+	foaf:name "Snow Trails" ;
+	geo:lat "40.67107"^^xsd:float ;
+	geo:long "-82.50188"^^xsd:float .
+
+skio:Bottineau_Winter_Park a :SkiResort ;
+	dcterms:identifier "280"^^xsd:int ;
+	foaf:name "Bottineau Winter Park" ;
+	geo:lat "48.95052"^^xsd:float ;
+	geo:long "-100.47195"^^xsd:float .
+
+skio:Bears_Den_Mountain a :SkiResort ;
+	dcterms:identifier "281"^^xsd:int ;
+	foaf:name "Bears Den Mountain" ;
+	geo:lat "46.53141"^^xsd:float ;
+	geo:long "-97.9371"^^xsd:float .
+
+skio:Huff_Hills a :SkiResort ;
+	dcterms:identifier "282"^^xsd:int ;
+	foaf:name "Huff Hills" ;
+	geo:lat "46.62688"^^xsd:float ;
+	geo:long "-100.72352"^^xsd:float .
+
+skio:Frost_Fire_Ski_and_Snow_Board a :SkiResort ;
+	dcterms:identifier "283"^^xsd:int ;
+	foaf:name "Frost Fire Ski and Snow Board" ;
+	geo:lat "48.910656"^^xsd:float ;
+	geo:long "-98.0662"^^xsd:float .
+
+skio:Sapphire_Valley a :SkiResort ;
+	dcterms:identifier "284"^^xsd:int ;
+	foaf:name "Sapphire Valley" ;
+	geo:lat "35.124153"^^xsd:float ;
+	geo:long "-83.05873"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Appalachian_Ski_Mtn.> a :SkiResort ;
+	dcterms:identifier "285"^^xsd:int ;
+	foaf:name "Appalachian Ski Mtn." ;
+	geo:lat "36.173702"^^xsd:float ;
+	geo:long "-81.66318"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Hawksnest_Golf_&_Ski_Resort> a :SkiResort ;
+	dcterms:identifier "286"^^xsd:int ;
+	foaf:name "Hawksnest Golf & Ski Resort" ;
+	geo:lat "36.142864"^^xsd:float ;
+	geo:long "-81.82634"^^xsd:float .
+
+skio:Beech_Mountain_Ski_Resort a :SkiResort ;
+	dcterms:identifier "287"^^xsd:int ;
+	foaf:name "Beech Mountain Ski Resort" ;
+	geo:lat "36.18853"^^xsd:float ;
+	geo:long "-81.8787"^^xsd:float .
+
+skio:Cataloochee_Ski_Area a :SkiResort ;
+	dcterms:identifier "288"^^xsd:int ;
+	foaf:name "Cataloochee Ski Area" ;
+	geo:lat "35.56306"^^xsd:float ;
+	geo:long "-83.08965"^^xsd:float .
+
+skio:Wolf_Laurel_Ski_Resort a :SkiResort ;
+	dcterms:identifier "289"^^xsd:int ;
+	foaf:name "Wolf Laurel Ski Resort" ;
+	geo:lat "35.949566"^^xsd:float ;
+	geo:long "-82.5059"^^xsd:float .
+
+skio:Sugar_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "290"^^xsd:int ;
+	foaf:name "Sugar Mountain Resort" ;
+	geo:lat "36.127754"^^xsd:float ;
+	geo:long "-81.86634"^^xsd:float .
+
+skio:Royal_Mountain a :SkiResort ;
+	dcterms:identifier "291"^^xsd:int ;
+	foaf:name "Royal Mountain" ;
+	geo:lat "43.083622"^^xsd:float ;
+	geo:long "-74.50713"^^xsd:float .
+
+skio:Kissing_Bridge a :SkiResort ;
+	dcterms:identifier "292"^^xsd:int ;
+	foaf:name "Kissing Bridge" ;
+	geo:lat "42.60086"^^xsd:float ;
+	geo:long "-78.658165"^^xsd:float .
+
+skio:Ski_Plattekill a :SkiResort ;
+	dcterms:identifier "293"^^xsd:int ;
+	foaf:name "Ski Plattekill" ;
+	geo:lat "42.28912"^^xsd:float ;
+	geo:long "-74.65399"^^xsd:float .
+
+skio:Oak_Mountain_Ski_Center a :SkiResort ;
+	dcterms:identifier "294"^^xsd:int ;
+	foaf:name "Oak Mountain Ski Center" ;
+	geo:lat "43.517185"^^xsd:float ;
+	geo:long "-74.36217"^^xsd:float .
+
+skio:Whiteface_Mountain_-_Lake_Placid a :SkiResort ;
+	dcterms:identifier "295"^^xsd:int ;
+	foaf:name "Whiteface Mountain - Lake Placid" ;
+	geo:lat "44.359917"^^xsd:float ;
+	geo:long "-73.87994"^^xsd:float .
+
+skio:Cortina_Valley a :SkiResort ;
+	dcterms:identifier "296"^^xsd:int ;
+	foaf:name "Cortina Valley" ;
+	geo:lat "42.189735"^^xsd:float ;
+	geo:long "-74.1184"^^xsd:float .
+
+skio:Greek_Peak_Ski_Resort a :SkiResort ;
+	dcterms:identifier "297"^^xsd:int ;
+	foaf:name "Greek Peak Ski Resort" ;
+	geo:lat "42.50273"^^xsd:float ;
+	geo:long "-76.14658"^^xsd:float .
+
+skio:Hickory_Ski_Center a :SkiResort ;
+	dcterms:identifier "298"^^xsd:int ;
+	foaf:name "Hickory Ski Center" ;
+	geo:lat "43.47427"^^xsd:float ;
+	geo:long "-73.817055"^^xsd:float .
+
+skio:Tuxedo_Ridge a :SkiResort ;
+	dcterms:identifier "299"^^xsd:int ;
+	foaf:name "Tuxedo Ridge" ;
+	geo:lat "41.24592"^^xsd:float ;
+	geo:long "-74.2278"^^xsd:float .
+
+skio:Thunder_Ridge a :SkiResort ;
+	dcterms:identifier "300"^^xsd:int ;
+	foaf:name "Thunder Ridge" ;
+	geo:lat "41.50829"^^xsd:float ;
+	geo:long "-73.58098"^^xsd:float .
+
+skio:Bobcat_Ski_Center a :SkiResort ;
+	dcterms:identifier "301"^^xsd:int ;
+	foaf:name "Bobcat Ski Center" ;
+	geo:lat "42.22483"^^xsd:float ;
+	geo:long "-74.743935"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Peek'n_Peak_Ski_Area> a :SkiResort ;
+	dcterms:identifier "302"^^xsd:int ;
+	foaf:name "Peek'n Peak Ski Area" ;
+	geo:lat "42.0625"^^xsd:float ;
+	geo:long "-79.736664"^^xsd:float .
+
+skio:Cockaigne_Ski_Resort a :SkiResort ;
+	dcterms:identifier "303"^^xsd:int ;
+	foaf:name "Cockaigne Ski Resort" ;
+	geo:lat "42.264446"^^xsd:float ;
+	geo:long "-79.16645"^^xsd:float .
+
+skio:Dry_Hill_Ski_Area a :SkiResort ;
+	dcterms:identifier "304"^^xsd:int ;
+	foaf:name "Dry Hill Ski Area" ;
+	geo:lat "43.931126"^^xsd:float ;
+	geo:long "-75.90163"^^xsd:float .
+
+skio:Toggenburg_Ski_Center a :SkiResort ;
+	dcterms:identifier "305"^^xsd:int ;
+	foaf:name "Toggenburg Ski Center" ;
+	geo:lat "42.825813"^^xsd:float ;
+	geo:long "-75.964066"^^xsd:float .
+
+skio:Labrador_Mountain a :SkiResort ;
+	dcterms:identifier "306"^^xsd:int ;
+	foaf:name "Labrador Mountain" ;
+	geo:lat "42.739796"^^xsd:float ;
+	geo:long "-76.035645"^^xsd:float .
+
+skio:Mt._Peter_Ski_Area a :SkiResort ;
+	dcterms:identifier "307"^^xsd:int ;
+	foaf:name "Mt. Peter Ski Area" ;
+	geo:lat "41.246353"^^xsd:float ;
+	geo:long "-74.29354"^^xsd:float .
+
+skio:Song_Mountain a :SkiResort ;
+	dcterms:identifier "308"^^xsd:int ;
+	foaf:name "Song Mountain" ;
+	geo:lat "42.77197"^^xsd:float ;
+	geo:long "-76.1622"^^xsd:float .
+
+skio:Brantling_Ski_Slopes a :SkiResort ;
+	dcterms:identifier "309"^^xsd:int ;
+	foaf:name "Brantling Ski Slopes" ;
+	geo:lat "43.150047"^^xsd:float ;
+	geo:long "-77.065704"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Swain_Ski_&_Snowboard_Resort> a :SkiResort ;
+	dcterms:identifier "310"^^xsd:int ;
+	foaf:name "Swain Ski & Snowboard Resort" ;
+	geo:lat "42.47311"^^xsd:float ;
+	geo:long "-77.85496"^^xsd:float .
+
+skio:Holiday_Mountain dcterms:identifier "311"^^xsd:int ;
+	geo:lat "41.627666"^^xsd:float ;
+	geo:long "-74.61073"^^xsd:float .
+
+skio:Snow_Ridge a :SkiResort ;
+	dcterms:identifier "312"^^xsd:int ;
+	foaf:name "Snow Ridge" ;
+	geo:lat "43.6398"^^xsd:float ;
+	geo:long "-75.42062"^^xsd:float .
+
+skio:Bristol_Mountain_Ski_Resort a :SkiResort ;
+	dcterms:identifier "313"^^xsd:int ;
+	foaf:name "Bristol Mountain Ski Resort" ;
+	geo:lat "42.745"^^xsd:float ;
+	geo:long "-77.40444"^^xsd:float .
+
+skio:Mt._Pisgah a :SkiResort ;
+	dcterms:identifier "314"^^xsd:int ;
+	foaf:name "Mt. Pisgah" ;
+	geo:lat "44.345398"^^xsd:float ;
+	geo:long "-74.12536"^^xsd:float .
+
+skio:Hunter_Mountain a :SkiResort ;
+	dcterms:identifier "315"^^xsd:int ;
+	foaf:name "Hunter Mountain" ;
+	geo:lat "42.201817"^^xsd:float ;
+	geo:long "-74.22167"^^xsd:float .
+
+skio:Titus_Mountain a :SkiResort ;
+	dcterms:identifier "316"^^xsd:int ;
+	foaf:name "Titus Mountain" ;
+	geo:lat "44.763332"^^xsd:float ;
+	geo:long "-74.235275"^^xsd:float .
+
+skio:West_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "317"^^xsd:int ;
+	foaf:name "West Mountain Ski Area" ;
+	geo:lat "43.285557"^^xsd:float ;
+	geo:long "-73.72833"^^xsd:float .
+
+skio:Holiday_Valley_Resort a :SkiResort ;
+	dcterms:identifier "318"^^xsd:int ;
+	foaf:name "Holiday Valley Resort" ;
+	geo:lat "42.25872"^^xsd:float ;
+	geo:long "-78.67683"^^xsd:float .
+
+skio:HoliMont a :SkiResort ;
+	dcterms:identifier "319"^^xsd:int ;
+	foaf:name "HoliMont" ;
+	geo:lat "42.270702"^^xsd:float ;
+	geo:long "-78.6858"^^xsd:float .
+
+skio:Gore_Mountain a :SkiResort ;
+	dcterms:identifier "320"^^xsd:int ;
+	foaf:name "Gore Mountain" ;
+	geo:lat "43.677998"^^xsd:float ;
+	geo:long "-74.02415"^^xsd:float .
+
+skio:Four_Seasons_Ski_Center a :SkiResort ;
+	dcterms:identifier "321"^^xsd:int ;
+	foaf:name "Four Seasons Ski Center" ;
+	geo:lat "43.03579"^^xsd:float ;
+	geo:long "-75.972176"^^xsd:float .
+
+skio:Villa_Roma_Ski_Area a :SkiResort ;
+	dcterms:identifier "322"^^xsd:int ;
+	foaf:name "Villa Roma Ski Area" ;
+	geo:lat "41.76398"^^xsd:float ;
+	geo:long "-74.969284"^^xsd:float .
+
+skio:Catamount_Ski_Area a :SkiResort ;
+	dcterms:identifier "323"^^xsd:int ;
+	foaf:name "Catamount Ski Area" ;
+	geo:lat "42.16907"^^xsd:float ;
+	geo:long "-73.47695"^^xsd:float .
+
+skio:Belleayre_Mountain a :SkiResort ;
+	dcterms:identifier "324"^^xsd:int ;
+	foaf:name "Belleayre Mountain" ;
+	geo:lat "42.131073"^^xsd:float ;
+	geo:long "-74.508766"^^xsd:float .
+
+skio:Hunt_Hollow a :SkiResort ;
+	dcterms:identifier "325"^^xsd:int ;
+	foaf:name "Hunt Hollow" ;
+	geo:lat "42.641285"^^xsd:float ;
+	geo:long "-77.48297"^^xsd:float .
+
+skio:Willard_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "326"^^xsd:int ;
+	foaf:name "Willard Mountain Ski Area" ;
+	geo:lat "43.021183"^^xsd:float ;
+	geo:long "-73.51647"^^xsd:float .
+
+skio:Woods_Valley_Ski_Area a :SkiResort ;
+	dcterms:identifier "327"^^xsd:int ;
+	foaf:name "Woods Valley Ski Area" ;
+	geo:lat "43.299446"^^xsd:float ;
+	geo:long "-75.38114"^^xsd:float .
+
+skio:McCauley_Mountain a :SkiResort ;
+	dcterms:identifier "328"^^xsd:int ;
+	foaf:name "McCauley Mountain" ;
+	geo:lat "43.695744"^^xsd:float ;
+	geo:long "-74.96195"^^xsd:float .
+
+skio:Sawkill_Family_Ski_Center a :SkiResort ;
+	dcterms:identifier "329"^^xsd:int ;
+	foaf:name "Sawkill Family Ski Center" ;
+	geo:lat "41.98518"^^xsd:float ;
+	geo:long "-74.04385"^^xsd:float .
+
+skio:Windham_Mountain a :SkiResort ;
+	dcterms:identifier "330"^^xsd:int ;
+	foaf:name "Windham Mountain" ;
+	geo:lat "42.29255"^^xsd:float ;
+	geo:long "-74.25728"^^xsd:float .
+
+skio:Angel_Fire_Resort a :SkiResort ;
+	dcterms:identifier "331"^^xsd:int ;
+	foaf:name "Angel Fire Resort" ;
+	geo:lat "36.38139"^^xsd:float ;
+	geo:long "-105.23889"^^xsd:float .
+
+skio:Sandia_Peak_Ski_Area a :SkiResort ;
+	dcterms:identifier "332"^^xsd:int ;
+	foaf:name "Sandia Peak Ski Area" ;
+	geo:lat "35.190556"^^xsd:float ;
+	geo:long "-106.47945"^^xsd:float .
+
+skio:Red_River_Ski_Area a :SkiResort ;
+	dcterms:identifier "333"^^xsd:int ;
+	foaf:name "Red River Ski Area" ;
+	geo:lat "36.700768"^^xsd:float ;
+	geo:long "-105.40867"^^xsd:float .
+
+skio:Ski_Apache a :SkiResort ;
+	dcterms:identifier "334"^^xsd:int ;
+	foaf:name "Ski Apache" ;
+	geo:lat "33.39722"^^xsd:float ;
+	geo:long "-105.799164"^^xsd:float .
+
+skio:Ski_Santa_Fe a :SkiResort ;
+	dcterms:identifier "335"^^xsd:int ;
+	foaf:name "Ski Santa Fe" ;
+	geo:lat "35.790783"^^xsd:float ;
+	geo:long "-105.791885"^^xsd:float .
+
+skio:Pajarito_Mountain a :SkiResort ;
+	dcterms:identifier "336"^^xsd:int ;
+	foaf:name "Pajarito Mountain" ;
+	geo:lat "35.894165"^^xsd:float ;
+	geo:long "-106.390274"^^xsd:float .
+
+skio:Sipapu_Ski_Area a :SkiResort ;
+	dcterms:identifier "337"^^xsd:int ;
+	foaf:name "Sipapu Ski Area" ;
+	geo:lat "36.154213"^^xsd:float ;
+	geo:long "-105.54851"^^xsd:float .
+
+skio:Taos_Ski_Valley a :SkiResort ;
+	dcterms:identifier "338"^^xsd:int ;
+	foaf:name "Taos Ski Valley" ;
+	geo:lat "36.58155"^^xsd:float ;
+	geo:long "-105.451225"^^xsd:float .
+
+skio:Mountain_Creek a :SkiResort ;
+	dcterms:identifier "339"^^xsd:int ;
+	foaf:name "Mountain Creek" ;
+	geo:lat "41.178257"^^xsd:float ;
+	geo:long "-74.532166"^^xsd:float .
+
+skio:Campgaw_Mountain a :SkiResort ;
+	dcterms:identifier "340"^^xsd:int ;
+	foaf:name "Campgaw Mountain" ;
+	geo:lat "41.054165"^^xsd:float ;
+	geo:long "-74.19945"^^xsd:float .
+
+skio:Hidden_Valley dcterms:identifier "341"^^xsd:int ;
+	geo:lat "41.184208"^^xsd:float ;
+	geo:long "-74.480095"^^xsd:float .
+
+skio:Gunstock_Ski_Area a :SkiResort ;
+	dcterms:identifier "342"^^xsd:int ;
+	foaf:name "Gunstock Ski Area" ;
+	geo:lat "43.53735"^^xsd:float ;
+	geo:long "-71.36977"^^xsd:float .
+
+skio:Crotched_Mountain a :SkiResort ;
+	dcterms:identifier "343"^^xsd:int ;
+	foaf:name "Crotched Mountain" ;
+	geo:lat "42.998333"^^xsd:float ;
+	geo:long "-71.873886"^^xsd:float .
+
+skio:Cranmore_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "344"^^xsd:int ;
+	foaf:name "Cranmore Mountain Resort" ;
+	geo:lat "44.05663"^^xsd:float ;
+	geo:long "-71.10265"^^xsd:float .
+
+skio:Dartmouth_Skiway a :SkiResort ;
+	dcterms:identifier "345"^^xsd:int ;
+	foaf:name "Dartmouth Skiway" ;
+	geo:lat "43.786938"^^xsd:float ;
+	geo:long "-72.10083"^^xsd:float .
+
+skio:Bretton_Woods_Ski_Area a :SkiResort ;
+	dcterms:identifier "346"^^xsd:int ;
+	foaf:name "Bretton Woods Ski Area" ;
+	geo:lat "44.252186"^^xsd:float ;
+	geo:long "-71.46721"^^xsd:float .
+
+skio:Cannon_Mountain a :SkiResort ;
+	dcterms:identifier "347"^^xsd:int ;
+	foaf:name "Cannon Mountain" ;
+	geo:lat "44.170097"^^xsd:float ;
+	geo:long "-71.699265"^^xsd:float .
+
+skio:Black_Mountain a :SkiResort ;
+	dcterms:identifier "348"^^xsd:int ;
+	foaf:name "Black Mountain" ;
+	geo:lat "44.170383"^^xsd:float ;
+	geo:long "-71.165146"^^xsd:float .
+
+skio:Attitash a :SkiResort ;
+	dcterms:identifier "349"^^xsd:int ;
+	foaf:name "Attitash" ;
+	geo:lat "44.075623"^^xsd:float ;
+	geo:long "-71.23638"^^xsd:float .
+
+skio:The_Balsams_-_Wilderness a :SkiResort ;
+	dcterms:identifier "350"^^xsd:int ;
+	foaf:name "The Balsams - Wilderness" ;
+	geo:lat "44.85721"^^xsd:float ;
+	geo:long "-71.32118"^^xsd:float .
+
+skio:Ragged_Mountain a :SkiResort ;
+	dcterms:identifier "351"^^xsd:int ;
+	foaf:name "Ragged Mountain" ;
+	geo:lat "43.484444"^^xsd:float ;
+	geo:long "-71.842224"^^xsd:float .
+
+skio:Loon_Mountain a :SkiResort ;
+	dcterms:identifier "352"^^xsd:int ;
+	foaf:name "Loon Mountain" ;
+	geo:lat "44.045975"^^xsd:float ;
+	geo:long "-71.63238"^^xsd:float .
+
+skio:Waterville_Valley a :SkiResort ;
+	dcterms:identifier "353"^^xsd:int ;
+	foaf:name "Waterville Valley" ;
+	geo:lat "43.961903"^^xsd:float ;
+	geo:long "-71.53918"^^xsd:float .
+
+skio:King_Pine_Ski_Area a :SkiResort ;
+	dcterms:identifier "354"^^xsd:int ;
+	foaf:name "King Pine Ski Area" ;
+	geo:lat "43.871387"^^xsd:float ;
+	geo:long "-71.08945"^^xsd:float .
+
+skio:Pats_Peak_Ski_Area a :SkiResort ;
+	dcterms:identifier "355"^^xsd:int ;
+	foaf:name "Pats Peak Ski Area" ;
+	geo:lat "43.163334"^^xsd:float ;
+	geo:long "-71.79583"^^xsd:float .
+
+skio:Wildcat_Mountain a :SkiResort ;
+	dcterms:identifier "356"^^xsd:int ;
+	foaf:name "Wildcat Mountain" ;
+	geo:lat "44.263054"^^xsd:float ;
+	geo:long "-71.238335"^^xsd:float .
+
+skio:Mount_Sunapee_Ski_Area a :SkiResort ;
+	dcterms:identifier "357"^^xsd:int ;
+	foaf:name "Mount Sunapee Ski Area" ;
+	geo:lat "43.324253"^^xsd:float ;
+	geo:long "-72.07624"^^xsd:float .
+
+skio:Mt._Rose_Ski_Tahoe a :SkiResort ;
+	dcterms:identifier "358"^^xsd:int ;
+	foaf:name "Mt. Rose Ski Tahoe" ;
+	geo:lat "39.319557"^^xsd:float ;
+	geo:long "-119.88326"^^xsd:float .
+
+skio:Diamond_Peak a :SkiResort ;
+	dcterms:identifier "359"^^xsd:int ;
+	foaf:name "Diamond Peak" ;
+	geo:lat "39.25193"^^xsd:float ;
+	geo:long "-119.922806"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Las_Vegas_Ski_&_Snowboard_Resort> a :SkiResort ;
+	dcterms:identifier "360"^^xsd:int ;
+	foaf:name "Las Vegas Ski & Snowboard Resort" ;
+	geo:lat "36.30164"^^xsd:float ;
+	geo:long "-115.680756"^^xsd:float .
+
+skio:Big_Sky_Resort a :SkiResort ;
+	dcterms:identifier "361"^^xsd:int ;
+	foaf:name "Big Sky Resort" ;
+	geo:lat "45.28019"^^xsd:float ;
+	geo:long "-111.413864"^^xsd:float .
+
+skio:Marshall_Mountain a :SkiResort ;
+	dcterms:identifier "362"^^xsd:int ;
+	foaf:name "Marshall Mountain" ;
+	geo:lat "46.92002"^^xsd:float ;
+	geo:long "-113.90694"^^xsd:float .
+
+skio:Blacktail_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "363"^^xsd:int ;
+	foaf:name "Blacktail Mountain Ski Area" ;
+	geo:lat "48.015766"^^xsd:float ;
+	geo:long "-114.368706"^^xsd:float .
+
+skio:Red_Lodge_Mountain a :SkiResort ;
+	dcterms:identifier "364"^^xsd:int ;
+	foaf:name "Red Lodge Mountain" ;
+	geo:lat "45.190807"^^xsd:float ;
+	geo:long "-109.335075"^^xsd:float .
+
+skio:Showdown_Ski_Area a :SkiResort ;
+	dcterms:identifier "365"^^xsd:int ;
+	foaf:name "Showdown Ski Area" ;
+	geo:lat "46.83861"^^xsd:float ;
+	geo:long "-110.708885"^^xsd:float .
+
+skio:Discovery_Ski_Area a :SkiResort ;
+	dcterms:identifier "366"^^xsd:int ;
+	foaf:name "Discovery Ski Area" ;
+	geo:lat "46.25639"^^xsd:float ;
+	geo:long "-113.24194"^^xsd:float .
+
+skio:Whitefish_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "367"^^xsd:int ;
+	foaf:name "Whitefish Mountain Resort" ;
+	geo:lat "48.48396"^^xsd:float ;
+	geo:long "-114.35583"^^xsd:float .
+
+skio:Montana_Snowbowl a :SkiResort ;
+	dcterms:identifier "368"^^xsd:int ;
+	foaf:name "Montana Snowbowl" ;
+	geo:lat "47.023613"^^xsd:float ;
+	geo:long "-113.99722"^^xsd:float .
+
+skio:Turner_Mountain a :SkiResort ;
+	dcterms:identifier "369"^^xsd:int ;
+	foaf:name "Turner Mountain" ;
+	geo:lat "48.605"^^xsd:float ;
+	geo:long "-115.630554"^^xsd:float .
+
+skio:Maverick_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "370"^^xsd:int ;
+	foaf:name "Maverick Mountain Ski Area" ;
+	geo:lat "45.434055"^^xsd:float ;
+	geo:long "-113.12768"^^xsd:float .
+
+skio:Great_Divide_Snowsports a :SkiResort ;
+	dcterms:identifier "371"^^xsd:int ;
+	foaf:name "Great Divide Snowsports" ;
+	geo:lat "46.7497"^^xsd:float ;
+	geo:long "-112.3043"^^xsd:float .
+
+skio:Teton_Pass_Ski_Area a :SkiResort ;
+	dcterms:identifier "372"^^xsd:int ;
+	foaf:name "Teton Pass Ski Area" ;
+	geo:lat "47.928055"^^xsd:float ;
+	geo:long "-112.81528"^^xsd:float .
+
+skio:Moonlight_Basin a :SkiResort ;
+	dcterms:identifier "373"^^xsd:int ;
+	foaf:name "Moonlight Basin" ;
+	geo:lat "45.29794"^^xsd:float ;
+	geo:long "-111.43411"^^xsd:float .
+
+skio:Lost_Trail_Powder_Mountain a :SkiResort ;
+	dcterms:identifier "374"^^xsd:int ;
+	foaf:name "Lost Trail Powder Mountain" ;
+	geo:lat "45.69"^^xsd:float ;
+	geo:long "-113.95"^^xsd:float .
+
+skio:Bridger_Bowl_Ski_Area a :SkiResort ;
+	dcterms:identifier "375"^^xsd:int ;
+	foaf:name "Bridger Bowl Ski Area" ;
+	geo:lat "45.817326"^^xsd:float ;
+	geo:long "-110.91323"^^xsd:float .
+
+skio:Snow_Creek a :SkiResort ;
+	dcterms:identifier "376"^^xsd:int ;
+	foaf:name "Snow Creek" ;
+	geo:lat "39.465237"^^xsd:float ;
+	geo:long "-94.96863"^^xsd:float .
+
+skio:Hidden_Valley dcterms:identifier "377"^^xsd:int ;
+	geo:lat "38.53514"^^xsd:float ;
+	geo:long "-90.65334"^^xsd:float .
+
+skio:Coffee_Mill a :SkiResort ;
+	dcterms:identifier "378"^^xsd:int ;
+	foaf:name "Coffee Mill" ;
+	geo:lat "44.360493"^^xsd:float ;
+	geo:long "-92.042595"^^xsd:float .
+
+skio:Welch_Village_Ski_Area a :SkiResort ;
+	dcterms:identifier "379"^^xsd:int ;
+	foaf:name "Welch Village Ski Area" ;
+	geo:lat "44.560555"^^xsd:float ;
+	geo:long "-92.72722"^^xsd:float .
+
+skio:Wild_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "380"^^xsd:int ;
+	foaf:name "Wild Mountain Ski Area" ;
+	geo:lat "45.488888"^^xsd:float ;
+	geo:long "-92.70556"^^xsd:float .
+
+skio:Lutsen_Mountains a :SkiResort ;
+	dcterms:identifier "381"^^xsd:int ;
+	foaf:name "Lutsen Mountains" ;
+	geo:lat "47.6641"^^xsd:float ;
+	geo:long "-90.7143"^^xsd:float .
+
+skio:Chester_Bowl_Park a :SkiResort ;
+	dcterms:identifier "382"^^xsd:int ;
+	foaf:name "Chester Bowl Park" ;
+	geo:lat "46.81225"^^xsd:float ;
+	geo:long "-92.09551"^^xsd:float .
+
+skio:Spirit_Mountain a :SkiResort ;
+	dcterms:identifier "383"^^xsd:int ;
+	foaf:name "Spirit Mountain" ;
+	geo:lat "46.719444"^^xsd:float ;
+	geo:long "-92.218056"^^xsd:float .
+
+skio:Buena_Vista_Ski_Area a :SkiResort ;
+	dcterms:identifier "384"^^xsd:int ;
+	foaf:name "Buena Vista Ski Area" ;
+	geo:lat "47.6579"^^xsd:float ;
+	geo:long "-94.87894"^^xsd:float .
+
+skio:Powder_Ridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "385"^^xsd:int ;
+	foaf:name "Powder Ridge Ski Area" ;
+	geo:lat "45.34394"^^xsd:float ;
+	geo:long "-94.308876"^^xsd:float .
+
+skio:Buck_Hill_Ski_Area a :SkiResort ;
+	dcterms:identifier "386"^^xsd:int ;
+	foaf:name "Buck Hill Ski Area" ;
+	geo:lat "44.723057"^^xsd:float ;
+	geo:long "-93.28333"^^xsd:float .
+
+skio:Mount_Kato_Ski_Area a :SkiResort ;
+	dcterms:identifier "387"^^xsd:int ;
+	foaf:name "Mount Kato Ski Area" ;
+	geo:lat "44.13139"^^xsd:float ;
+	geo:long "-94.03639"^^xsd:float .
+
+skio:Giants_Ridge_Resort a :SkiResort ;
+	dcterms:identifier "388"^^xsd:int ;
+	foaf:name "Giants Ridge Resort" ;
+	geo:lat "47.57476"^^xsd:float ;
+	geo:long "-92.307686"^^xsd:float .
+
+skio:Hyland_Ski_and_Snowboard_Area a :SkiResort ;
+	dcterms:identifier "389"^^xsd:int ;
+	foaf:name "Hyland Ski and Snowboard Area" ;
+	geo:lat "44.843517"^^xsd:float ;
+	geo:long "-93.36465"^^xsd:float .
+
+skio:Hole_in_the_Mountain a :SkiResort ;
+	dcterms:identifier "390"^^xsd:int ;
+	foaf:name "Hole in the Mountain" ;
+	geo:lat "44.264164"^^xsd:float ;
+	geo:long "-96.30388"^^xsd:float .
+
+skio:Andes_Tower_Hills a :SkiResort ;
+	dcterms:identifier "391"^^xsd:int ;
+	foaf:name "Andes Tower Hills" ;
+	geo:lat "45.84961"^^xsd:float ;
+	geo:long "-95.63221"^^xsd:float .
+
+skio:Mount_Frontenac a :SkiResort ;
+	dcterms:identifier "392"^^xsd:int ;
+	foaf:name "Mount Frontenac" ;
+	geo:lat "44.514473"^^xsd:float ;
+	geo:long "-92.38287"^^xsd:float .
+
+skio:Afton_Alps_Ski_Area a :SkiResort ;
+	dcterms:identifier "393"^^xsd:int ;
+	foaf:name "Afton Alps Ski Area" ;
+	geo:lat "44.855556"^^xsd:float ;
+	geo:long "-92.78917"^^xsd:float .
+
+skio:Blackjack_Ski_Resort a :SkiResort ;
+	dcterms:identifier "394"^^xsd:int ;
+	foaf:name "Blackjack Ski Resort" ;
+	geo:lat "46.502586"^^xsd:float ;
+	geo:long "-90.00639"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Mulligan's_Hollow_Ski_Bowl> a :SkiResort ;
+	dcterms:identifier "395"^^xsd:int ;
+	foaf:name "Mulligan's Hollow Ski Bowl" ;
+	geo:lat "43.058407"^^xsd:float ;
+	geo:long "-86.23943"^^xsd:float .
+
+skio:Mt._Zion_Ski_Area a :SkiResort ;
+	dcterms:identifier "396"^^xsd:int ;
+	foaf:name "Mt. Zion Ski Area" ;
+	geo:lat "46.46837"^^xsd:float ;
+	geo:long "-90.1439"^^xsd:float .
+
+skio:Gladstone_Sports_Park a :SkiResort ;
+	dcterms:identifier "397"^^xsd:int ;
+	foaf:name "Gladstone Sports Park" ;
+	geo:lat "45.86047"^^xsd:float ;
+	geo:long "-87.037056"^^xsd:float .
+
+skio:Hickory_Hills a :SkiResort ;
+	dcterms:identifier "398"^^xsd:int ;
+	foaf:name "Hickory Hills" ;
+	geo:lat "44.7691"^^xsd:float ;
+	geo:long "-85.66583"^^xsd:float .
+
+skio:Ski_Brule a :SkiResort ;
+	dcterms:identifier "399"^^xsd:int ;
+	foaf:name "Ski Brule" ;
+	geo:lat "46.02907"^^xsd:float ;
+	geo:long "-88.69929"^^xsd:float .
+
+skio:Bittersweet_Ski_Area a :SkiResort ;
+	dcterms:identifier "400"^^xsd:int ;
+	foaf:name "Bittersweet Ski Area" ;
+	geo:lat "42.46545"^^xsd:float ;
+	geo:long "-85.76036"^^xsd:float .
+
+skio:Swiss_Valley_Ski_Lodge a :SkiResort ;
+	dcterms:identifier "401"^^xsd:int ;
+	foaf:name "Swiss Valley Ski Lodge" ;
+	geo:lat "41.95285"^^xsd:float ;
+	geo:long "-85.82503"^^xsd:float .
+
+skio:Pando_Ski_Center a :SkiResort ;
+	dcterms:identifier "402"^^xsd:int ;
+	foaf:name "Pando Ski Center" ;
+	geo:lat "43.08392"^^xsd:float ;
+	geo:long "-85.46853"^^xsd:float .
+
+skio:Skyline_Ski_Area a :SkiResort ;
+	dcterms:identifier "403"^^xsd:int ;
+	foaf:name "Skyline Ski Area" ;
+	geo:lat "44.57216"^^xsd:float ;
+	geo:long "-84.69086"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Caberfae_Peaks_Ski_&_Golf_Resort> a :SkiResort ;
+	dcterms:identifier "404"^^xsd:int ;
+	foaf:name "Caberfae Peaks Ski & Golf Resort" ;
+	geo:lat "44.24439"^^xsd:float ;
+	geo:long "-85.72049"^^xsd:float .
+
+skio:Petosky_Winter_Sports_Park a :SkiResort ;
+	dcterms:identifier "405"^^xsd:int ;
+	foaf:name "Petosky Winter Sports Park" ;
+	geo:lat "45.375965"^^xsd:float ;
+	geo:long "-84.94497"^^xsd:float .
+
+skio:Nubs_Nob_Ski_Area a :SkiResort ;
+	dcterms:identifier "406"^^xsd:int ;
+	foaf:name "Nubs Nob Ski Area" ;
+	geo:lat "45.470245"^^xsd:float ;
+	geo:long "-84.90303"^^xsd:float .
+
+skio:Boyne_Highlands a :SkiResort ;
+	dcterms:identifier "407"^^xsd:int ;
+	foaf:name "Boyne Highlands" ;
+	geo:lat "45.4733"^^xsd:float ;
+	geo:long "-84.94215"^^xsd:float .
+
+skio:Missaukee_Mountain a :SkiResort ;
+	dcterms:identifier "408"^^xsd:int ;
+	foaf:name "Missaukee Mountain" ;
+	geo:lat "44.392296"^^xsd:float ;
+	geo:long "-85.22791"^^xsd:float .
+
+skio:Snow_Snake_Mountain a :SkiResort ;
+	dcterms:identifier "409"^^xsd:int ;
+	foaf:name "Snow Snake Mountain" ;
+	geo:lat "43.959183"^^xsd:float ;
+	geo:long "-84.77029"^^xsd:float .
+
+skio:Norway_Mountain a :SkiResort ;
+	dcterms:identifier "410"^^xsd:int ;
+	foaf:name "Norway Mountain" ;
+	geo:lat "45.791466"^^xsd:float ;
+	geo:long "-87.86865"^^xsd:float .
+
+skio:Mt_Holiday_Ski_Area a :SkiResort ;
+	dcterms:identifier "411"^^xsd:int ;
+	foaf:name "Mt Holiday Ski Area" ;
+	geo:lat "44.743324"^^xsd:float ;
+	geo:long "-85.51355"^^xsd:float .
+
+skio:Apple_Mountain a :SkiResort ;
+	dcterms:identifier "412"^^xsd:int ;
+	foaf:name "Apple Mountain" ;
+	geo:lat "43.470116"^^xsd:float ;
+	geo:long "-84.10855"^^xsd:float .
+
+skio:Cannonsburg_Ski_Area a :SkiResort ;
+	dcterms:identifier "413"^^xsd:int ;
+	foaf:name "Cannonsburg Ski Area" ;
+	geo:lat "43.052254"^^xsd:float ;
+	geo:long "-85.50325"^^xsd:float .
+
+skio:The_Homestead a :SkiResort ;
+	dcterms:identifier "414"^^xsd:int ;
+	foaf:name "The Homestead" ;
+	geo:lat "44.916286"^^xsd:float ;
+	geo:long "-85.96508"^^xsd:float .
+
+skio:Alpine_Valley a :SkiResort ;
+	dcterms:identifier "415"^^xsd:int ;
+	foaf:name "Alpine Valley" ;
+	geo:lat "42.6541"^^xsd:float ;
+	geo:long "-83.525276"^^xsd:float .
+
+skio:Shanty_Creek_Resorts a :SkiResort ;
+	dcterms:identifier "416"^^xsd:int ;
+	foaf:name "Shanty Creek Resorts" ;
+	geo:lat "44.949883"^^xsd:float ;
+	geo:long "-85.17982"^^xsd:float .
+
+skio:Timber_Ridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "417"^^xsd:int ;
+	foaf:name "Timber Ridge Ski Area" ;
+	geo:lat "42.391712"^^xsd:float ;
+	geo:long "-85.77905"^^xsd:float .
+
+skio:Hanson_Hills a :SkiResort ;
+	dcterms:identifier "418"^^xsd:int ;
+	foaf:name "Hanson Hills" ;
+	geo:lat "44.64545"^^xsd:float ;
+	geo:long "-84.75326"^^xsd:float .
+
+skio:Marquette_Mountain a :SkiResort ;
+	dcterms:identifier "419"^^xsd:int ;
+	foaf:name "Marquette Mountain" ;
+	geo:lat "46.508335"^^xsd:float ;
+	geo:long "-87.42"^^xsd:float .
+
+skio:Big_Powderhorn_Mountain a :SkiResort ;
+	dcterms:identifier "420"^^xsd:int ;
+	foaf:name "Big Powderhorn Mountain" ;
+	geo:lat "46.50572"^^xsd:float ;
+	geo:long "-90.09218"^^xsd:float .
+
+skio:Boyne_Mountain a :SkiResort ;
+	dcterms:identifier "421"^^xsd:int ;
+	foaf:name "Boyne Mountain" ;
+	geo:lat "45.164097"^^xsd:float ;
+	geo:long "-84.93923"^^xsd:float .
+
+skio:Indianhead_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "422"^^xsd:int ;
+	foaf:name "Indianhead Mountain Resort" ;
+	geo:lat "46.505245"^^xsd:float ;
+	geo:long "-89.971504"^^xsd:float .
+
+skio:Treetops_Sylvan_Resort a :SkiResort ;
+	dcterms:identifier "423"^^xsd:int ;
+	foaf:name "Treetops Sylvan Resort" ;
+	geo:lat "45.038082"^^xsd:float ;
+	geo:long "-84.59177"^^xsd:float .
+
+skio:Mt._McSauba a :SkiResort ;
+	dcterms:identifier "424"^^xsd:int ;
+	foaf:name "Mt. McSauba" ;
+	geo:lat "45.33598"^^xsd:float ;
+	geo:long "-85.24344"^^xsd:float .
+
+skio:Pine_Knob_Ski_Resort a :SkiResort ;
+	dcterms:identifier "425"^^xsd:int ;
+	foaf:name "Pine Knob Ski Resort" ;
+	geo:lat "42.746002"^^xsd:float ;
+	geo:long "-83.36832"^^xsd:float .
+
+skio:Porcupine_Mountain a :SkiResort ;
+	dcterms:identifier "426"^^xsd:int ;
+	foaf:name "Porcupine Mountain" ;
+	geo:lat "46.81783"^^xsd:float ;
+	geo:long "-89.65041"^^xsd:float .
+
+skio:Mont_Ripley a :SkiResort ;
+	dcterms:identifier "427"^^xsd:int ;
+	foaf:name "Mont Ripley" ;
+	geo:lat "47.130623"^^xsd:float ;
+	geo:long "-88.559296"^^xsd:float .
+
+skio:Mount_Bohemia a :SkiResort ;
+	dcterms:identifier "428"^^xsd:int ;
+	foaf:name "Mount Bohemia" ;
+	geo:lat "47.391697"^^xsd:float ;
+	geo:long "-88.01358"^^xsd:float .
+
+skio:Crystal_Mountain a :SkiResort ;
+	dcterms:identifier "429"^^xsd:int ;
+	foaf:name "Crystal Mountain" ;
+	geo:lat "44.520588"^^xsd:float ;
+	geo:long "-85.99083"^^xsd:float .
+
+skio:Mt._Brighton a :SkiResort ;
+	dcterms:identifier "430"^^xsd:int ;
+	foaf:name "Mt. Brighton" ;
+	geo:lat "42.540024"^^xsd:float ;
+	geo:long "-83.809845"^^xsd:float .
+
+skio:Mt._Holly_Ski_Area a :SkiResort ;
+	dcterms:identifier "431"^^xsd:int ;
+	foaf:name "Mt. Holly Ski Area" ;
+	geo:lat "42.82952"^^xsd:float ;
+	geo:long "-83.56436"^^xsd:float .
+
+skio:Silver_Ridge_Resort a :SkiResort ;
+	dcterms:identifier "432"^^xsd:int ;
+	foaf:name "Silver Ridge Resort" ;
+	geo:lat "43.81639"^^xsd:float ;
+	geo:long "-84.874725"^^xsd:float .
+
+skio:Pine_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "433"^^xsd:int ;
+	foaf:name "Pine Mountain Resort" ;
+	geo:lat "45.839203"^^xsd:float ;
+	geo:long "-88.091385"^^xsd:float .
+
+skio:Otis_Ridge a :SkiResort ;
+	dcterms:identifier "434"^^xsd:int ;
+	foaf:name "Otis Ridge" ;
+	geo:lat "42.19546"^^xsd:float ;
+	geo:long "-73.10131"^^xsd:float .
+
+skio:Berkshire_East_Ski_Area a :SkiResort ;
+	dcterms:identifier "435"^^xsd:int ;
+	foaf:name "Berkshire East Ski Area" ;
+	geo:lat "42.620834"^^xsd:float ;
+	geo:long "-72.876945"^^xsd:float .
+
+skio:Nashoba_Valley_Ski_Area a :SkiResort ;
+	dcterms:identifier "436"^^xsd:int ;
+	foaf:name "Nashoba Valley Ski Area" ;
+	geo:lat "42.541973"^^xsd:float ;
+	geo:long "-71.4441"^^xsd:float .
+
+skio:Wachusett_Mountain a :SkiResort ;
+	dcterms:identifier "437"^^xsd:int ;
+	foaf:name "Wachusett Mountain" ;
+	geo:lat "42.499443"^^xsd:float ;
+	geo:long "-71.88639"^^xsd:float .
+
+skio:Blandford_Ski_Area a :SkiResort ;
+	dcterms:identifier "438"^^xsd:int ;
+	foaf:name "Blandford Ski Area" ;
+	geo:lat "42.18885"^^xsd:float ;
+	geo:long "-72.900764"^^xsd:float .
+
+skio:Ski_Bradford a :SkiResort ;
+	dcterms:identifier "439"^^xsd:int ;
+	foaf:name "Ski Bradford" ;
+	geo:lat "42.74361"^^xsd:float ;
+	geo:long "-71.05889"^^xsd:float .
+
+skio:Blue_Hills_Ski_Area a :SkiResort ;
+	dcterms:identifier "440"^^xsd:int ;
+	foaf:name "Blue Hills Ski Area" ;
+	geo:lat "42.21528"^^xsd:float ;
+	geo:long "-71.11916"^^xsd:float .
+
+skio:Ski_Butternut a :SkiResort ;
+	dcterms:identifier "441"^^xsd:int ;
+	foaf:name "Ski Butternut" ;
+	geo:lat "42.178055"^^xsd:float ;
+	geo:long "-73.31695"^^xsd:float .
+
+skio:Ski_Ward a :SkiResort ;
+	dcterms:identifier "442"^^xsd:int ;
+	foaf:name "Ski Ward" ;
+	geo:lat "42.305557"^^xsd:float ;
+	geo:long "-71.675"^^xsd:float .
+
+skio:Jiminy_Peak_Resort a :SkiResort ;
+	dcterms:identifier "443"^^xsd:int ;
+	foaf:name "Jiminy Peak Resort" ;
+	geo:lat "42.55"^^xsd:float ;
+	geo:long "-73.29"^^xsd:float .
+
+skio:Bousquet_Ski_Area a :SkiResort ;
+	dcterms:identifier "444"^^xsd:int ;
+	foaf:name "Bousquet Ski Area" ;
+	geo:lat "42.41611"^^xsd:float ;
+	geo:long "-73.27917"^^xsd:float .
+
+skio:Wisp_at_Deep_Creek_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "445"^^xsd:int ;
+	foaf:name "Wisp at Deep Creek Mountain Resort" ;
+	geo:lat "39.549458"^^xsd:float ;
+	geo:long "-79.36849"^^xsd:float .
+
+skio:Saddleback_Ski_Area a :SkiResort ;
+	dcterms:identifier "446"^^xsd:int ;
+	foaf:name "Saddleback Ski Area" ;
+	geo:lat "44.94196"^^xsd:float ;
+	geo:long "-70.522446"^^xsd:float .
+
+skio:Mt._Abram_Ski_Resort a :SkiResort ;
+	dcterms:identifier "447"^^xsd:int ;
+	foaf:name "Mt. Abram Ski Resort" ;
+	geo:lat "44.379166"^^xsd:float ;
+	geo:long "-70.70695"^^xsd:float .
+
+skio:Sugarloaf a :SkiResort ;
+	dcterms:identifier "448"^^xsd:int ;
+	foaf:name "Sugarloaf" ;
+	geo:lat "45.044323"^^xsd:float ;
+	geo:long "-70.31428"^^xsd:float .
+
+skio:Lost_Valley_Ski_Area a :SkiResort ;
+	dcterms:identifier "449"^^xsd:int ;
+	foaf:name "Lost Valley Ski Area" ;
+	geo:lat "44.136112"^^xsd:float ;
+	geo:long "-70.281944"^^xsd:float .
+
+skio:Mt._Jefferson_Ski_Area a :SkiResort ;
+	dcterms:identifier "450"^^xsd:int ;
+	foaf:name "Mt. Jefferson Ski Area" ;
+	geo:lat "45.357574"^^xsd:float ;
+	geo:long "-68.28355"^^xsd:float .
+
+skio:Eaton_Mountain_Ski_Area a :SkiResort ;
+	dcterms:identifier "451"^^xsd:int ;
+	foaf:name "Eaton Mountain Ski Area" ;
+	geo:lat "44.768055"^^xsd:float ;
+	geo:long "-69.619446"^^xsd:float .
+
+skio:Camden_Snow_Bowl a :SkiResort ;
+	dcterms:identifier "452"^^xsd:int ;
+	foaf:name "Camden Snow Bowl" ;
+	geo:lat "44.217216"^^xsd:float ;
+	geo:long "-69.13467"^^xsd:float .
+
+skio:Hermon_Mountain a :SkiResort ;
+	dcterms:identifier "453"^^xsd:int ;
+	foaf:name "Hermon Mountain" ;
+	geo:lat "44.78028"^^xsd:float ;
+	geo:long "-68.95953"^^xsd:float .
+
+skio:Black_Mountain_of_Maine a :SkiResort ;
+	dcterms:identifier "454"^^xsd:int ;
+	foaf:name "Black Mountain of Maine" ;
+	geo:lat "44.577213"^^xsd:float ;
+	geo:long "-70.61573"^^xsd:float .
+
+skio:Big_Rock a :SkiResort ;
+	dcterms:identifier "455"^^xsd:int ;
+	foaf:name "Big Rock" ;
+	geo:lat "46.52222"^^xsd:float ;
+	geo:long "-67.827774"^^xsd:float .
+
+skio:Shawnee_Peak a :SkiResort ;
+	dcterms:identifier "456"^^xsd:int ;
+	foaf:name "Shawnee Peak" ;
+	geo:lat "44.058334"^^xsd:float ;
+	geo:long "-70.81528"^^xsd:float .
+
+skio:Big_Squaw a :SkiResort ;
+	dcterms:identifier "457"^^xsd:int ;
+	foaf:name "Big Squaw" ;
+	geo:lat "45.49997"^^xsd:float ;
+	geo:long "-69.70637"^^xsd:float .
+
+skio:Titcomb_Mountain a :SkiResort ;
+	dcterms:identifier "458"^^xsd:int ;
+	foaf:name "Titcomb Mountain" ;
+	geo:lat "44.65"^^xsd:float ;
+	geo:long "-70.17083"^^xsd:float .
+
+skio:Sunday_River_Ski_Resort a :SkiResort ;
+	dcterms:identifier "459"^^xsd:int ;
+	foaf:name "Sunday River Ski Resort" ;
+	geo:lat "44.467117"^^xsd:float ;
+	geo:long "-70.87359"^^xsd:float .
+
+skio:Nor-Ski_Runs_Ski_Area a :SkiResort ;
+	dcterms:identifier "460"^^xsd:int ;
+	foaf:name "Nor-Ski Runs Ski Area" ;
+	geo:lat "43.31606"^^xsd:float ;
+	geo:long "-91.82079"^^xsd:float .
+
+skio:Riverside_Hills a :SkiResort ;
+	dcterms:identifier "461"^^xsd:int ;
+	foaf:name "Riverside Hills" ;
+	geo:lat "43.38674"^^xsd:float ;
+	geo:long "-94.83506"^^xsd:float .
+
+skio:Fun_Valley a :SkiResort ;
+	dcterms:identifier "462"^^xsd:int ;
+	foaf:name "Fun Valley" ;
+	geo:lat "41.565083"^^xsd:float ;
+	geo:long "-92.572624"^^xsd:float .
+
+skio:Mt._Crescent_Ski_Area a :SkiResort ;
+	dcterms:identifier "463"^^xsd:int ;
+	foaf:name "Mt. Crescent Ski Area" ;
+	geo:lat "41.394375"^^xsd:float ;
+	geo:long "-95.862076"^^xsd:float .
+
+skio:Sleepy_Hollow_Sports_Park a :SkiResort ;
+	dcterms:identifier "464"^^xsd:int ;
+	foaf:name "Sleepy Hollow Sports Park" ;
+	geo:lat "41.589"^^xsd:float ;
+	geo:long "-93.53322"^^xsd:float .
+
+skio:Seven_Oaks_Recreation_Area a :SkiResort ;
+	dcterms:identifier "465"^^xsd:int ;
+	foaf:name "Seven Oaks Recreation Area" ;
+	geo:lat "42.030678"^^xsd:float ;
+	geo:long "-93.95353"^^xsd:float .
+
+skio:Sundown_Mountain a :SkiResort ;
+	dcterms:identifier "466"^^xsd:int ;
+	foaf:name "Sundown Mountain" ;
+	geo:lat "42.515575"^^xsd:float ;
+	geo:long "-90.8199"^^xsd:float .
+
+skio:Paoli_Peaks a :SkiResort ;
+	dcterms:identifier "468"^^xsd:int ;
+	foaf:name "Paoli Peaks" ;
+	geo:lat "38.557777"^^xsd:float ;
+	geo:long "-86.51028"^^xsd:float .
+
+skio:Pines_Peak_Family_Ski_Area a :SkiResort ;
+	dcterms:identifier "469"^^xsd:int ;
+	foaf:name "Pines Peak Family Ski Area" ;
+	geo:lat "41.53152"^^xsd:float ;
+	geo:long "-87.067726"^^xsd:float .
+
+skio:Perfect_North_Slopes a :SkiResort ;
+	dcterms:identifier "470"^^xsd:int ;
+	foaf:name "Perfect North Slopes" ;
+	geo:lat "39.149208"^^xsd:float ;
+	geo:long "-84.88658"^^xsd:float .
+
+skio:Chestnut_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "471"^^xsd:int ;
+	foaf:name "Chestnut Mountain Resort" ;
+	geo:lat "42.318573"^^xsd:float ;
+	geo:long "-90.398254"^^xsd:float .
+
+skio:Four_Lakes_Village a :SkiResort ;
+	dcterms:identifier "472"^^xsd:int ;
+	foaf:name "Four Lakes Village" ;
+	geo:lat "41.780834"^^xsd:float ;
+	geo:long "-88.083725"^^xsd:float .
+
+skio:Ski_Snowstar a :SkiResort ;
+	dcterms:identifier "473"^^xsd:int ;
+	foaf:name "Ski Snowstar" ;
+	geo:lat "41.42458"^^xsd:float ;
+	geo:long "-90.7475"^^xsd:float .
+
+skio:Villa_Olivia a :SkiResort ;
+	dcterms:identifier "474"^^xsd:int ;
+	foaf:name "Villa Olivia" ;
+	geo:lat "42.01283"^^xsd:float ;
+	geo:long "-88.22235"^^xsd:float .
+
+skio:Raging_Buffalo_Snowboard_Park a :SkiResort ;
+	dcterms:identifier "475"^^xsd:int ;
+	foaf:name "Raging Buffalo Snowboard Park" ;
+	geo:lat "42.14726"^^xsd:float ;
+	geo:long "-88.29614"^^xsd:float .
+
+skio:Schweitzer_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "476"^^xsd:int ;
+	foaf:name "Schweitzer Mountain Resort" ;
+	geo:lat "48.379242"^^xsd:float ;
+	geo:long "-116.62277"^^xsd:float .
+
+skio:Pomerelle_Ski_Area a :SkiResort ;
+	dcterms:identifier "477"^^xsd:int ;
+	foaf:name "Pomerelle Ski Area" ;
+	geo:lat "42.333332"^^xsd:float ;
+	geo:long "-113.666664"^^xsd:float .
+
+skio:Pebble_Creek_Ski_Area a :SkiResort ;
+	dcterms:identifier "478"^^xsd:int ;
+	foaf:name "Pebble Creek Ski Area" ;
+	geo:lat "42.778233"^^xsd:float ;
+	geo:long "-112.15937"^^xsd:float .
+
+skio:Silver_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "479"^^xsd:int ;
+	foaf:name "Silver Mountain Resort" ;
+	geo:lat "47.495277"^^xsd:float ;
+	geo:long "-116.136665"^^xsd:float .
+
+skio:Sun_Valley_-_Bald_Mountain a :SkiResort ;
+	dcterms:identifier "480"^^xsd:int ;
+	foaf:name "Sun Valley - Bald Mountain" ;
+	geo:lat "43.66452"^^xsd:float ;
+	geo:long "-114.39634"^^xsd:float .
+
+skio:Lookout_Pass a :SkiResort ;
+	dcterms:identifier "482"^^xsd:int ;
+	foaf:name "Lookout Pass" ;
+	geo:lat "47.455"^^xsd:float ;
+	geo:long "-115.708336"^^xsd:float .
+
+skio:Brundage_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "483"^^xsd:int ;
+	foaf:name "Brundage Mountain Resort" ;
+	geo:lat "45.004"^^xsd:float ;
+	geo:long "-116.145"^^xsd:float .
+
+skio:Cottonwood_Butte a :SkiResort ;
+	dcterms:identifier "484"^^xsd:int ;
+	foaf:name "Cottonwood Butte" ;
+	geo:lat "46.07565"^^xsd:float ;
+	geo:long "-116.45308"^^xsd:float .
+
+skio:Soldier_Mountain a :SkiResort ;
+	dcterms:identifier "485"^^xsd:int ;
+	foaf:name "Soldier Mountain" ;
+	geo:lat "43.483334"^^xsd:float ;
+	geo:long "-114.833336"^^xsd:float .
+
+skio:Kelly_Canyon_Ski_Area a :SkiResort ;
+	dcterms:identifier "486"^^xsd:int ;
+	foaf:name "Kelly Canyon Ski Area" ;
+	geo:lat "43.645832"^^xsd:float ;
+	geo:long "-111.63"^^xsd:float .
+
+skio:Bogus_Basin a :SkiResort ;
+	dcterms:identifier "487"^^xsd:int ;
+	foaf:name "Bogus Basin" ;
+	geo:lat "43.764526"^^xsd:float ;
+	geo:long "-116.10672"^^xsd:float .
+
+skio:Tamarack_Resort a :SkiResort ;
+	dcterms:identifier "488"^^xsd:int ;
+	foaf:name "Tamarack Resort" ;
+	geo:lat "44.673164"^^xsd:float ;
+	geo:long "-116.12724"^^xsd:float .
+
+skio:Snowhaven_Ski_Area a :SkiResort ;
+	dcterms:identifier "489"^^xsd:int ;
+	foaf:name "Snowhaven Ski Area" ;
+	geo:lat "45.86787"^^xsd:float ;
+	geo:long "-116.09309"^^xsd:float .
+
+skio:Magic_Mountain_Ski_Resort a :SkiResort ;
+	dcterms:identifier "490"^^xsd:int ;
+	foaf:name "Magic Mountain Ski Resort" ;
+	geo:lat "42.189037"^^xsd:float ;
+	geo:long "-114.28538"^^xsd:float .
+
+skio:Sky_Valley_Resort a :SkiResort ;
+	dcterms:identifier "491"^^xsd:int ;
+	foaf:name "Sky Valley Resort" ;
+	geo:lat "34.983616"^^xsd:float ;
+	geo:long "-83.32242"^^xsd:float .
+
+skio:Powder_Ridge_Ski_Area dcterms:identifier "492"^^xsd:int ;
+	geo:lat "41.501637"^^xsd:float ;
+	geo:long "-72.741684"^^xsd:float .
+
+skio:Mohawk_Mountain a :SkiResort ;
+	dcterms:identifier "493"^^xsd:int ;
+	foaf:name "Mohawk Mountain" ;
+	geo:lat "41.836956"^^xsd:float ;
+	geo:long "-73.31434"^^xsd:float .
+
+skio:Mount_Southington_Ski_Area a :SkiResort ;
+	dcterms:identifier "494"^^xsd:int ;
+	foaf:name "Mount Southington Ski Area" ;
+	geo:lat "41.58235"^^xsd:float ;
+	geo:long "-72.92587"^^xsd:float .
+
+skio:Woodbury_Ski_Area a :SkiResort ;
+	dcterms:identifier "495"^^xsd:int ;
+	foaf:name "Woodbury Ski Area" ;
+	geo:lat "41.589832"^^xsd:float ;
+	geo:long "-73.25578"^^xsd:float .
+
+skio:Ski_Sundown a :SkiResort ;
+	dcterms:identifier "496"^^xsd:int ;
+	foaf:name "Ski Sundown" ;
+	geo:lat "41.88324"^^xsd:float ;
+	geo:long "-72.94216"^^xsd:float .
+
+skio:Beaver_Creek_Resort a :SkiResort ;
+	dcterms:identifier "497"^^xsd:int ;
+	foaf:name "Beaver Creek Resort" ;
+	geo:lat "39.60449"^^xsd:float ;
+	geo:long "-106.52963"^^xsd:float .
+
+skio:Howelsen_Hill_Ski_Area a :SkiResort ;
+	dcterms:identifier "498"^^xsd:int ;
+	foaf:name "Howelsen Hill Ski Area" ;
+	geo:lat "40.481655"^^xsd:float ;
+	geo:long "-106.83913"^^xsd:float .
+
+skio:Kendall_Mountain a :SkiResort ;
+	dcterms:identifier "499"^^xsd:int ;
+	foaf:name "Kendall Mountain" ;
+	geo:lat "37.81131"^^xsd:float ;
+	geo:long "-107.65521"^^xsd:float .
+
+skio:Steamboat_Ski_Resort a :SkiResort ;
+	dcterms:identifier "500"^^xsd:int ;
+	foaf:name "Steamboat Ski Resort" ;
+	geo:lat "40.454624"^^xsd:float ;
+	geo:long "-106.76679"^^xsd:float .
+
+skio:Winter_Park_Resort a :SkiResort ;
+	dcterms:identifier "503"^^xsd:int ;
+	foaf:name "Winter Park Resort" ;
+	geo:lat "39.872524"^^xsd:float ;
+	geo:long "-105.7737"^^xsd:float .
+
+skio:Buttermilk_Mountain a :SkiResort ;
+	dcterms:identifier "504"^^xsd:int ;
+	foaf:name "Buttermilk Mountain" ;
+	geo:lat "39.192272"^^xsd:float ;
+	geo:long "-106.86995"^^xsd:float .
+
+skio:Wolf_Creek_Ski_Area a :SkiResort ;
+	dcterms:identifier "505"^^xsd:int ;
+	foaf:name "Wolf Creek Ski Area" ;
+	geo:lat "37.46728"^^xsd:float ;
+	geo:long "-106.79448"^^xsd:float .
+
+skio:Sunlight_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "506"^^xsd:int ;
+	foaf:name "Sunlight Mountain Resort" ;
+	geo:lat "39.393436"^^xsd:float ;
+	geo:long "-107.33913"^^xsd:float .
+
+skio:Vail a :SkiResort ;
+	dcterms:identifier "507"^^xsd:int ;
+	foaf:name "Vail" ;
+	geo:lat "39.616035"^^xsd:float ;
+	geo:long "-106.36288"^^xsd:float .
+
+skio:Eldora_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "508"^^xsd:int ;
+	foaf:name "Eldora Mountain Resort" ;
+	geo:lat "39.93912"^^xsd:float ;
+	geo:long "-105.59286"^^xsd:float .
+
+skio:Copper_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "509"^^xsd:int ;
+	foaf:name "Copper Mountain Resort" ;
+	geo:lat "39.483055"^^xsd:float ;
+	geo:long "-106.160576"^^xsd:float .
+
+skio:Breckenridge_Ski_Resort a :SkiResort ;
+	dcterms:identifier "510"^^xsd:int ;
+	foaf:name "Breckenridge Ski Resort" ;
+	geo:lat "39.47225"^^xsd:float ;
+	geo:long "-106.06571"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Monarch_Ski_&_Snowboard_Area> a :SkiResort ;
+	dcterms:identifier "511"^^xsd:int ;
+	foaf:name "Monarch Ski & Snowboard Area" ;
+	geo:lat "38.50978"^^xsd:float ;
+	geo:long "-106.337074"^^xsd:float .
+
+skio:Ski_Cooper a :SkiResort ;
+	dcterms:identifier "512"^^xsd:int ;
+	foaf:name "Ski Cooper" ;
+	geo:lat "39.360554"^^xsd:float ;
+	geo:long "-106.30222"^^xsd:float .
+
+skio:Arapahoe_Basin a :SkiResort ;
+	dcterms:identifier "513"^^xsd:int ;
+	foaf:name "Arapahoe Basin" ;
+	geo:lat "39.630512"^^xsd:float ;
+	geo:long "-105.874176"^^xsd:float .
+
+skio:Crested_Butte_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "514"^^xsd:int ;
+	foaf:name "Crested Butte Mountain Resort" ;
+	geo:lat "38.89936"^^xsd:float ;
+	geo:long "-106.94795"^^xsd:float .
+
+skio:Loveland a :SkiResort ;
+	dcterms:identifier "515"^^xsd:int ;
+	foaf:name "Loveland" ;
+	geo:lat "39.678326"^^xsd:float ;
+	geo:long "-105.89911"^^xsd:float .
+
+skio:Ski_Granby_Ranch a :SkiResort ;
+	dcterms:identifier "516"^^xsd:int ;
+	foaf:name "Ski Granby Ranch" ;
+	geo:lat "40.044567"^^xsd:float ;
+	geo:long "-105.90567"^^xsd:float .
+
+skio:Telluride a :SkiResort ;
+	dcterms:identifier "517"^^xsd:int ;
+	foaf:name "Telluride" ;
+	geo:lat "37.921993"^^xsd:float ;
+	geo:long "-107.83658"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Purgatory_(Durango_Mountain_Resort)> a :SkiResort ;
+	dcterms:identifier "518"^^xsd:int ;
+	foaf:name "Purgatory (Durango Mountain Resort)" ;
+	geo:lat "37.626495"^^xsd:float ;
+	geo:long "-107.83545"^^xsd:float .
+
+skio:Keystone_Resort a :SkiResort ;
+	dcterms:identifier "519"^^xsd:int ;
+	foaf:name "Keystone Resort" ;
+	geo:lat "39.584145"^^xsd:float ;
+	geo:long "-105.94428"^^xsd:float .
+
+skio:Powderhorn_Resort a :SkiResort ;
+	dcterms:identifier "520"^^xsd:int ;
+	foaf:name "Powderhorn Resort" ;
+	geo:lat "39.061302"^^xsd:float ;
+	geo:long "-108.15178"^^xsd:float .
+
+skio:Mountain_High_Resort a :SkiResort ;
+	dcterms:identifier "521"^^xsd:int ;
+	foaf:name "Mountain High Resort" ;
+	geo:lat "34.374718"^^xsd:float ;
+	geo:long "-117.69323"^^xsd:float .
+
+skio:Alpine_Meadows_Ski_Area a :SkiResort ;
+	dcterms:identifier "522"^^xsd:int ;
+	foaf:name "Alpine Meadows Ski Area" ;
+	geo:lat "39.156273"^^xsd:float ;
+	geo:long "-120.23555"^^xsd:float .
+
+skio:Boreal_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "523"^^xsd:int ;
+	foaf:name "Boreal Mountain Resort" ;
+	geo:lat "39.332836"^^xsd:float ;
+	geo:long "-120.34815"^^xsd:float .
+
+skio:Soda_Springs a :SkiResort ;
+	dcterms:identifier "524"^^xsd:int ;
+	foaf:name "Soda Springs" ;
+	geo:lat "39.319424"^^xsd:float ;
+	geo:long "-120.38269"^^xsd:float .
+
+skio:Sierra_at_Tahoe a :SkiResort ;
+	dcterms:identifier "525"^^xsd:int ;
+	foaf:name "Sierra at Tahoe" ;
+	geo:lat "38.795525"^^xsd:float ;
+	geo:long "-120.07911"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#China_Peak_(Sierra_Summit)> a :SkiResort ;
+	dcterms:identifier "527"^^xsd:int ;
+	foaf:name "China Peak (Sierra Summit)" ;
+	geo:lat "37.227226"^^xsd:float ;
+	geo:long "-119.158165"^^xsd:float .
+
+skio:Alta_Sierra_at_Shirley_Meadows a :SkiResort ;
+	dcterms:identifier "528"^^xsd:int ;
+	foaf:name "Alta Sierra at Shirley Meadows" ;
+	geo:lat "35.7108"^^xsd:float ;
+	geo:long "-118.5622"^^xsd:float .
+
+skio:Tahoe_Donner a :SkiResort ;
+	dcterms:identifier "529"^^xsd:int ;
+	foaf:name "Tahoe Donner" ;
+	geo:lat "39.350628"^^xsd:float ;
+	geo:long "-120.26356"^^xsd:float .
+
+skio:Mammoth_Mountain a :SkiResort ;
+	dcterms:identifier "530"^^xsd:int ;
+	foaf:name "Mammoth Mountain" ;
+	geo:lat "37.642075"^^xsd:float ;
+	geo:long "-119.0227"^^xsd:float .
+
+skio:Northstar a :SkiResort ;
+	dcterms:identifier "531"^^xsd:int ;
+	foaf:name "Northstar" ;
+	geo:lat "39.26436"^^xsd:float ;
+	geo:long "-120.12623"^^xsd:float .
+
+skio:Mt._Shasta_Ski_Park a :SkiResort ;
+	dcterms:identifier "532"^^xsd:int ;
+	foaf:name "Mt. Shasta Ski Park" ;
+	geo:lat "41.32"^^xsd:float ;
+	geo:long "-122.20361"^^xsd:float .
+
+skio:Dodge_Ridge_Ski_Area a :SkiResort ;
+	dcterms:identifier "533"^^xsd:int ;
+	foaf:name "Dodge Ridge Ski Area" ;
+	geo:lat "38.189228"^^xsd:float ;
+	geo:long "-119.94095"^^xsd:float .
+
+skio:Bear_Valley_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "534"^^xsd:int ;
+	foaf:name "Bear Valley Mountain Resort" ;
+	geo:lat "38.489986"^^xsd:float ;
+	geo:long "-120.04987"^^xsd:float .
+
+skio:Granlibakken_Ski_Resort a :SkiResort ;
+	dcterms:identifier "535"^^xsd:int ;
+	foaf:name "Granlibakken Ski Resort" ;
+	geo:lat "39.154358"^^xsd:float ;
+	geo:long "-120.15378"^^xsd:float .
+
+skio:Bear_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "536"^^xsd:int ;
+	foaf:name "Bear Mountain Resort" ;
+	geo:lat "34.22685"^^xsd:float ;
+	geo:long "-116.86002"^^xsd:float .
+
+skio:Kirkwood a :SkiResort ;
+	dcterms:identifier "537"^^xsd:int ;
+	foaf:name "Kirkwood" ;
+	geo:lat "38.67512"^^xsd:float ;
+	geo:long "-120.062805"^^xsd:float .
+
+skio:Squaw_Valley a :SkiResort ;
+	dcterms:identifier "538"^^xsd:int ;
+	foaf:name "Squaw Valley" ;
+	geo:lat "39.19152"^^xsd:float ;
+	geo:long "-120.25597"^^xsd:float .
+
+skio:Snow_Valley_Ski_Resort a :SkiResort ;
+	dcterms:identifier "539"^^xsd:int ;
+	foaf:name "Snow Valley Ski Resort" ;
+	geo:lat "34.216415"^^xsd:float ;
+	geo:long "-117.03521"^^xsd:float .
+
+skio:June_Mountain a :SkiResort ;
+	dcterms:identifier "540"^^xsd:int ;
+	foaf:name "June Mountain" ;
+	geo:lat "37.7683"^^xsd:float ;
+	geo:long "-119.0906"^^xsd:float .
+
+skio:Mt._Baldy_Ski_Lifts a :SkiResort ;
+	dcterms:identifier "541"^^xsd:int ;
+	foaf:name "Mt. Baldy Ski Lifts" ;
+	geo:lat "34.273247"^^xsd:float ;
+	geo:long "-117.60812"^^xsd:float .
+
+skio:Donner_Ski_Ranch a :SkiResort ;
+	dcterms:identifier "542"^^xsd:int ;
+	foaf:name "Donner Ski Ranch" ;
+	geo:lat "39.320686"^^xsd:float ;
+	geo:long "-120.33755"^^xsd:float .
+
+skio:Sugar_Bowl_Resort a :SkiResort ;
+	dcterms:identifier "543"^^xsd:int ;
+	foaf:name "Sugar Bowl Resort" ;
+	geo:lat "39.299892"^^xsd:float ;
+	geo:long "-120.33279"^^xsd:float .
+
+skio:Heavenly_Ski_Resort a :SkiResort ;
+	dcterms:identifier "544"^^xsd:int ;
+	foaf:name "Heavenly Ski Resort" ;
+	geo:lat "38.940582"^^xsd:float ;
+	geo:long "-119.91377"^^xsd:float .
+
+skio:Homewood_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "545"^^xsd:int ;
+	foaf:name "Homewood Mountain Resort" ;
+	geo:lat "39.078903"^^xsd:float ;
+	geo:long "-120.17229"^^xsd:float .
+
+skio:Snow_Summit_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "546"^^xsd:int ;
+	foaf:name "Snow Summit Mountain Resort" ;
+	geo:lat "34.227516"^^xsd:float ;
+	geo:long "-116.89063"^^xsd:float .
+
+skio:Badger_Pass_Ski_Area a :SkiResort ;
+	dcterms:identifier "547"^^xsd:int ;
+	foaf:name "Badger Pass Ski Area" ;
+	geo:lat "37.6475"^^xsd:float ;
+	geo:long "-119.7175"^^xsd:float .
+
+skio:Arizona_Snowbowl a :SkiResort ;
+	dcterms:identifier "548"^^xsd:int ;
+	foaf:name "Arizona Snowbowl" ;
+	geo:lat "35.329502"^^xsd:float ;
+	geo:long "-111.69965"^^xsd:float .
+
+skio:Sunrise_Park_Resort a :SkiResort ;
+	dcterms:identifier "549"^^xsd:int ;
+	foaf:name "Sunrise Park Resort" ;
+	geo:lat "33.956894"^^xsd:float ;
+	geo:long "-109.56618"^^xsd:float .
+
+skio:Mt._Lemmon_Ski_Valley a :SkiResort ;
+	dcterms:identifier "550"^^xsd:int ;
+	foaf:name "Mt. Lemmon Ski Valley" ;
+	geo:lat "32.45222"^^xsd:float ;
+	geo:long "-110.78389"^^xsd:float .
+
+skio:Elk_Ridge a :SkiResort ;
+	dcterms:identifier "551"^^xsd:int ;
+	foaf:name "Elk Ridge" ;
+	geo:lat "35.21484"^^xsd:float ;
+	geo:long "-112.19277"^^xsd:float .
+
+skio:Alyeska_Resort a :SkiResort ;
+	dcterms:identifier "552"^^xsd:int ;
+	foaf:name "Alyeska Resort" ;
+	geo:lat "60.96141"^^xsd:float ;
+	geo:long "-149.09192"^^xsd:float .
+
+skio:Eaglecrest_Ski_Area a :SkiResort ;
+	dcterms:identifier "553"^^xsd:int ;
+	foaf:name "Eaglecrest Ski Area" ;
+	geo:lat "58.27611"^^xsd:float ;
+	geo:long "-134.51527"^^xsd:float .
+
+skio:Mt._Eyak a :SkiResort ;
+	dcterms:identifier "554"^^xsd:int ;
+	foaf:name "Mt. Eyak" ;
+	geo:lat "60.55135"^^xsd:float ;
+	geo:long "-145.74352"^^xsd:float .
+
+skio:Arctic_Valley a :SkiResort ;
+	dcterms:identifier "555"^^xsd:int ;
+	foaf:name "Arctic Valley" ;
+	geo:lat "61.246666"^^xsd:float ;
+	geo:long "-149.53276"^^xsd:float .
+
+skio:Hilltop_Ski_Area a :SkiResort ;
+	dcterms:identifier "556"^^xsd:int ;
+	foaf:name "Hilltop Ski Area" ;
+	geo:lat "61.140915"^^xsd:float ;
+	geo:long "-149.73747"^^xsd:float .
+
+skio:Cloudmont_Ski_Resort a :SkiResort ;
+	dcterms:identifier "557"^^xsd:int ;
+	foaf:name "Cloudmont Ski Resort" ;
+	geo:lat "34.53808"^^xsd:float ;
+	geo:long "-85.60371"^^xsd:float .
+
+skio:Garibaldi_at_Squamish a :SkiResort ;
+	dcterms:identifier "559"^^xsd:int ;
+	foaf:name "Garibaldi at Squamish" ;
+	geo:lat "49.81539"^^xsd:float ;
+	geo:long "-123.12206"^^xsd:float .
+
+skio:Forbidden_Plateau a :SkiResort ;
+	dcterms:identifier "560"^^xsd:int ;
+	foaf:name "Forbidden Plateau" ;
+	geo:lat "49.66152"^^xsd:float ;
+	geo:long "-125.16449"^^xsd:float .
+
+skio:Mt_Timothy a :SkiResort ;
+	dcterms:identifier "561"^^xsd:int ;
+	foaf:name "Mt Timothy" ;
+	geo:lat "51.91505"^^xsd:float ;
+	geo:long "-121.25198"^^xsd:float .
+
+skio:Troll a :SkiResort ;
+	dcterms:identifier "565"^^xsd:int ;
+	foaf:name "Troll" ;
+	geo:lat "53.067215"^^xsd:float ;
+	geo:long "-121.94069"^^xsd:float .
+
+skio:Wintergreen a :SkiResort ;
+	dcterms:identifier "567"^^xsd:int ;
+	foaf:name "Wintergreen" ;
+	geo:lat "50.980263"^^xsd:float ;
+	geo:long "-114.57161"^^xsd:float .
+
+skio:Whistler_Cross_Country_Connection a :SkiResort ;
+	dcterms:identifier "568"^^xsd:int ;
+	foaf:name "Whistler Cross Country Connection" ;
+	geo:lat "50.119972"^^xsd:float ;
+	geo:long "-122.94795"^^xsd:float .
+
+skio:Golden_Golf_Course a :SkiResort ;
+	dcterms:identifier "569"^^xsd:int ;
+	foaf:name "Golden Golf Course" ;
+	geo:lat "51.33273"^^xsd:float ;
+	geo:long "-117.0074"^^xsd:float .
+
+skio:Dawn_Mountain_Nordic a :SkiResort ;
+	dcterms:identifier "570"^^xsd:int ;
+	foaf:name "Dawn Mountain Nordic" ;
+	geo:lat "51.303387"^^xsd:float ;
+	geo:long "-117.05491"^^xsd:float .
+
+skio:Canoe_Mountain_Resort a :SkiResort ;
+	dcterms:identifier "571"^^xsd:int ;
+	foaf:name "Canoe Mountain Resort" ;
+	geo:lat "52.73785"^^xsd:float ;
+	geo:long "-119.2511"^^xsd:float .
+
+skio:Nickel_Plate_Nordic_Centre a :SkiResort ;
+	dcterms:identifier "572"^^xsd:int ;
+	foaf:name "Nickel Plate Nordic Centre" ;
+	geo:lat "49.383755"^^xsd:float ;
+	geo:long "-119.95433"^^xsd:float .
+
+skio:Stake_Lake a :SkiResort ;
+	dcterms:identifier "573"^^xsd:int ;
+	foaf:name "Stake Lake" ;
+	geo:lat "50.511463"^^xsd:float ;
+	geo:long "-120.48191"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Ski_Callaghan_(Whistler_Olympic_Park)> a :SkiResort ;
+	dcterms:identifier "574"^^xsd:int ;
+	foaf:name "Ski Callaghan (Whistler Olympic Park)" ;
+	geo:lat "50.13516"^^xsd:float ;
+	geo:long "-123.116745"^^xsd:float .
+
+skio:Black_Jack a :SkiResort ;
+	dcterms:identifier "575"^^xsd:int ;
+	foaf:name "Black Jack" ;
+	geo:lat "49.1131"^^xsd:float ;
+	geo:long "-117.81361"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Dreiländereck_Bergbahnen_(Arnoldstein)> a :SkiResort ;
+	dcterms:identifier "579"^^xsd:int ;
+	foaf:name "Dreiländereck Bergbahnen (Arnoldstein)" ;
+	geo:lat "46.542213"^^xsd:float ;
+	geo:long "13.713684"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Dobratsch_(Villacher_Alpe)> a :SkiResort ;
+	dcterms:identifier "580"^^xsd:int ;
+	foaf:name "Dobratsch (Villacher Alpe)" ;
+	geo:lat "46.59591"^^xsd:float ;
+	geo:long "13.711023"^^xsd:float .
+
+skio:Gerlitzen a :SkiResort ;
+	dcterms:identifier "581"^^xsd:int ;
+	foaf:name "Gerlitzen" ;
+	geo:lat "46.68245"^^xsd:float ;
+	geo:long "13.945631"^^xsd:float .
+
+skio:Heiligenblut a :SkiResort ;
+	dcterms:identifier "582"^^xsd:int ;
+	foaf:name "Heiligenblut" ;
+	geo:lat "47.033333"^^xsd:float ;
+	geo:long "12.833333"^^xsd:float .
+
+skio:Innerkrems a :SkiResort ;
+	dcterms:identifier "583"^^xsd:int ;
+	foaf:name "Innerkrems" ;
+	geo:lat "46.970707"^^xsd:float ;
+	geo:long "13.748274"^^xsd:float .
+
+skio:Katschberg a :SkiResort ;
+	dcterms:identifier "584"^^xsd:int ;
+	foaf:name "Katschberg" ;
+	geo:lat "47.058357"^^xsd:float ;
+	geo:long "13.617933"^^xsd:float .
+
+skio:Koralpe a :SkiResort ;
+	dcterms:identifier "585"^^xsd:int ;
+	foaf:name "Koralpe" ;
+	geo:lat "46.8"^^xsd:float ;
+	geo:long "14.983"^^xsd:float .
+
+skio:Kleinkirchheim a :SkiResort ;
+	dcterms:identifier "586"^^xsd:int ;
+	foaf:name "Kleinkirchheim" ;
+	geo:lat "46.81692"^^xsd:float ;
+	geo:long "13.78335"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Nassfeld_–_Hermagor> a :SkiResort ;
+	dcterms:identifier "587"^^xsd:int ;
+	foaf:name "Nassfeld – Hermagor" ;
+	geo:lat "46.564644"^^xsd:float ;
+	geo:long "13.274403"^^xsd:float .
+
+skio:Petzen a :SkiResort ;
+	dcterms:identifier "588"^^xsd:int ;
+	foaf:name "Petzen" ;
+	geo:lat "46.541092"^^xsd:float ;
+	geo:long "14.773779"^^xsd:float .
+
+skio:Simonhöhe a :SkiResort ;
+	dcterms:identifier "589"^^xsd:int ;
+	foaf:name "Simonhöhe" ;
+	geo:lat "46.775463"^^xsd:float ;
+	geo:long "14.168544"^^xsd:float .
+
+skio:Turracher_Höhe a :SkiResort ;
+	dcterms:identifier "590"^^xsd:int ;
+	foaf:name "Turracher Höhe" ;
+	geo:lat "46.913887"^^xsd:float ;
+	geo:long "13.877778"^^xsd:float .
+
+skio:Hochkar a :SkiResort ;
+	dcterms:identifier "591"^^xsd:int ;
+	foaf:name "Hochkar" ;
+	geo:lat "47.7107"^^xsd:float ;
+	geo:long "14.9013"^^xsd:float .
+
+skio:Mitterbach-Gemeindealpe a :SkiResort ;
+	dcterms:identifier "592"^^xsd:int ;
+	foaf:name "Mitterbach-Gemeindealpe" ;
+	geo:lat "47.81053"^^xsd:float ;
+	geo:long "15.288956"^^xsd:float .
+
+skio:Schischaukel_Mönichkirchen a :SkiResort ;
+	dcterms:identifier "593"^^xsd:int ;
+	foaf:name "Schischaukel Mönichkirchen" ;
+	geo:lat "47.5"^^xsd:float ;
+	geo:long "16.033333"^^xsd:float .
+
+skio:Ötscher_Lackenhof a :SkiResort ;
+	dcterms:identifier "594"^^xsd:int ;
+	foaf:name "Ötscher Lackenhof" ;
+	geo:lat "47.86987"^^xsd:float ;
+	geo:long "15.154653"^^xsd:float .
+
+skio:Semmering a :SkiResort ;
+	dcterms:identifier "595"^^xsd:int ;
+	foaf:name "Semmering" ;
+	geo:lat "47.632313"^^xsd:float ;
+	geo:long "15.829582"^^xsd:float .
+
+skio:Annaberg a :SkiResort ;
+	dcterms:identifier "596"^^xsd:int ;
+	foaf:name "Annaberg" ;
+	geo:lat "47.871666"^^xsd:float ;
+	geo:long "15.376111"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Ski_Gastein_(Bad_Gastein,_Sportgastein,_Bad_Hofgastein,_Großarl)> a :SkiResort ;
+	dcterms:identifier "597"^^xsd:int ;
+	foaf:name "Ski Gastein (Bad Gastein, Sportgastein, Bad Hofgastein, Großarl)" ;
+	geo:lat "47.11637"^^xsd:float ;
+	geo:long "13.13879"^^xsd:float .
+
+skio:Mühlbach_am_Hochkönig a :SkiResort ;
+	dcterms:identifier "602"^^xsd:int ;
+	foaf:name "Mühlbach am Hochkönig" ;
+	geo:lat "47.409706"^^xsd:float ;
+	geo:long "13.128448"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Maria_Alm_(Hochkönig)> a :SkiResort ;
+	dcterms:identifier "603"^^xsd:int ;
+	foaf:name "Maria Alm (Hochkönig)" ;
+	geo:lat "47.406193"^^xsd:float ;
+	geo:long "12.906382"^^xsd:float .
+
+skio:Lungau a :SkiResort ;
+	dcterms:identifier "604"^^xsd:int ;
+	foaf:name "Lungau" ;
+	geo:lat "47.116665"^^xsd:float ;
+	geo:long "13.816667"^^xsd:float .
+
+skio:Obertauern a :SkiResort ;
+	dcterms:identifier "605"^^xsd:int ;
+	foaf:name "Obertauern" ;
+	geo:lat "47.248055"^^xsd:float ;
+	geo:long "13.5575"^^xsd:float .
+
+skio:Saalbach-Hinterglemm a :SkiResort ;
+	dcterms:identifier "606"^^xsd:int ;
+	foaf:name "Saalbach-Hinterglemm" ;
+	geo:lat "47.3904"^^xsd:float ;
+	geo:long "12.637"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Flachau_(Flachauwinkl,_Zauchensee)> a :SkiResort ;
+	dcterms:identifier "607"^^xsd:int ;
+	foaf:name "Flachau (Flachauwinkl, Zauchensee)" ;
+	geo:lat "47.324394"^^xsd:float ;
+	geo:long "13.345642"^^xsd:float .
+
+skio:Kleinarl a :SkiResort ;
+	dcterms:identifier "608"^^xsd:int ;
+	foaf:name "Kleinarl" ;
+	geo:lat "47.301205"^^xsd:float ;
+	geo:long "13.354869"^^xsd:float .
+
+skio:Altenmarkt_-_Radstadt a :SkiResort ;
+	dcterms:identifier "610"^^xsd:int ;
+	foaf:name "Altenmarkt - Radstadt" ;
+	geo:lat "47.356995"^^xsd:float ;
+	geo:long "13.532367"^^xsd:float .
+
+skio:Wagrain a :SkiResort ;
+	dcterms:identifier "612"^^xsd:int ;
+	foaf:name "Wagrain" ;
+	geo:lat "47.328438"^^xsd:float ;
+	geo:long "13.299594"^^xsd:float .
+
+skio:Spielbergalm a :SkiResort ;
+	dcterms:identifier "613"^^xsd:int ;
+	foaf:name "Spielbergalm" ;
+	geo:lat "47.702396"^^xsd:float ;
+	geo:long "13.218355"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Kitzsteinhorn_(Kaprun,_Zell_am_See)> a :SkiResort ;
+	dcterms:identifier "614"^^xsd:int ;
+	foaf:name "Kitzsteinhorn (Kaprun, Zell am See)" ;
+	geo:lat "47.316666"^^xsd:float ;
+	geo:long "12.8"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Dachstein_West_(Salzburg:_Russbach,_Zwieselalm)> a :SkiResort ;
+	dcterms:identifier "615"^^xsd:int ;
+	foaf:name "Dachstein West (Salzburg: Russbach, Zwieselalm)" ;
+	geo:lat "49.016666"^^xsd:float ;
+	geo:long "13.233334"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Annaberg-Lungötz|Annaberg_im_Lammertal> a :SkiResort ;
+	dcterms:identifier "616"^^xsd:int ;
+	foaf:name "Annaberg-Lungötz|Annaberg im Lammertal" ;
+	geo:lat "47.516666"^^xsd:float ;
+	geo:long "13.416667"^^xsd:float .
+
+skio:Dachstein a :SkiResort ;
+	dcterms:identifier "619"^^xsd:int ;
+	foaf:name "Dachstein" ;
+	geo:lat "47.475693"^^xsd:float ;
+	geo:long "13.606444"^^xsd:float .
+
+skio:Haus_im_Ennstal a :SkiResort ;
+	dcterms:identifier "620"^^xsd:int ;
+	foaf:name "Haus im Ennstal" ;
+	geo:lat "47.4075"^^xsd:float ;
+	geo:long "13.766945"^^xsd:float .
+
+skio:Lachtal a :SkiResort ;
+	dcterms:identifier "621"^^xsd:int ;
+	foaf:name "Lachtal" ;
+	geo:lat "47.247776"^^xsd:float ;
+	geo:long "14.366667"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Lammeralm_(Langenwang)> a :SkiResort ;
+	dcterms:identifier "622"^^xsd:int ;
+	foaf:name "Lammeralm (Langenwang)" ;
+	geo:lat "47.5888"^^xsd:float ;
+	geo:long "15.594406"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Schladming_(Planai)> a :SkiResort ;
+	dcterms:identifier "623"^^xsd:int ;
+	foaf:name "Schladming (Planai)" ;
+	geo:lat "47.394165"^^xsd:float ;
+	geo:long "13.689167"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Stuhleck_–_Spital_am_Semmering> a :SkiResort ;
+	dcterms:identifier "624"^^xsd:int ;
+	foaf:name "Stuhleck – Spital am Semmering" ;
+	geo:lat "47.608883"^^xsd:float ;
+	geo:long "15.759029"^^xsd:float .
+
+skio:Tauplitz a :SkiResort ;
+	dcterms:identifier "625"^^xsd:int ;
+	foaf:name "Tauplitz" ;
+	geo:lat "47.616665"^^xsd:float ;
+	geo:long "14.0"^^xsd:float .
+
+skio:Alpbach a :SkiResort ;
+	dcterms:identifier "626"^^xsd:int ;
+	foaf:name "Alpbach" ;
+	geo:lat "47.398533"^^xsd:float ;
+	geo:long "11.943906"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Arlberg_(St_Anton,_Lech,_Zurs,_Stuben,_Wald)> a :SkiResort ;
+	dcterms:identifier "627"^^xsd:int ;
+	foaf:name "Arlberg (St Anton, Lech, Zurs, Stuben, Wald)" ;
+	geo:lat "47.128178"^^xsd:float ;
+	geo:long "10.262754"^^xsd:float .
+
+skio:Axamer_Lizum a :SkiResort ;
+	dcterms:identifier "628"^^xsd:int ;
+	foaf:name "Axamer Lizum" ;
+	geo:lat "47.195835"^^xsd:float ;
+	geo:long "11.301389"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Nordpark_Seegrube_(Nordketten_Bahn_Innsbruck)> a :SkiResort ;
+	dcterms:identifier "629"^^xsd:int ;
+	foaf:name "Nordpark Seegrube (Nordketten Bahn Innsbruck)" ;
+	geo:lat "47.306576"^^xsd:float ;
+	geo:long "11.379455"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Silvretta_Arena_(Ischgl,_Galtur,_Kappl,_See_I._P,_Samnaun))> a :SkiResort ;
+	dcterms:identifier "630"^^xsd:int ;
+	foaf:name "Silvretta Arena (Ischgl, Galtur, Kappl, See I. P, Samnaun))" ;
+	geo:lat "46.933334"^^xsd:float ;
+	geo:long "10.35"^^xsd:float .
+
+skio:Kaunertal a :SkiResort ;
+	dcterms:identifier "631"^^xsd:int ;
+	foaf:name "Kaunertal" ;
+	geo:lat "47.033333"^^xsd:float ;
+	geo:long "10.75"^^xsd:float .
+
+skio:Kitzbuhel a :SkiResort ;
+	dcterms:identifier "632"^^xsd:int ;
+	foaf:name "Kitzbuhel" ;
+	geo:lat "47.44527"^^xsd:float ;
+	geo:long "12.393608"^^xsd:float .
+
+skio:Lienz a :SkiResort ;
+	dcterms:identifier "633"^^xsd:int ;
+	foaf:name "Lienz" ;
+	geo:lat "46.829723"^^xsd:float ;
+	geo:long "12.769722"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Zillertal_3000_(Mayrhofen)> a :SkiResort ;
+	dcterms:identifier "634"^^xsd:int ;
+	foaf:name "Zillertal 3000 (Mayrhofen)" ;
+	geo:lat "47.166668"^^xsd:float ;
+	geo:long "11.866667"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Otztal_(Sölden)> a :SkiResort ;
+	dcterms:identifier "635"^^xsd:int ;
+	foaf:name "Otztal (Sölden)" ;
+	geo:lat "46.975628"^^xsd:float ;
+	geo:long "10.976372"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Pitztal_(Hochzeiger)> a :SkiResort ;
+	dcterms:identifier "636"^^xsd:int ;
+	foaf:name "Pitztal (Hochzeiger)" ;
+	geo:lat "47.15205"^^xsd:float ;
+	geo:long "10.758615"^^xsd:float .
+
+skio:Sankt_Jakob_im_Defereggental a :SkiResort ;
+	dcterms:identifier "637"^^xsd:int ;
+	foaf:name "Sankt Jakob im Defereggental" ;
+	geo:lat "46.91722"^^xsd:float ;
+	geo:long "12.329166"^^xsd:float .
+
+skio:Sankt_Johann_im_Tyrol a :SkiResort ;
+	dcterms:identifier "638"^^xsd:int ;
+	foaf:name "Sankt Johann im Tyrol" ;
+	geo:lat "47.5225"^^xsd:float ;
+	geo:long "12.425555"^^xsd:float .
+
+skio:Seefeld a :SkiResort ;
+	dcterms:identifier "639"^^xsd:int ;
+	foaf:name "Seefeld" ;
+	geo:lat "47.329445"^^xsd:float ;
+	geo:long "11.189167"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Stubaital_(Stubaier_Gletscher)> a :SkiResort ;
+	dcterms:identifier "640"^^xsd:int ;
+	foaf:name "Stubaital (Stubaier Gletscher)" ;
+	geo:lat "47.1667"^^xsd:float ;
+	geo:long "11.3167"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Ski_Welt_(Wilder_Kaiser_–_Gosau,_Scheffau,_Ellmau)> a :SkiResort ;
+	dcterms:identifier "641"^^xsd:int ;
+	foaf:name "Ski Welt (Wilder Kaiser – Gosau, Scheffau, Ellmau)" ;
+	geo:lat "47.465004"^^xsd:float ;
+	geo:long "12.203922"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Wildschönau_(Schatzbergbahn,_Niederau,_Oberau,_Auffach,_Thierbach)> a :SkiResort ;
+	dcterms:identifier "642"^^xsd:int ;
+	foaf:name "Wildschönau (Schatzbergbahn, Niederau, Oberau, Auffach, Thierbach)" ;
+	geo:lat "47.43331"^^xsd:float ;
+	geo:long "12.079983"^^xsd:float .
+
+skio:Zillertal_Arena a :SkiResort ;
+	dcterms:identifier "643"^^xsd:int ;
+	foaf:name "Zillertal Arena" ;
+	geo:lat "47.242764"^^xsd:float ;
+	geo:long "12.024021"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Zillertal_3000_(Hintertux)> a :SkiResort ;
+	dcterms:identifier "644"^^xsd:int ;
+	foaf:name "Zillertal 3000 (Hintertux)" ;
+	geo:lat "47.106937"^^xsd:float ;
+	geo:long "11.674991"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Kasberg_(Grünau_im_Almtal)> a :SkiResort ;
+	dcterms:identifier "645"^^xsd:int ;
+	foaf:name "Kasberg (Grünau im Almtal)" ;
+	geo:lat "47.811195"^^xsd:float ;
+	geo:long "13.993149"^^xsd:float .
+
+<http://inf.unibz.it/2017/ski-resort-ontology/#Krippenstein_(Dachstein_Obertraun_Freesports_Arena)> a :SkiResort ;
+	dcterms:identifier "646"^^xsd:int ;
+	foaf:name "Krippenstein (Dachstein Obertraun Freesports Arena)" ;
+	geo:lat "47.542778"^^xsd:float ;
+	geo:long "13.698889"^^xsd:float .
+
+skio:Postalm a :SkiResort ;
+	dcterms:identifier "647"^^xsd:int ;
+	foaf:name "Postalm" ;
+	geo:lat "47.65702"^^xsd:float ;
+	geo:long "13.437381"^^xsd:float .
+
+skio:Loser a :SkiResort ;
+	dcterms:identifier "648"^^xsd:int ;
+	foaf:name "Loser" ;
+	geo:lat "47.660934"^^xsd:float ;
+	geo:long "13.744562"^^xsd:float .
+
+skio:Feuerkogel a :SkiResort ;
+	dcterms:identifier "649"^^xsd:int ;
+	foaf:name "Feuerkogel" ;
+	geo:lat "47.81605"^^xsd:float ;
+	geo:long "13.717589"^^xsd:float .
+
+skio:Hinterstoder a :SkiResort ;
+	dcterms:identifier "650"^^xsd:int ;
+	foaf:name "Hinterstoder" ;
+	geo:lat "47.69639"^^xsd:float ;
+	geo:long "14.149445"^^xsd:float .
+
+skio:Hochficht a :SkiResort ;
+	dcterms:identifier "651"^^xsd:int ;
+	foaf:name "Hochficht" ;
+	geo:lat "48.733334"^^xsd:float ;
+	geo:long "13.916667"^^xsd:float .
+
+skio:Hohe-Wand-Wiese a :SkiResort ;
+	dcterms:identifier "652"^^xsd:int ;
+	foaf:name "Hohe-Wand-Wiese" ;
+	geo:lat "48.229645"^^xsd:float ;
+	geo:long "16.202517"^^xsd:float .
