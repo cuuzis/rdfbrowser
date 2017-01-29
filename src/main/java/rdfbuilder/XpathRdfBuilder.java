@@ -78,6 +78,7 @@ public class XpathRdfBuilder {
             Document doc = docBuilder.parse(pathname);
             XPathExpression expr;
             Node node;
+            NodeList nodeList;
             int level;
             String name;
             String subject;
@@ -88,23 +89,7 @@ public class XpathRdfBuilder {
 
             expr = xPath.compile("/region/name");
             name = expr.evaluate(doc);
-            subject = SKIO.PREFIX + ":" + name.replaceAll(" ","_");
-
-            expr = xPath.compile("/region/regions/region");
-            NodeList nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
-            for (int i = 0; i < nodeList.getLength(); i++) {
-                int containsId = Integer.parseInt(
-                        nodeList.item(i).getAttributes().item(0).getTextContent());
-            }
-
-            expr = xPath.compile("/region/parents/region");
-            NodeList parents = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
-            for (int i = 0; i < nodeList.getLength(); i++) {
-                int containsId = Integer.parseInt(
-                        nodeList.item(i).getAttributes().item(0).getTextContent());
-                //System.out.println(nodeList.item(i).getTextContent());
-            }
-
+            subject = getSubjectStr(name);
 
             // Store values in ttl:
             IRI geographicRegion;
@@ -117,9 +102,38 @@ public class XpathRdfBuilder {
             builder.defaultGraph()
                     .subject(subject)
                     .add(RDF.TYPE, geographicRegion)
-                    .add(FOAF.NAME, name)
-                    .add(DCTERMS.IDENTIFIER, counter);
+                    .add(DCTERMS.IDENTIFIER, counter)
+                    .add(FOAF.NAME, name);
 
+            // parent regions
+            expr = xPath.compile("/region/parents/region");
+            nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                String parentGeoRegion = nodeList.item(i).getTextContent();
+                builder.defaultGraph()
+                        .subject(subject)
+                        .add(SKIO.ISREGIONINREGION, getSubjectStr(parentGeoRegion));
+            }
+
+            // child regions
+            expr = xPath.compile("/region/regions/region");
+            nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                String childGeoRegion = nodeList.item(i).getTextContent();
+                builder.defaultGraph()
+                        .subject(subject)
+                        .add(SKIO.CONTAINSGEOREGION, getSubjectStr(childGeoRegion));
+            }
+
+            // child ski resorts
+            expr = xPath.compile("/region/skiAreas/skiArea");
+            nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+            for (int i = 0; i < nodeList.getLength(); i++) {
+                String childSkiResort = nodeList.item(i).getTextContent();
+                builder.defaultGraph()
+                        .subject(subject)
+                        .add(SKIO.CONTAINSSKIRESORT, getSubjectStr(childSkiResort));
+            }
 
             // Get next counter(identifier) and filename
             counter++;
@@ -142,6 +156,7 @@ public class XpathRdfBuilder {
                 // Get XML values using XPath
                 Document doc = docBuilder.parse(pathname);
                 XPathExpression expr;
+                NodeList nodeList;
                 Node node;
                 String name;
                 String subject;
@@ -150,7 +165,7 @@ public class XpathRdfBuilder {
 
                 expr = xPath.compile("/skiArea/name");
                 name = expr.evaluate(doc);
-                subject = SKIO.PREFIX + ":" + name.replaceAll(" ","_");
+                subject = getSubjectStr(name);
 
                 // Store mandatory values in ttl
                 builder.defaultGraph()
@@ -158,6 +173,16 @@ public class XpathRdfBuilder {
                         .add(RDF.TYPE, SKIO.SKIRESORT)
                         .add(DCTERMS.IDENTIFIER, counter)
                         .add(FOAF.NAME, name);
+
+                // parent regions
+                expr = xPath.compile("/skiArea/regions/region");
+                nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+                for (int i = 0; i < nodeList.getLength(); i++) {
+                    String parentGeoRegion = nodeList.item(i).getTextContent();
+                    builder.defaultGraph()
+                            .subject(subject)
+                            .add(SKIO.ISRESORTINREGION, getSubjectStr(parentGeoRegion));
+                }
 
                 // add lat long if they exist
                 expr = xPath.compile("/skiArea/georeferencing/@lat");
@@ -184,5 +209,9 @@ public class XpathRdfBuilder {
             pathname = SKI_AREAS_OUT + counter + ".xml";
         }
         System.out.println("Processed " + (counter - startFrom) + " resorts. Of them invalid files: " + brokenFiles);
+    }
+
+    private static String getSubjectStr(String name) {
+        return SKIO.PREFIX + ":" + name.replaceAll(" ","_");
     }
 }
