@@ -1,5 +1,6 @@
 <%@ page import="Secret.SecretApiKeys" %>
 <%@ page import="endpoint.LocalFileSparqlEndpoint" %>
+<%@ page import="java.util.List" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -22,19 +23,64 @@
 		width: 30%;
 		min-width: 300px;
 	  }
+	  #sidebar ul {
+		  padding: 10px;
+	  }
+	  #sidebar li {
+		  display: block;
+	  }
     </style>
   </head>
   <body>
     <div id="map"></div>
 	<div id="sidebar">
-		<h2>
-		Continents
-		</h2>
+		<h3>
+		<%
+		String className = request.getParameter("Class");
+		String propertyName = request.getParameter("Property");
+		String instanceName = request.getParameter("Instance");
+		out.write("className=[" + className + "]");
+		out.write("propertyName=[" + propertyName + "]");
+		out.write("instanceName=[" + instanceName + "]");
+		%>
+		</h3>
 		<ul>
-          <% 
-		  for (String str : LocalFileSparqlEndpoint.getClassInstances("")) {
-            out.write("<ul>" + str + "</ul>");
-          } %>
+		
+          <%
+		  if (className != null) {
+		    List<String> triples = LocalFileSparqlEndpoint.getClassInstances(className);
+		    if (triples.isEmpty())
+			  out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
+		    else {
+		      for (String str : triples) {
+                out.write("<li><a href=\"?Instance=" + str + "\">" + str + "</a></li>");
+              }
+		    }
+		  } else if (propertyName != null) {
+			List<String[]> triples = LocalFileSparqlEndpoint.getPropertyInstances(propertyName);
+			if (triples.isEmpty())
+			out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
+			else {
+			  for (String[] str : triples) {
+				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+				out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
+			  }
+			}
+		  } else if (instanceName != null) {
+			List<String[]> triples = LocalFileSparqlEndpoint.getInstanceProperties(instanceName);
+			if (triples.isEmpty())
+			out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
+			else {
+			  for (String[] str : triples) {
+				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+				out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
+			  }
+			}  
+		  } else
+			  out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
+		  %>
 		</ul>
 	</div>
     <script>
