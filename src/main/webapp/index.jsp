@@ -1,4 +1,5 @@
 <%@ page import="Secret.SecretApiKeys" %>
+<%@ page import="endpoint.LocalFileSparqlEndpoint" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -6,21 +7,36 @@
     <meta charset="utf-8">
     <title>Marker Clustering</title>
     <style>
-      /* Always set the map height explicitly to define the size of the div
-       * element that contains the map. */
-      #map {
-        height: 100%;
-      }
-      /* Optional: Makes the sample page fill the window. */
       html, body {
         height: 100%;
         margin: 0;
         padding: 0;
       }
+      #map {
+		float: left;
+        height: 100%;
+        width: 70%;
+      }
+	  #sidebar {
+		float: left;
+		width: 30%;
+		min-width: 300px;
+	  }
     </style>
   </head>
   <body>
     <div id="map"></div>
+	<div id="sidebar">
+		<h2>
+		Continents
+		</h2>
+		<ul>
+          <% 
+		  for (String str : LocalFileSparqlEndpoint.getClassInstances("")) {
+            out.write("<ul>" + str + "</ul>");
+          } %>
+		</ul>
+	</div>
     <script>
 
       function initMap() {

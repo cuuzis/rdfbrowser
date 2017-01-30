@@ -22,6 +22,8 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.xpath.*;
 
 import java.io.*;
+import java.net.*;
+import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -31,7 +33,8 @@ import static webscraper.ResortDownloader.SKI_AREAS_OUT;
 
 public class XpathRdfBuilder {
 
-    private static final String outputLocation = "src/main/resources/model.ttl";
+    public static final String MODEL_LOCATION = "src/main/resources/model.ttl";
+    private static final String ONTOLOGY_LOCATION = "src/main/resources/skiresorts-xml.owl";
 
     private static XPathFactory xPathFactory;
     private static XPath xPath;
@@ -49,7 +52,7 @@ public class XpathRdfBuilder {
 
         // Extract namespaces from ontology
         OntModel ontoModel = ModelFactory.createOntologyModel();
-        InputStream ontoFile = FileManager.get().open("src/main/resources/skiresorts-xml.owl");
+        InputStream ontoFile = FileManager.get().open(ONTOLOGY_LOCATION);
         ontoModel.read(ontoFile, null);
         Map<String, String> namespaces = ontoModel.getNsPrefixMap();
         for(Map.Entry<String, String> entry : namespaces.entrySet()) {
@@ -63,7 +66,7 @@ public class XpathRdfBuilder {
 
         // Save model to file
         final Model model = builder.build();
-        FileOutputStream out = new FileOutputStream(outputLocation);
+        FileOutputStream out = new FileOutputStream(MODEL_LOCATION);
         Rio.write(model, out, RDFFormat.TURTLE);
     }
 
@@ -211,7 +214,8 @@ public class XpathRdfBuilder {
         System.out.println("Processed " + (counter - startFrom) + " resorts. Of them invalid files: " + brokenFiles);
     }
 
-    private static String getSubjectStr(String name) {
-        return SKIO.PREFIX + ":" + name.replaceAll(" ","_");
+    private static String getSubjectStr(String name) throws UnsupportedEncodingException {
+        //return SKIO.PREFIX + ":" + name.replaceAll("( |\\'|\\\\)","_");
+        return SKIO.PREFIX + ":" + URLEncoder.encode(name, "UTF-8");
     }
 }

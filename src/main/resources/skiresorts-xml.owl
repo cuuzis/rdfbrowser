@@ -8,8 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:dcterms="http://purl.org/dc/terms/"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:skio="http://inf.unibz.it/2017/ski-resort-ontology/#"
-     xmlns:ski-resort-ontology="http://inf.unibz.it/2017/ski-resort-ontology/"
+     xmlns:skio="http://inf.unibz.it/2017/ski-resort-ontology#"
      xmlns:foaf="http://xmlns.com/foaf/0.1/">
     <owl:Ontology rdf:about="http://inf.unibz.it/2017/ski-resort-ontology"/>
     
@@ -403,7 +402,7 @@
 
     <owl:NamedIndividual rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/Alpine_Meadows_Ski_Area">
         <rdf:type rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiResort"/>
-        <ski-resort-ontology:isLocatedInRegion rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/Americas"/>
+        <skio:isLocatedInRegion rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/Americas"/>
     </owl:NamedIndividual>
     
 
