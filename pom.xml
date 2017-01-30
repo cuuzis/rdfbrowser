@@ -45,6 +45,11 @@
                 <version>3.0.0</version>
                 <configuration>
                     <outputDirectory>${basedir}/../apache-tomcat-8.5.9/webapps</outputDirectory>
+                    <packagingExcludes>
+                        WEB-INF/classes/xml-maps/,
+                        WEB-INF/classes/xml-regions/,
+                        WEB-INF/classes/xml-skiareas/
+                    </packagingExcludes>
                 </configuration>
             </plugin>
             <!-- RDF -->

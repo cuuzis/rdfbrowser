@@ -13,15 +13,23 @@
         margin: 0;
         padding: 0;
       }
+	  @media screen and (max-width: 820px) {
+		div#map {
+			width:100%;
+		}   
+	  }
       #map {
 		float: left;
         height: 100%;
-        width: 70%;
+        width: 60%;
+		min-width: 600px;
       }
 	  #sidebar {
 		float: left;
-		width: 30%;
-		min-width: 300px;
+		width: 40%;
+		min-width: 400px;
+        overflow-y: auto;
+        height: 100vh;
 	  }
 	  #sidebar ul {
 		  padding: 10px;
@@ -29,57 +37,93 @@
 	  #sidebar li {
 		  display: block;
 	  }
+	  #sidebar h2 {
+		  padding-left: 20px;
+	  }
     </style>
   </head>
   <body>
     <div id="map"></div>
 	<div id="sidebar">
-		<h3>
+		<h2>
 		<%
 		String className = request.getParameter("Class");
 		String propertyName = request.getParameter("Property");
 		String instanceName = request.getParameter("Instance");
-		out.write("className=[" + className + "]");
-		out.write("propertyName=[" + propertyName + "]");
-		out.write("instanceName=[" + instanceName + "]");
+		if (className != null) 
+		  out.write("Class "+className);
+	    else if (propertyName != null)
+		  out.write("Property " + propertyName);
+	    else if (instanceName != null)
+		  out.write("Instance " + instanceName);
+	    else
+		  out.write("Nothing");
 		%>
-		</h3>
+		</h2>
 		<ul>
 		
           <%
+		  boolean foundItems = false;
 		  if (className != null) {
 		    List<String> triples = LocalFileSparqlEndpoint.getClassInstances(className);
-		    if (triples.isEmpty())
-			  out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
-		    else {
+		    if (!triples.isEmpty()) {
+			  foundItems = true;
 		      for (String str : triples) {
                 out.write("<li><a href=\"?Instance=" + str + "\">" + str + "</a></li>");
               }
 		    }
 		  } else if (propertyName != null) {
 			List<String[]> triples = LocalFileSparqlEndpoint.getPropertyInstances(propertyName);
-			if (triples.isEmpty())
-			out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
-			else {
+			if (!triples.isEmpty()) {
+			  foundItems = true;
 			  for (String[] str : triples) {
 				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
-				out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+				if (str[1].startsWith(":"))
+				  out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+			    else
+				  out.write("<li><a href=\"" + str[1] + "\">" + str[1] + "</a></li>");
 				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
 			  }
 			}
 		  } else if (instanceName != null) {
-			List<String[]> triples = LocalFileSparqlEndpoint.getInstanceProperties(instanceName);
-			if (triples.isEmpty())
-			out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
-			else {
+			List<String> classes = LocalFileSparqlEndpoint.getInstanceClasses(instanceName);
+		    if (!classes.isEmpty()) {
+			  foundItems = true;
+			  out.write("<h3>Class/Classes</h3><ul>");
+		      for (String str : classes) {
+                out.write("<li><a href=\"?Class=" + str + "\">" + str + "</a></li>");
+              }
+			  out.write("</ul>");
+		    }
+			List<String[]> triples = LocalFileSparqlEndpoint.getInstanceLiterals(instanceName);
+			if (!triples.isEmpty()) {
+			  foundItems = true;
+			  out.write("<h3>Data Properties (Literals)</h3>");
 			  for (String[] str : triples) {
 				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
-				out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+				if (str[1].startsWith(":"))
+				  out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+			    else
+				  out.write("<li><a href=\"" + str[1] + "\">" + str[1] + "</a></li>");
+				out.write("<li>\"" + str[2] + "\"</li></ul>");
+			  }
+			}
+			triples = LocalFileSparqlEndpoint.getInstanceProperties(instanceName);
+			if (!triples.isEmpty()) {
+			  foundItems = true;
+			  out.write("<h3>Object Properties</h3>");
+			  for (String[] str : triples) {
+				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+				if (str[1].startsWith(":"))
+				  out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
+			    else
+				  out.write("<li><a href=\"" + str[1] + "\">" + str[1] + "</a></li>");
 				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
 			  }
-			}  
-		  } else
-			  out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">Continents</a></li>");
+			}
+		  }
+		  if (!foundItems)
+		    out.write("<li>No entries. Try browsing <a href=\"?Class=:Continent\">:Continent</a></li>");
 		  %>
 		</ul>
 	</div>

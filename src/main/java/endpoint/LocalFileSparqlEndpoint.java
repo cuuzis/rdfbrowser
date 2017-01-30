@@ -34,12 +34,23 @@ public class LocalFileSparqlEndpoint {
             System.out.println(str[1]);
             System.out.println(str[2]);
         }
-        System.out.println("---- Instance Info -----------------------------");
+        System.out.println("---- Instance Instances -----------------------------");
         for (String[] str : getInstanceProperties(":Americas")) {
             System.out.println("Triple:");
             System.out.println(str[0]);
             System.out.println(str[1]);
             System.out.println(str[2]);
+        }
+        System.out.println("---- Instance Literals -----------------------------");
+        for (String[] str : getInstanceLiterals(":Americas")) {
+            System.out.println("Triple:");
+            System.out.println(str[0]);
+            System.out.println(str[1]);
+            System.out.println(str[2]);
+        }
+        System.out.println("---- Instance Classes -----------------------------");
+        for (String str : getInstanceClasses(":Americas")) {
+            System.out.println(str);
         }
     }
 
@@ -52,9 +63,9 @@ public class LocalFileSparqlEndpoint {
         connection.add(inputStream, SKIO.NAMESPACE, RDFFormat.TURTLE);
         String fullQuery =
                 "PREFIX : <"+SKIO.NAMESPACE+">\n" +
+                        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
                         /*"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> \n" +
                         "PREFIX owl: <http://www.w3.org/2002/07/owl#> \n" +
-                        "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
                         "PREFIX dcterms: <http://purl.org/dc/terms/> \n" +
                         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \n" +
                         "PREFIX skio: <http://inf.unibz.it/2017/ski-resort-ontology/#> \n" +
@@ -69,15 +80,15 @@ public class LocalFileSparqlEndpoint {
     }
 
     public static List<String> getClassInstances(String rdfClass) {
-        String qry = "SELECT DISTINCT ?className WHERE {\n" +
-                "?className a "+rdfClass+".\n" +
+        String qry = "SELECT DISTINCT ?instance WHERE {\n" +
+                "?instance a "+rdfClass+".\n" +
                 "}";
         List<String> results = new ArrayList<>();
         try {
             TupleQueryResult qryResult = executeQuery(qry);
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
-                results.add(getStringVal(bindingSet,"className"));
+                results.add(getStringVal(bindingSet,"instance"));
             }
         } catch (Exception e) { // Malformed query etc
             e.printStackTrace();
@@ -115,6 +126,8 @@ public class LocalFileSparqlEndpoint {
     public static List<String[]> getInstanceProperties(String rdfInstance) throws IOException {
         String qry = "SELECT DISTINCT ?property ?hasValue WHERE {\n" +
                 rdfInstance + " ?property ?hasValue\n" +
+                " filter (isIRI(?hasValue)\n" +
+                " && (?property != rdf:type))\n" +
                 "}";
         List<String[]> results = new ArrayList<>();
         try {
@@ -126,6 +139,51 @@ public class LocalFileSparqlEndpoint {
                         getStringVal(bindingSet, "property"),
                         getStringVal(bindingSet, "hasValue")}
                 );
+            }
+        } catch (Exception e) { // Malformed query etc
+            e.printStackTrace();
+        } finally {
+            connection.close();
+            repo.shutDown();
+        }
+        return results;
+    }
+
+    public static List<String[]> getInstanceLiterals(String rdfInstance) throws IOException {
+        String qry = "SELECT DISTINCT ?property ?hasValue WHERE {\n" +
+                rdfInstance + " ?property ?hasValue\n" +
+                " FILTER isLiteral(?hasValue)\n" +
+                "}";
+        List<String[]> results = new ArrayList<>();
+        try {
+            TupleQueryResult qryResult = executeQuery(qry);
+            while (qryResult.hasNext()) {
+                BindingSet bindingSet = qryResult.next();
+                results.add(new String[]{
+                        rdfInstance,
+                        getStringVal(bindingSet, "property"),
+                        getStringVal(bindingSet, "hasValue")}
+                );
+            }
+        } catch (Exception e) { // Malformed query etc
+            e.printStackTrace();
+        } finally {
+            connection.close();
+            repo.shutDown();
+        }
+        return results;
+    }
+
+    public static List<String> getInstanceClasses(String rdfInstance) throws IOException {
+        String qry = "SELECT DISTINCT ?hasValue WHERE {\n" +
+                rdfInstance + " rdf:type ?hasValue .\n" +
+                "}";
+        List<String> results = new ArrayList<>();
+        try {
+            TupleQueryResult qryResult = executeQuery(qry);
+            while (qryResult.hasNext()) {
+                BindingSet bindingSet = qryResult.next();
+                results.add(getStringVal(bindingSet, "hasValue"));
             }
         } catch (Exception e) { // Malformed query etc
             e.printStackTrace();
