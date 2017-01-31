@@ -17,6 +17,11 @@ public class SKIO {
     public static final IRI ISREGIONINREGION;
     public static final IRI CONTAINSSKIRESORT;
     public static final IRI ISRESORTINREGION;
+    public static final IRI MAXELEVATION;
+    public static final IRI MINELEVATION;
+    public static final IRI HASMAP;
+    public static final IRI ISMAPOF;
+    public static final IRI SKIMAP;
 
     static {
         SimpleValueFactory factory = SimpleValueFactory.getInstance();
@@ -24,9 +29,14 @@ public class SKIO {
         CONTINENT = factory.createIRI(NAMESPACE, "Continent");
         COUNTRY = factory.createIRI(NAMESPACE, "Country");
         SKIRESORT = factory.createIRI(NAMESPACE, "SkiResort");
+        SKIMAP = factory.createIRI(NAMESPACE, "SkiMap");
         CONTAINSGEOREGION = factory.createIRI(NAMESPACE, "containsGeographicRegion");
         ISREGIONINREGION = factory.createIRI(NAMESPACE, "isGeographicRegionLocatedInRegion");
         CONTAINSSKIRESORT = factory.createIRI(NAMESPACE, "containsSkiResort");
         ISRESORTINREGION = factory.createIRI(NAMESPACE, "isSkiResortLocatedInRegion");
+        MAXELEVATION = factory.createIRI(NAMESPACE, "maximumElevation");
+        MINELEVATION = factory.createIRI(NAMESPACE, "minimumElevation");
+        HASMAP = factory.createIRI(NAMESPACE, "hasMap");
+        ISMAPOF = factory.createIRI(NAMESPACE, "isMapOf");
     }
 }

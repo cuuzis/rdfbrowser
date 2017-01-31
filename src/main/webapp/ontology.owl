@@ -17,6 +17,23 @@
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://inf.unibz.it/2017/ski-resort-ontology#isLocatedInRegion -->
+
+    <owl:AnnotationProperty rdf:about="http://inf.unibz.it/2017/ski-resort-ontology#isLocatedInRegion"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -101,6 +118,17 @@
     
 
 
+    <!-- http://inf.unibz.it/2017/ski-resort-ontology/hasMap -->
+
+    <owl:ObjectProperty rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/hasMap">
+        <owl:inverseOf rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/isMapOf"/>
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#InverseFunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiResort"/>
+        <rdfs:range rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiMap"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://inf.unibz.it/2017/ski-resort-ontology/hasNightSkiing -->
 
     <owl:ObjectProperty rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/hasNightSkiing">
@@ -138,6 +166,16 @@
     <owl:ObjectProperty rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/isLocatedInRegion">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
         <rdfs:range rdf:resource="http://www.w3.org/2003/01/geo/wgs84_pos#SpatialThing"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://inf.unibz.it/2017/ski-resort-ontology/isMapOf -->
+
+    <owl:ObjectProperty rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/isMapOf">
+        <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#FunctionalProperty"/>
+        <rdfs:domain rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiMap"/>
+        <rdfs:range rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiResort"/>
     </owl:ObjectProperty>
     
 
@@ -213,7 +251,10 @@
 
     <!-- http://www.w3.org/2003/01/geo/wgs84_pos#altitude -->
 
-    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#altitude"/>
+    <owl:DatatypeProperty rdf:about="http://www.w3.org/2003/01/geo/wgs84_pos#altitude">
+        <rdfs:domain rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiResort"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#decimal"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -402,7 +443,7 @@
 
     <owl:NamedIndividual rdf:about="http://inf.unibz.it/2017/ski-resort-ontology/Alpine_Meadows_Ski_Area">
         <rdf:type rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/SkiResort"/>
-        <skio:isLocatedInRegion rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/Americas"/>
+        <isLocatedInRegion rdf:resource="http://inf.unibz.it/2017/ski-resort-ontology/Americas"/>
     </owl:NamedIndividual>
     
 

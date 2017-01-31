@@ -23,7 +23,6 @@ import javax.xml.xpath.*;
 
 import java.io.*;
 import java.net.*;
-import java.nio.charset.Charset;
 import java.nio.file.Files;
 import java.nio.file.Paths;
 import java.util.Map;
@@ -33,8 +32,8 @@ import static webscraper.ResortDownloader.SKI_AREAS_OUT;
 
 public class XpathRdfBuilder {
 
-    public static final String MODEL_LOCATION = "src/main/resources/model.ttl";
-    private static final String ONTOLOGY_LOCATION = "src/main/resources/skiresorts-xml.owl";
+    public static final String MODEL_LOCATION = "src/main/webapp/model.ttl";
+    private static final String ONTOLOGY_LOCATION = "src/main/webapp/ontology.owl";
 
     private static XPathFactory xPathFactory;
     private static XPath xPath;
@@ -203,6 +202,53 @@ public class XpathRdfBuilder {
                             .add(GEO.LAT, latitude)
                             .add(GEO.LONG, longitude);
                 }
+
+                // add top elevation if it exists
+                expr = xPath.compile("/skiArea/georeferencing/@top");
+                node = (Node)expr.evaluate(doc, XPathConstants.NODE);
+                if (node != null) {
+                    double top = Double.parseDouble(node.getNodeValue());
+                    builder.defaultGraph()
+                            .subject(subject)
+                            .add(SKIO.MAXELEVATION, top);
+                }
+
+                // add bottom elevation if it exists
+                expr = xPath.compile("/skiArea/georeferencing/@bottom");
+                node = (Node)expr.evaluate(doc, XPathConstants.NODE);
+                if (node != null) {
+                    double bottom = Double.parseDouble(node.getNodeValue());
+                    builder.defaultGraph()
+                            .subject(subject)
+                            .add(SKIO.MINELEVATION, bottom);
+                }
+
+                // add homepage if it exists
+                expr = xPath.compile("/skiArea/officialWebsite");
+                String homepage = expr.evaluate(doc);
+                if (homepage != "") {
+                    builder.defaultGraph()
+                            .subject(subject)
+                            .add(FOAF.HOMEPAGE, homepage);
+                }
+
+                // add skimaps
+                expr = xPath.compile("/skiArea/skiMaps/skiMap/@id");
+                nodeList = (NodeList) expr.evaluate(doc, XPathConstants.NODESET);
+                for (int i = 0; i < nodeList.getLength(); i++) {
+                    String skimapId = nodeList.item(i).getTextContent();
+                    builder.defaultGraph()
+                            .subject(subject)
+                            .add(SKIO.HASMAP, getSubjectStr(skimapId)); // add child map
+                }
+                for (int i = 0; i < nodeList.getLength(); i++) {
+                    String skimapId = nodeList.item(i).getTextContent();
+                    builder.defaultGraph()
+                            .add(getSubjectStr(skimapId), RDF.TYPE, SKIO.SKIMAP) // add map instance
+                            .add(getSubjectStr(skimapId), SKIO.ISMAPOF, subject) // add relationship
+                            .add(getSubjectStr(skimapId), FOAF.IMAGE, "https://skimap.org/SkiMaps/view/" + skimapId + ".xml"); // add relationship
+                }
+
             }
             else {
                 brokenFiles++;
@@ -216,6 +262,10 @@ public class XpathRdfBuilder {
 
     private static String getSubjectStr(String name) throws UnsupportedEncodingException {
         //return SKIO.PREFIX + ":" + name.replaceAll("( |\\'|\\\\)","_");
-        return SKIO.PREFIX + ":" + URLEncoder.encode(name, "UTF-8");
+        //return SKIO.PREFIX + ":" + URLEncoder.encode(name.replaceAll(" ","_"), "UTF-8");
+
+        name = name.replaceAll("( |,|\\.|;|\\(|\\)|\\\\|\\+|\\{|\\}|\\:|\\;|%)","_");
+        name = SKIO.PREFIX + ":" + URLEncoder.encode(name, "UTF-8");
+        return name;
     }
 }

@@ -24,9 +24,9 @@ public class ResortDownloader {
     private static final String SKI_MAPS_OUT = "src/main/resources/xml-maps/";
 
     public static void main(String[] args) {
-        scrapeData(REGIONS, REGIONS_OUT, 1);
-        scrapeData(SKI_AREAS, SKI_AREAS_OUT, 1);
-        scrapeData(SKI_MAPS, SKI_MAPS_OUT, 22); // for some reason ski areas start from 22.xml
+        scrapeData(REGIONS, REGIONS_OUT, 1, 600);
+        scrapeData(SKI_AREAS, SKI_AREAS_OUT, 1, 2222);
+        //scrapeData(SKI_MAPS, SKI_MAPS_OUT, 22); // for some reason ski areas start from 22.xml
     }
 
     /**
@@ -35,24 +35,21 @@ public class ResortDownloader {
      * @param destination Directory
      * @param startFrom first document
      */
-    private static void scrapeData(String source, String destination, int startFrom) {
+    private static void scrapeData(String source, String destination, int startFrom, int endAt) {
         URL src;
         File dest;
         File emptyResults;
         int counter = -1;
         try {
-            src = new URL(source +"0.xml");
-            emptyResults = new File(destination + "0_empty.xml");
-            FileUtils.copyURLToFile(src, emptyResults);
-
             counter = startFrom;
-            do {
+            while (counter <= endAt) {
                 src = new URL(source + counter + ".xml");
                 dest = new File(destination + counter + ".xml");
                 FileUtils.copyURLToFile(src, dest);
                 counter++;
-            } while (!FileUtils.contentEquals(emptyResults, dest));
-            dest.delete(); //Last file is empty
+                if ((counter % 100) == 0)
+                    System.out.println("counter: " + counter);
+            }
 
         } catch (MalformedURLException e) {
             System.out.println(counter + " Malformed URL");
@@ -61,6 +58,6 @@ public class ResortDownloader {
             System.out.println(counter + " IO error");
             e.printStackTrace();
         }
-        System.out.println("Processed " + (counter - startFrom - 1) + " of " + source);
+        System.out.println("Processed " + (counter - startFrom) + " of " + source);
     }
 }
