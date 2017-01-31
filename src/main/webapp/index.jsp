@@ -1,6 +1,7 @@
 <%@ page import="Secret.SecretApiKeys" %>
 <%@ page import="endpoint.LocalFileSparqlEndpoint" %>
 <%@ page import="java.util.List" %>
+<%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
 <html>
   <head>
@@ -37,7 +38,8 @@
         height: 100vh;
 	  }
 	  #sidebar ul {
-		  padding: 10px;
+		  padding-left: 10px;
+		  padding-bottom: 5px;
 	  }
 	  #sidebar li {
 		  display: block;
@@ -76,13 +78,20 @@
 		
           <%
 		  boolean foundItems = false;
+		  List<String[]> classInstances = new ArrayList<>();
 		  if (className != null) {
-		    List<String[]> triples = LocalFileSparqlEndpoint.getClassInstances(className);
-		    if (!triples.isEmpty()) {
+		    classInstances = LocalFileSparqlEndpoint.getClassInstances(className);
+		    if (!classInstances.isEmpty()) {
 			  foundItems = true;
 			  out.write("<h3>Instances</h3>");
-		      for (String str[] : triples) {
-                out.write("<li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+		      for (String str[] : classInstances) {
+                out.write("<li><ul>");
+				out.write("<li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a><li>");
+				if (str[1].length() > 0) {
+                  out.write("<li>" + str[1] + "</li>");
+				  
+				}
+			    out.write("</ul></li>");
               }
 		    }
 		  } else if (propertyName != null) {
@@ -169,12 +178,13 @@
       var markers = [];
 	  <%
 	    if (coordinates != "") {
-			out.write("var marker = new google.maps.Marker({position: " + center + ",title: '" + instanceName + "'});");
-			out.write("var contentString = '<a href=\"?Instance=" + instanceName +"\">" + instanceName + "</a>';");
-			out.write("var infowindow = new google.maps.InfoWindow({content: contentString});");
-			out.write("marker.addListener('click', function() {infowindow.open(map, marker);});");
-			out.write("markers = [marker];");
-		} 
+		  out.write("markers = [getInstanceMarker(" + center + ",\"" + instanceName + "\")];");
+		} else if (!classInstances.isEmpty()) {
+		  for (String[] str : classInstances) {
+			if (str[1].length() > 0)
+			  out.write("markers.push(getInstanceMarker(" + str[1] + ",\"" + str[0] +"\"));");
+		  }
+		}
 	  %>
       
 
@@ -196,6 +206,14 @@
         var markerCluster = new MarkerClusterer(map, markers,
             {imagePath: 'https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/m'});
       }
+	  
+	  function getInstanceMarker(pos, instanceName) {
+		var marker = new google.maps.Marker({position: pos, title: instanceName});
+		var contentString = '<a href="?Instance=' + instanceName + '">' + instanceName + '</a>';
+		var infowindow = new google.maps.InfoWindow({content: contentString});
+		marker.addListener('click', function() {infowindow.open(map, marker);});
+		return marker;
+	  }
     </script>
     <script src="https://developers.google.com/maps/documentation/javascript/examples/markerclusterer/markerclusterer.js">
     </script>

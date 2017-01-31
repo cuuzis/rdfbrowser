@@ -97,7 +97,7 @@ public class LocalFileSparqlEndpoint {
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
                 Value lat = bindingSet.getValue("lat");
-                Value lng = bindingSet.getValue("lat");
+                Value lng = bindingSet.getValue("long");
                 String coordinates = "";
                 if (lat != null && lng != null)
                     coordinates =  "{lat: " + lat.stringValue() + ", lng: " + lng.stringValue() + "}";
