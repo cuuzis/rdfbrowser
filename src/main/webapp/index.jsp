@@ -1,5 +1,6 @@
 <%@ page import="Secret.SecretApiKeys" %>
 <%@ page import="endpoint.LocalFileSparqlEndpoint" %>
+<%@ page import="endpoint.HttpSparqlEndpoint" %>
 <%@ page import="java.util.List" %>
 <%@ page import="java.util.ArrayList" %>
 <!DOCTYPE html>
@@ -7,7 +8,7 @@
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Marker Clustering</title>
+    <title>RDF Ski Resort Browser</title>
     <style>
       html, body {
         height: 100%;
@@ -53,7 +54,7 @@
     <div id="map"></div>
 	<div id="sidebar">
 		<ul>
-		  <li>Ontology visualization in <a href="<% out.write("http://" + request.getServerName() + "/webvowl/#iri=http://" + request.getServerName() + "/ski-resort-browser/ontology.owl");%>">WebVOWL</a></li>
+		  <li>Ontology <a href="<% out.write("http://" + request.getServerName() + "/webvowl/#iri=http://" + request.getServerName() + "/ski-resort-browser/ontology.owl");%>">visualized (in WebVOWL)</a></li>
 		  <li>Ontology file: <a href="ontology.owl">ontology.owl</a></li>
 		  <li>Data file: <a href="model.ttl">model.ttl</a></li>
 		  <li>Github: <a href="https://github.com/cuuzis/rdfbrowser">https://github.com/cuuzis/rdfbrowser</a></li>
@@ -74,8 +75,18 @@
 		  out.write("Nothing");
 		%>
 		</h2>
+		<%
+		if (instanceName != null) {
+			out.write("<ul><li>");
+			String dbpediaEntry = HttpSparqlEndpoint.getDbpediaSkiArea(instanceName.substring(1));
+			if (dbpediaEntry == "")
+				out.write("No corresponding dbpedia ski resort found");
+			else
+				out.write("Dbpedia entry: <a href=\"" + dbpediaEntry + "\">" + dbpediaEntry + "</a>");
+			out.write("</li></ul>");
+		}
+		%>
 		<ul>
-		
           <%
 		  boolean foundItems = false;
 		  List<String[]> classInstances = new ArrayList<>();
@@ -198,30 +209,15 @@
 		} else if (!propertyInstances.isEmpty()) {
 		  for (String[] str : propertyInstances) {
 			if (str[3].length() > 0)
-			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[0] +"\"));");
+			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[2] +"\"));");
 		  }
 		} else if (!instInstances.isEmpty()) {
 		  for (String[] str : instInstances) {
 			if (str[3].length() > 0)
-			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[0] +"\"));");
+			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[2] +"\"));");
 		  }
 		}
 	  %>
-      
-
-        // Create an array of alphabetical characters used to label the markers.
-        //var labels = 'ABCDEFGHIJKLMNOPQRSTUVWXYZ';
-
-        // Add some markers to the map.
-        // Note: The code uses the JavaScript Array.prototype.map() method to
-        // create an array of markers based on a given "locations" array.
-        // The map() method here has nothing to do with the Google Maps API.
-        //var markers = locations.map(function(location, i) {
-        //  return new google.maps.Marker({
-        //    position: location,
-        //    label: labels[i % labels.length]
-        //  });
-        //});
 
         // Add a marker clusterer to manage the markers.
         var markerCluster = new MarkerClusterer(map, markers,

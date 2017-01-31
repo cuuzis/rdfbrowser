@@ -10,37 +10,27 @@ import org.eclipse.rdf4j.repository.sparql.SPARQLRepository;
 
 public class HttpSparqlEndpoint {
     public static void main(String[] args) {
-        System.out.println(getResults());
+        System.out.println(getDbpediaSkiArea("Alyeska Resort"));
     }
 
-    public static String getResults() {
-        String results = "";
-        String sparqlEndpoint = "http://dblp.l3s.de/d2r/sparql";
+    public static String getDbpediaSkiArea(String name) {
+        String result = "";
+        String sparqlEndpoint = "https://dbpedia.org/sparql";
         Repository repo = new SPARQLRepository(sparqlEndpoint);
         repo.initialize();
-
-        try (RepositoryConnection conn = repo.getConnection()) {
-            String queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" +
-                    "PREFIX dc: <http://purl.org/dc/elements/1.1/>" +
-                    "SELECT DISTINCT * WHERE {\n" +
-                    "<http://dblp.l3s.de/d2r/resource/authors/Guohui_Xiao> foaf:name ?N .\n" +
-                    "?P  dc:creator  <http://dblp.l3s.de/d2r/resource/authors/Guohui_Xiao> .\n" +
-                    "}";
-            TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryString);
-            //TupleQueryResult result = tupleQuery.evaluate();
-            try (TupleQueryResult result = tupleQuery.evaluate()) {
-                while (result.hasNext()) {  // iterate over the result
-                    BindingSet bindingSet = result.next();
-                    //System.out.println(bindingSet);
-                    results += bindingSet;
-
-                    //Value valueOfX = bindingSet.getValue("N");
-                    //Value valueOfY = bindingSet.getValue("O");
-                    //System.out.println("x:" + valueOfX + ", y:" + valueOfY);
-                }
+        RepositoryConnection conn = repo.getConnection();
+        String queryString = "PREFIX foaf: <http://xmlns.com/foaf/0.1/>\n" +
+                "SELECT ?instance WHERE {\n" +
+                " ?instance a <http://dbpedia.org/ontology/SkiArea> .\n" +
+                " ?instance foaf:name \"" + name + "\"@en .\n" +
+                "}";
+        TupleQuery tupleQuery = conn.prepareTupleQuery(QueryLanguage.SPARQL, queryString);
+        TupleQueryResult qryResult = tupleQuery.evaluate();
+            if (qryResult.hasNext()) {  // iterate over the result
+                BindingSet bindingSet = qryResult.next();
+                result = bindingSet.getBinding("instance").getValue().stringValue();
             }
-        }
         repo.shutDown();
-        return results;
+        return result;
     }
 }
