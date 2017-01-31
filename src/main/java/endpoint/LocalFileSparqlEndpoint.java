@@ -31,18 +31,22 @@ public class LocalFileSparqlEndpoint {
                 System.out.println(str[1]);
         }
         System.out.println("---- Property Info -----------------------------");
-        for (String[] str : getPropertyInstances(":containsGeographicRegion")) {
+        for (String[] str : getPropertyInstances(":containsSkiResort")) {
             System.out.println("Triple:");
             System.out.println(str[0]);
             System.out.println(str[1]);
             System.out.println(str[2]);
+            if (str[3].length() > 0)
+                System.out.println(str[3]);
         }
         System.out.println("---- Instance Instances -----------------------------");
-        for (String[] str : getInstanceProperties(":Seefeld")) {
+        for (String[] str : getInstanceProperties(":Tyrol")) {
             System.out.println("Triple:");
             System.out.println(str[0]);
             System.out.println(str[1]);
             System.out.println(str[2]);
+            if (str[3].length() > 0)
+                System.out.println(str[3]);
         }
         System.out.println("---- Instance Literals -----------------------------");
         for (String[] str : getInstanceLiterals(":Seefeld")) {
@@ -116,18 +120,27 @@ public class LocalFileSparqlEndpoint {
     }
 
     public static List<String[]> getPropertyInstances(String rdfProperty) {
-        String qry = "SELECT DISTINCT ?instance ?hasValue WHERE {\n" +
+        String qry = "SELECT DISTINCT ?instance ?hasValue ?lat ?long WHERE {\n" +
                 "?instance " + rdfProperty + " ?hasValue\n" +
+                " OPTIONAL {" +
+                " ?hasValue geo:lat ?lat .\n" +
+                " ?hasValue geo:long ?long .} \n" +
                 "}";
         List<String[]> results = new ArrayList<>();
         try {
             TupleQueryResult qryResult = executeQuery(qry);
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
+                Value lat = bindingSet.getValue("lat");
+                Value lng = bindingSet.getValue("long");
+                String coordinates = "";
+                if (lat != null && lng != null)
+                    coordinates =  "{lat: " + lat.stringValue() + ", lng: " + lng.stringValue() + "}";
                 results.add(new String[]{
                         getStringVal(bindingSet, "instance"),
                         rdfProperty,
-                        getStringVal(bindingSet, "hasValue")}
+                        getStringVal(bindingSet, "hasValue"),
+                        coordinates}
                         );
             }
         } catch (Exception e) { // Malformed query etc
@@ -140,9 +153,12 @@ public class LocalFileSparqlEndpoint {
     }
 
     public static List<String[]> getInstanceProperties(String rdfInstance) {
-        String qry = "SELECT DISTINCT ?property ?hasValue WHERE {\n" +
+        String qry = "SELECT DISTINCT ?property ?hasValue ?lat ?long WHERE {\n" +
                 rdfInstance + " ?property ?hasValue\n" +
-                " filter (isIRI(?hasValue)\n" +
+                " OPTIONAL {" +
+                " ?hasValue geo:lat ?lat .\n" +
+                " ?hasValue geo:long ?long .} \n" +
+                " FILTER (isIRI(?hasValue)\n" +
                 " && (?property != rdf:type))\n" +
                 "}";
         List<String[]> results = new ArrayList<>();
@@ -150,10 +166,16 @@ public class LocalFileSparqlEndpoint {
             TupleQueryResult qryResult = executeQuery(qry);
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
+                Value lat = bindingSet.getValue("lat");
+                Value lng = bindingSet.getValue("long");
+                String coordinates = "";
+                if (lat != null && lng != null)
+                    coordinates =  "{lat: " + lat.stringValue() + ", lng: " + lng.stringValue() + "}";
                 results.add(new String[]{
                         rdfInstance,
                         getStringVal(bindingSet, "property"),
-                        getStringVal(bindingSet, "hasValue")}
+                        getStringVal(bindingSet, "hasValue"),
+                        coordinates}
                 );
             }
         } catch (Exception e) { // Malformed query etc

@@ -79,6 +79,8 @@
           <%
 		  boolean foundItems = false;
 		  List<String[]> classInstances = new ArrayList<>();
+		  List<String[]> propertyInstances = new ArrayList<>();
+		  List<String[]> instInstances = new ArrayList<>();
 		  if (className != null) {
 		    classInstances = LocalFileSparqlEndpoint.getClassInstances(className);
 		    if (!classInstances.isEmpty()) {
@@ -89,23 +91,27 @@
 				out.write("<li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a><li>");
 				if (str[1].length() > 0) {
                   out.write("<li>" + str[1] + "</li>");
-				  
 				}
 			    out.write("</ul></li>");
               }
 		    }
 		  } else if (propertyName != null) {
-			List<String[]> triples = LocalFileSparqlEndpoint.getPropertyInstances(propertyName);
-			if (!triples.isEmpty()) {
+			propertyInstances = LocalFileSparqlEndpoint.getPropertyInstances(propertyName);
+			if (!propertyInstances.isEmpty()) {
 			  foundItems = true;
 			  out.write("<h3>Instances</h3>");
-			  for (String[] str : triples) {
-				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+			  for (String[] str : propertyInstances) {
+				out.write("<li><ul>");
+				out.write("<li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
 				if (str[1].startsWith(":"))
 				  out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
 			    else
 				  out.write("<li><a href=\"" + str[1] + "\">" + str[1] + "</a></li>");
-				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
+				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li>");
+				if (str[3].length() > 0) {
+                  out.write("<li>" + str[3] + "</li>");
+				}
+				out.write("</ul></li>");
 			  }
 			}
 		  } else if (instanceName != null) {
@@ -131,17 +137,22 @@
 				out.write("<li>\"" + str[2] + "\"</li></ul>");
 			  }
 			}
-			triples = LocalFileSparqlEndpoint.getInstanceProperties(instanceName);
-			if (!triples.isEmpty()) {
+			instInstances = LocalFileSparqlEndpoint.getInstanceProperties(instanceName);
+			if (!instInstances.isEmpty()) {
 			  foundItems = true;
 			  out.write("<h3>Object Properties</h3>");
-			  for (String[] str : triples) {
-				out.write("<ul><li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
+			  for (String[] str : instInstances) {
+				out.write("<li><ul>");
+				out.write("<li><a href=\"?Instance=" + str[0] + "\">" + str[0] + "</a></li>");
 				if (str[1].startsWith(":"))
 				  out.write("<li><a href=\"?Property=" + str[1] + "\">" + str[1] + "</a></li>");
 			    else
 				  out.write("<li><a href=\"" + str[1] + "\">" + str[1] + "</a></li>");
-				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li></ul>");
+				out.write("<li><a href=\"?Instance=" + str[2] + "\">" + str[2] + "</a></li>");
+				if (str[3].length() > 0) {
+                  out.write("<li>" + str[3] + "</li>");
+				}
+				out.write("</ul></li>");
 			  }
 			}
 		  }
@@ -167,7 +178,7 @@
 			}
 		    if (center == "") {
 			  center = "{lat: 46.498198, lng: 11.351372}";
-			  zoom = "3";
+			  zoom = "2";
 			}
 		    out.write("zoom: " + zoom + ",");
 		    out.write("center: " + center);
@@ -183,6 +194,16 @@
 		  for (String[] str : classInstances) {
 			if (str[1].length() > 0)
 			  out.write("markers.push(getInstanceMarker(" + str[1] + ",\"" + str[0] +"\"));");
+		  }
+		} else if (!propertyInstances.isEmpty()) {
+		  for (String[] str : propertyInstances) {
+			if (str[3].length() > 0)
+			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[0] +"\"));");
+		  }
+		} else if (!instInstances.isEmpty()) {
+		  for (String[] str : instInstances) {
+			if (str[3].length() > 0)
+			  out.write("markers.push(getInstanceMarker(" + str[3] + ",\"" + str[0] +"\"));");
 		  }
 		}
 	  %>
