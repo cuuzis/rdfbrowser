@@ -54,7 +54,10 @@
     <div id="map"></div>
 	<div id="sidebar">
 		<ul>
-		  <li>Ontology <a href="<% out.write("http://" + request.getServerName() + "/webvowl/#iri=http://" + request.getServerName() + "/ski-resort-browser/ontology.owl");%>">visualized (in WebVOWL)</a></li>
+		  <li>Ontology 
+		    <a href="<% out.write("http://visualdataweb.de/webvowl/#iri=http://" + request.getServerName() + "/ski-resort-browser/ontology.owl");%>">visualized (in WebVOWL)</a>
+			[<a href="<% out.write("http://" + request.getServerName() + "/webvowl/#iri=http://" + request.getServerName() + "/ski-resort-browser/ontology.owl");%>"> locally </a>]
+		  </li>
 		  <li>Ontology file: <a href="ontology.owl">ontology.owl</a></li>
 		  <li>Data file: <a href="model.ttl">model.ttl</a></li>
 		  <li>Github: <a href="https://github.com/cuuzis/rdfbrowser">https://github.com/cuuzis/rdfbrowser</a></li>
