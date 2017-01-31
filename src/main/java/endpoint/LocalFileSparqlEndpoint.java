@@ -1,5 +1,6 @@
 package endpoint;
 
+import org.eclipse.rdf4j.model.Value;
 import org.eclipse.rdf4j.query.BindingSet;
 import org.eclipse.rdf4j.query.QueryLanguage;
 import org.eclipse.rdf4j.query.TupleQuery;
@@ -24,8 +25,10 @@ public class LocalFileSparqlEndpoint {
     // Demo function
     public static void main(String[] args) throws IOException {
         System.out.println("---- Class Info -----------------------------");
-        for (String str : getClassInstances(":Continent")) {
-            System.out.println(str);
+        for (String[] str : getClassInstances(":SkiResort")) {
+            System.out.println(str[0]);
+            if (str[1].length() > 0)
+                System.out.println(str[1]);
         }
         System.out.println("---- Property Info -----------------------------");
         for (String[] str : getPropertyInstances(":containsGeographicRegion")) {
@@ -35,23 +38,25 @@ public class LocalFileSparqlEndpoint {
             System.out.println(str[2]);
         }
         System.out.println("---- Instance Instances -----------------------------");
-        for (String[] str : getInstanceProperties(":Americas")) {
+        for (String[] str : getInstanceProperties(":Seefeld")) {
             System.out.println("Triple:");
             System.out.println(str[0]);
             System.out.println(str[1]);
             System.out.println(str[2]);
         }
         System.out.println("---- Instance Literals -----------------------------");
-        for (String[] str : getInstanceLiterals(":Americas")) {
+        for (String[] str : getInstanceLiterals(":Seefeld")) {
             System.out.println("Triple:");
             System.out.println(str[0]);
             System.out.println(str[1]);
             System.out.println(str[2]);
         }
         System.out.println("---- Instance Classes -----------------------------");
-        for (String str : getInstanceClasses(":Americas")) {
+        for (String str : getInstanceClasses(":Seefeld")) {
             System.out.println(str);
         }
+        System.out.println("---- Instance Coordinates -----------------------------");
+        System.out.println(getInstanceCoordinates(":Seefeld"));
     }
 
     private static TupleQueryResult executeQuery(String queryString) throws IOException {
@@ -64,8 +69,8 @@ public class LocalFileSparqlEndpoint {
         String fullQuery =
                 "PREFIX : <"+SKIO.NAMESPACE+">\n" +
                         "PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> \n" +
-                        /*"PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> \n" +
-                        "PREFIX owl: <http://www.w3.org/2002/07/owl#> \n" +
+                        "PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#> \n" +
+                        /*"PREFIX owl: <http://www.w3.org/2002/07/owl#> \n" +
                         "PREFIX dcterms: <http://purl.org/dc/terms/> \n" +
                         "PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> \n" +
                         "PREFIX skio: <http://inf.unibz.it/2017/ski-resort-ontology/#> \n" +
@@ -79,16 +84,27 @@ public class LocalFileSparqlEndpoint {
         return result;
     }
 
-    public static List<String> getClassInstances(String rdfClass) {
-        String qry = "SELECT DISTINCT ?instance WHERE {\n" +
-                "?instance a "+rdfClass+".\n" +
+    public static List<String[]> getClassInstances(String rdfClass) {
+        String qry = "SELECT DISTINCT ?instance ?lat ?long WHERE {\n" +
+                "?instance a "+rdfClass+" .\n" +
+                " OPTIONAL {" +
+                " ?instance geo:lat ?lat .\n" +
+                " ?instance geo:long ?long .} \n" +
                 "}";
-        List<String> results = new ArrayList<>();
+        List<String[]> results = new ArrayList<>();
         try {
             TupleQueryResult qryResult = executeQuery(qry);
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
-                results.add(getStringVal(bindingSet,"instance"));
+                Value lat = bindingSet.getValue("lat");
+                Value lng = bindingSet.getValue("lat");
+                String coordinates = "";
+                if (lat != null && lng != null)
+                    coordinates =  "{lat: " + lat.stringValue() + ", lng: " + lng.stringValue() + "}";
+                results.add(new String[]{
+                        getStringVal(bindingSet, "instance"),
+                        coordinates}
+                );
             }
         } catch (Exception e) { // Malformed query etc
             e.printStackTrace();
@@ -99,7 +115,7 @@ public class LocalFileSparqlEndpoint {
         return results;
     }
 
-    public static List<String[]> getPropertyInstances(String rdfProperty) throws IOException {
+    public static List<String[]> getPropertyInstances(String rdfProperty) {
         String qry = "SELECT DISTINCT ?instance ?hasValue WHERE {\n" +
                 "?instance " + rdfProperty + " ?hasValue\n" +
                 "}";
@@ -123,7 +139,7 @@ public class LocalFileSparqlEndpoint {
         return results;
     }
 
-    public static List<String[]> getInstanceProperties(String rdfInstance) throws IOException {
+    public static List<String[]> getInstanceProperties(String rdfInstance) {
         String qry = "SELECT DISTINCT ?property ?hasValue WHERE {\n" +
                 rdfInstance + " ?property ?hasValue\n" +
                 " filter (isIRI(?hasValue)\n" +
@@ -149,7 +165,7 @@ public class LocalFileSparqlEndpoint {
         return results;
     }
 
-    public static List<String[]> getInstanceLiterals(String rdfInstance) throws IOException {
+    public static List<String[]> getInstanceLiterals(String rdfInstance) {
         String qry = "SELECT DISTINCT ?property ?hasValue WHERE {\n" +
                 rdfInstance + " ?property ?hasValue\n" +
                 " FILTER isLiteral(?hasValue)\n" +
@@ -160,7 +176,7 @@ public class LocalFileSparqlEndpoint {
             while (qryResult.hasNext()) {
                 BindingSet bindingSet = qryResult.next();
                 results.add(new String[]{
-                        rdfInstance,
+                        rdfInstance, // + bindingSet.getValue("lat").stringValue(),
                         getStringVal(bindingSet, "property"),
                         getStringVal(bindingSet, "hasValue")}
                 );
@@ -174,7 +190,7 @@ public class LocalFileSparqlEndpoint {
         return results;
     }
 
-    public static List<String> getInstanceClasses(String rdfInstance) throws IOException {
+    public static List<String> getInstanceClasses(String rdfInstance) {
         String qry = "SELECT DISTINCT ?hasValue WHERE {\n" +
                 rdfInstance + " rdf:type ?hasValue .\n" +
                 "}";
@@ -192,6 +208,30 @@ public class LocalFileSparqlEndpoint {
             repo.shutDown();
         }
         return results;
+    }
+
+    // returns string JSON string for google maps api
+    public static String getInstanceCoordinates(String rdfInstance) {
+        String qry = "SELECT ?lat ?long WHERE {\n" +
+                rdfInstance + " geo:lat ?lat .\n" +
+                rdfInstance + " geo:long ?long .\n" +
+                "}";
+        String result = "";
+        try {
+            TupleQueryResult qryResult = executeQuery(qry);
+            if (qryResult.hasNext()) {
+                BindingSet bindingSet = qryResult.next();
+                String lat = bindingSet.getValue("lat").stringValue();
+                String lng = bindingSet.getValue("long").stringValue();
+                result = "{lat: " + lat + ", lng: " + lng + "}";
+            }
+        } catch (Exception e) { // Malformed query etc
+            e.printStackTrace();
+        } finally {
+            connection.close();
+            repo.shutDown();
+        }
+        return result;
     }
 
     private static String getStringVal(BindingSet bindingSet, String propertyName) {
