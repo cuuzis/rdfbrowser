@@ -11,7 +11,7 @@ The ontology was designed using [Protégé](http://protege.stanford.edu/), with 
 Using Protégé](http://mowl-power.cs.man.ac.uk/protegeowltutorial/resources/ProtegeOWLTutorialP4_v1_3.pdf)
 
 ### System design
-![System overview](https://github.com/cuuzis/rdfbrowser/rdf_proj.svg?raw=true "System overview")
+![System overview](https://github.com/cuuzis/rdfbrowser/blob/master/rdf_proj.svg?raw=true "System overview")
 
 The system is packaged as a Java servlet and runs on Tomcat server. Its presentation logic is handled within index.jsp, and business logic contains 3 packages:
 - webscraper: Downloads xml data from skimap.org API
