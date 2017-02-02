@@ -24,6 +24,10 @@ public class LocalFileSparqlEndpoint {
 
     // Demo function
     public static void main(String[] args) throws IOException {
+        System.out.println("Regions: " + getCount(":Region"));
+        System.out.println("Countries: " + getCount(":Country"));
+        System.out.println("Continents: " + getCount(":Continent"));
+        System.out.println("GeographicRegions: " + getCount(":GeographicRegion"));
         System.out.println("---- Class Info -----------------------------");
         for (String[] str : getClassInstances(":SkiResort")) {
             System.out.println(str[0]);
@@ -246,6 +250,26 @@ public class LocalFileSparqlEndpoint {
                 String lat = bindingSet.getValue("lat").stringValue();
                 String lng = bindingSet.getValue("long").stringValue();
                 result = "{lat: " + lat + ", lng: " + lng + "}";
+            }
+        } catch (Exception e) { // Malformed query etc
+            e.printStackTrace();
+        } finally {
+            connection.close();
+            repo.shutDown();
+        }
+        return result;
+    }
+
+    public static String getCount(String obj) {
+        String qry = "SELECT (COUNT(?obj) as ?objCount) WHERE {\n" +
+                " ?obj a " + obj + "  .\n" +
+                "}";
+        String result = "";
+        try {
+            TupleQueryResult qryResult = executeQuery(qry);
+            if (qryResult.hasNext()) {
+                BindingSet bindingSet = qryResult.next();
+                result = bindingSet.getValue("objCount").stringValue();
             }
         } catch (Exception e) { // Malformed query etc
             e.printStackTrace();
