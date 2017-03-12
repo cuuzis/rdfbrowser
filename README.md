@@ -2,7 +2,7 @@
 Project for Semantic Technologies study course at [Free University of Bolzano](https://www.unibz.it). Project's [presentation](https://docs.google.com/presentation/d/1uSvkDx7_u_tnBN93Ye8ZBS5vlDruVXY7_aZWz9PVwVk/edit?usp=sharing)
 
 ### Project Idea
-Developing a World's ski resort ontology and represent it on an interactive system. System users must be able to traverse the RDF objects and properties. Objects that have coordinates must be shown on a map. The system combines Ski Resort data from [skimap.org](https://www.skimap.org) into a turtle rdf resource for sparql querying. The system has a [presentation](https://docs.google.com/presentation/d/1uSvkDx7_u_tnBN93Ye8ZBS5vlDruVXY7_aZWz9PVwVk/edit?usp=sharing) and is temporarily published in http://swproject2017.tk/ski-resort-browser/.
+Developing a World's ski resort ontology and represent it on an interactive system. System users must be able to traverse the RDF objects and properties. Objects that have coordinates must be shown on a map. The system combines Ski Resort data from [skimap.org](https://www.skimap.org) into a turtle rdf resource for sparql querying.
 
 ### Ontology
 The [ontology](https://github.com/cuuzis/rdfbrowser/blob/master/src/main/webapp/ontology.owl) ([visualized in webvowl](http://visualdataweb.de/webvowl/#iri=https://github.com/cuuzis/rdfbrowser/blob/master/src/main/webapp/ontology.owl?raw=true)) defines a relationship of world Regions and Ski Resorts within those regions.
